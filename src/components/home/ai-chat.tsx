@@ -10,6 +10,7 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Send, Loader2, User, Bot } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { answerQuestionsAboutMe } from '@/ai/flows/answer-questions-about-me';
+import ReactMarkdown from 'react-markdown';
 import { 
   aiWelcomeMessage, 
   getResumeTextForAI,
@@ -97,54 +98,6 @@ export function AIChat() {
     });
   };
   
-  const renderMessageText = (text: string | React.ReactNode): React.ReactNode => {
-    if (typeof text !== 'string') {
-      return text;
-    }
-
-    const markdownLinkRegex = /\[([^\]]+?)\]\(([^)]+?)\)/g;
-    const parts = [];
-    let lastIndex = 0;
-    let match;
-
-    while ((match = markdownLinkRegex.exec(text)) !== null) {
-      // Add text before the link
-      if (match.index > lastIndex) {
-        parts.push(text.substring(lastIndex, match.index));
-      }
-      // Add the link
-      const linkText = match[1];
-      const linkUrl = match[2];
-      // Check if it's an internal or external link
-      if (linkUrl.startsWith('/')) {
-        parts.push(
-          <Link key={`${match.index}-${linkUrl}`} href={linkUrl} className="text-accent hover:underline">
-            {linkText}
-          </Link>
-        );
-      } else {
-        parts.push(
-          <a key={`${match.index}-${linkUrl}`} href={linkUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-            {linkText}
-          </a>
-        );
-      }
-      lastIndex = markdownLinkRegex.lastIndex;
-    }
-
-    // Add any remaining text after the last link
-    if (lastIndex < text.length) {
-      parts.push(text.substring(lastIndex));
-    }
-    
-    if (parts.length === 0 && lastIndex === 0) {
-        return text; // Return original text if no links found
-    }
-
-    return parts.map((part, index) => <React.Fragment key={index}>{part}</React.Fragment>);
-  };
-
-
   return (
     <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full max-h-[70vh] rounded-xl">
       <CardHeader>
@@ -175,7 +128,25 @@ export function AIChat() {
                       : 'bg-secondary text-secondary-foreground'
                   )}
                 >
-                  <p className="text-sm whitespace-pre-wrap break-words">{renderMessageText(message.text)}</p>
+                  <div className="text-sm whitespace-pre-wrap break-words">
+                    {typeof message.text === 'string' ? (
+                      <ReactMarkdown
+                        components={{
+                          a: ({node, ...props}) => {
+                            if (props.href?.startsWith('/')) {
+                              return <Link href={props.href} {...props} className="text-accent hover:underline" />;
+                            } else {
+                              return <a {...props} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline" />;
+                            }
+                          }
+                        }}
+                      >
+                        {message.text}
+                      </ReactMarkdown>
+                    ) : (
+                      message.text
+                    )}
+                  </div>
                 </div>
                  {message.sender === 'user' && (
                   <Avatar className="h-8 w-8 self-start">
