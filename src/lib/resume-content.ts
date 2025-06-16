@@ -4,36 +4,112 @@ export const resumeContent = {
     headline: "Experience",
     jobs: [
       {
-        title: "Senior Machine Learning Engineer",
-        company: "Tech Innovations Inc.",
-        dates: "Jan 2022 - Present",
+        title: "Co-founder & AI Solutions Lead",
+        company: "Argomai",
+        dates: "January 2025 - Present",
         responsibilities: [
-          "Led the development of NLP models for sentiment analysis and text summarization, improving accuracy by 15%.",
-          "Designed and implemented scalable machine learning pipelines for real-time data processing.",
-          "Collaborated with cross-functional teams to integrate AI solutions into flagship products.",
-          "Mentored junior engineers and contributed to best practices in model development and deployment."
+          "Own enterprise architecture for multiple AI initiatives, defining domain models, service boundaries, data governance, and NFRs to support highly scalable customer-facing products.",
+          "Partner with executives to translate business vision into technical roadmaps; created shared architectural vision that aligns GenAI/ML technologies with business objectives.",
+          "Lead the design and implementation of complex systems, including vector databases, retrieval pipelines, reusable AI component library (embeddings, prompt templates, orchestration SDK), and autonomous agents using LLMs.",
+          "Translate client needs into technical roadmaps, applying abstraction, reuse, and modularization principles to scale ML solutions."
         ],
       },
       {
-        title: "Machine Learning Researcher",
-        company: "AI Labs Co.",
-        dates: "Jun 2019 - Dec 2021",
+        title: "Senior Quantitative User Experience Researcher",
+        company: "Meta",
+        dates: "January 2024 - January 2025",
         responsibilities: [
-          "Conducted research on novel deep learning architectures for natural language understanding.",
-          "Published 3 papers in top-tier AI conferences and journals.",
-          "Developed proof-of-concept models for new AI-driven product features.",
-          "Contributed to the development of proprietary datasets for model training."
+          "Developed and implemented a hybrid machine learning classifier for open-ended responses, utilizing clustering analysis, multi-agent chain-of-reasoning, human-in-the-loop feedback, and few-shot learning, significantly reducing analysis time.",
+          "Led the development of Python-based analytical tools to streamline survey data analysis, utilizing statistical methods such as regressions, ANOVA, and T-tests, enabling efficient processing and supporting fellow researchers across multiple projects.",
+          "Merged behavioral data from editor logs and in-app surveys, employing data science and machine learning methodologies to produce comprehensive, data-driven insights.",
+          "Conducted longitudinal research on a novel machine learning model, overseeing the design and execution of bi-weekly surveys and identifying critical performance metrics for a product with over 500 million monthly active users."
         ],
       },
       {
-        title: "Software Engineer Intern",
-        company: "Future Solutions Ltd.",
-        dates: "May 2018 - Aug 2018",
+        title: "Senior User Experience Researcher",
+        company: "Roku Inc.",
+        dates: "January 2021 - November 2023",
         responsibilities: [
-          "Assisted in the development of a data analytics platform.",
-          "Implemented data visualization tools for interpreting model outputs.",
-          "Participated in code reviews and agile development processes.",
-          "Gained experience with cloud computing platforms and big data technologies."
+          "Spearheaded the creation of an AI-powered indexed database of Roku's UX and CI research, enhancing data accessibility and leveraging AI techniques to improve search capabilities across the organization.",
+          "Developed the Modular Survey Analysis System, integrating machine learning algorithms for generating detailed reports on survey data, including statistical analysis and NLP-based categorization of open-ended responses.",
+          "Led quantitative and qualitative research on physical devices, deriving insights through behavioral log analysis from over 70 million devices to inform product development.",
+          "Executed comprehensive UX research on Roku's Customer Support site and call center software, utilizing data-driven methodologies to enhance user experience and optimize support processes."
+        ],
+      },
+      {
+        title: "Senior User Experience Researcher",
+        company: "Walmart Global Tech",
+        dates: "August 2019 - Nov 2020",
+        responsibilities: [
+          "Orchestrated comprehensive data analytics projects for Sam's Club's mobile app using Tableau, establishing key performance metrics to guide strategic enhancements.",
+          "Pioneered a data-centric approach, integrating user interaction data with business metrics to inform and transform the user experience.",
+          "Presented synthesized research findings to diverse stakeholders, including product managers, designers, and executives, influencing the user experience strategy and design decisions."
+        ],
+      },
+      {
+        title: "Data Scientist",
+        company: "Scrapworks Inc.",
+        dates: "September 2017 - August 2019",
+        responsibilities: [
+          "Spearheaded a successful deep learning project that accurately forecasted commodities futures, yielding a 60% reduction in prediction error.",
+          "Initiated an NLP-based merchandise classification project, contributing to a patent application and aiding strategic business decision-making.",
+          "Created an interactive dashboard to visualize and filter 20 years of sales data, driving a 30% sales growth."
+        ],
+      },
+      {
+        title: "Senior User Experience Researcher",
+        company: "Suggestic",
+        dates: "December 2016 - September 2017",
+        responsibilities: [
+          "Led the transition from a conversational to a graphical interface, utilizing data insights to guide design decisions, significantly enhancing user engagement and app functionality.",
+          "Executed data-driven testing and analysis for new app features, ensuring optimal integration and alignment with user needs and business objectives.",
+          "Designed and developed advanced app prototypes, leveraging analytics to inform rapid iterations and feature enhancements."
+        ],
+      },
+      {
+        title: "User Experience Researcher",
+        company: "Stanford University",
+        dates: "May 2016 - November 2016",
+        responsibilities: [
+          "Conducted pioneering research on stress detection using machine learning algorithms, collecting and analyzing over 150 hours of car, biometric, and video data.",
+          "Contributed to the development of algorithms with 90% accuracy in stress detection.",
+          "Authored and contributed to research papers on automotive UI and pedestrian interactions, enhancing the academic discourse in UX design.",
+          "Conducted pioneering UX research for autonomous cars, creating replicable, safe environments to elicit stress in drivers.",
+          "Performed advanced signal processing and statistical analysis on physiological data, innovating in driver emotion recognition technology."
+        ],
+      },
+      {
+        title: "User Experience Researcher",
+        company: "Google.org",
+        dates: "January 2016 - June 2016",
+        responsibilities: [
+          "Analyzed technology adoption through a longitudinal ethnographic study, inspiring complex changes in multiple use cases."
+        ],
+      },
+      {
+        title: "User Experience Researcher",
+        company: "ITAM",
+        dates: "August 2014 - May 2016",
+        responsibilities: [
+          "Created custom data visualizations and analyzed psychophysiological signals, identifying user behavior patterns using machine learning techniques.",
+          "Crafted personalized user experience solutions for interactive technologies, spanning wearable, mobile, and web platforms.",
+          "Conducted comprehensive usability testing at various development stages, significantly improving user interaction and satisfaction."
+        ],
+      },
+      {
+        title: "Health Psychology Researcher",
+        company: "University of Colima",
+        dates: "2009 - 2014",
+        responsibilities: [
+          "Developed and assessed a psychoeducational program for adults with type 2 diabetes, improving glucose levels in 80% of patients."
+        ],
+      },
+      {
+        title: "Data Science Intern",
+        company: "Stevens Institute of Technology",
+        dates: "June 2015 - August 2015",
+        responsibilities: [
+          "Developed a visualization technique to classify over 2 million tweets into new depression-related categories using NLP and machine learning methods."
         ],
       },
     ],
@@ -42,16 +118,28 @@ export const resumeContent = {
     headline: "Skills",
     categories: [
       {
-        name: "Technical Skills",
-        skills: [
-          "Python", "Java", "C++", "TensorFlow", "PyTorch", "Scikit-learn", "Keras",
-          "SQL", "NoSQL", "Docker", "Kubernetes", "AWS", "GCP", "Azure",
-          "Data Mining", "Statistical Analysis", "Algorithm Design", "Big Data"
-        ],
+        name: "Programming Languages",
+        skills: ["Python", "R", "SQL", "JavaScript", "TypeScript"],
+      },
+      {
+        name: "Machine Learning",
+        skills: ["Machine learning", "Deep learning", "NLP", "LLMs", "RNNs", "Transformers", "Prompt engineering"],
+      },
+      {
+        name: "Data Analysis",
+        skills: ["Statistical analysis", "Data visualization", "Predictive modeling", "Trend analysis", "KPI development"],
+      },
+      {
+        name: "Databases",
+        skills: ["Vector Databases", "Automation pipelines", "Data processing", "Workflow optimization"],
+      },
+      {
+        name: "Frameworks",
+        skills: ["FastAPI", "LangChain", "LangGraph", "React", "Next.js", "TensorFlow", "PyTorch", "Scikit-learn"],
       },
       {
         name: "Languages",
-        skills: ["English (Native)", "Spanish (Fluent)"],
+        skills: ["English (Fluent)", "Spanish (Fluent)"]
       },
     ],
   },
@@ -59,14 +147,14 @@ export const resumeContent = {
     headline: "Education",
     degrees: [
       {
-        university: "Stanford University",
-        degree: "M.S. in Computer Science, Specialization in AI",
-        graduationYear: "2019",
+        university: "Instituto Tecnológico Autónomo de México",
+        degree: "M.S. in Computer Science (HCI/AI Focus)",
+        graduationYear: "2016",
       },
       {
-        university: "University of California, Berkeley",
-        degree: "B.S. in Electrical Engineering and Computer Sciences",
-        graduationYear: "2017",
+        university: "Universidad de Colima",
+        degree: "B.A. in Psychology",
+        graduationYear: "2013",
       },
     ],
   },

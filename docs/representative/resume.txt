@@ -6,6 +6,7 @@ Previously at Roku Inc., I led the development of AI-powered databases and advan
 
 EXPERIENCE
 Argomai
+Co-founder & AI Solutions Lead
 January 2025 - Present
 Own enterprise architecture for multiple AI initiatives, defining domain models, service boundaries, data governance, and NFRs to support highly scalable customer‑facing products.
 Partner with executives to translate business vision into technical roadmaps; created shared architectural vision that aligns GenAI/ML technologies with business objectives.
@@ -109,18 +110,18 @@ MACHINE LEARNING PROJECTS
 -----
 SKILLS
 
-Programming Languages: Advanced proficiency in Python, R, SQL
+Programming Languages: Advanced proficiency in Python, R, SQL, JavaScript/TypeScript
 Machine Learning: Expertise in machine learning, deep learning, NLP, LLMs, RNNs, transformers, prompt engineering
 Data Analysis: Statistical analysis, data visualization, predictive modeling, trend analysis, KPI development
 Databases: Experience with Vector Databases, building automation pipelines, data processing, workflow optimization
+Frameworks: FastAPI, LangChain/LangGraph, React/Next.js, TensorFlow, PyTorch, Scikit-learn
 Languages: Fluent in Spanish and English
-Tools and Frameworks: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy
 -----
 EDUCATION
 Instituto Tecnológico Autónomo de México
-Computer Science, M.S.
+M.S. in Computer Science (HCI/AI Focus)
 2014-2016
 
 Universidad de Colima
-Psychology, B.A.
-2008-2013
+B.A. in Psychology
+2009-2013

@@ -4,5 +4,5 @@ export const personalDetails = {
   copyrightYear: new Date().getFullYear(),
   linkedInUrl: "https://www.linkedin.com/in/jegama/",
   githubUrl: "https://github.com/Jegama/",
-  resumePdfUrl: "/placeholder-resume.pdf",
+  resumePdfUrl: "/cv-jgmancilla.pdf",
 };

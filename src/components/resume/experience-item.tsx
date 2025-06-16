@@ -13,7 +13,7 @@ export function ExperienceItem({ title, company, dates, responsibilities }: Expe
       <CardHeader>
         <CardTitle className="text-xl font-headline text-primary">{title}</CardTitle>
         <CardDescription className="text-md text-muted-foreground">
-          {company} | {dates}
+          <strong>{company}</strong> | {dates}
         </CardDescription>
       </CardHeader>
       <CardContent>
