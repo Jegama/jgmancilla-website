@@ -8,8 +8,8 @@
  * - AnswerQuestionsAboutMeOutput - The return type for the answerQuestionsAboutMe function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { z } from "zod";
+import { generateGeminiContent } from "@/ai/google-genai";
 
 const AnswerQuestionsAboutMeInputSchema = z.object({
   question: z.string().describe('The question to answer about Jesus Mancilla.'),
@@ -26,14 +26,7 @@ const AnswerQuestionsAboutMeOutputSchema = z.object({
 export type AnswerQuestionsAboutMeOutput = z.infer<typeof AnswerQuestionsAboutMeOutputSchema>;
 
 export async function answerQuestionsAboutMe(input: AnswerQuestionsAboutMeInput): Promise<AnswerQuestionsAboutMeOutput> {
-  return answerQuestionsAboutMeFlow(input);
-}
-
-const prompt = ai.definePrompt({
-  name: 'answerQuestionsAboutMePrompt',
-  input: {schema: AnswerQuestionsAboutMeInputSchema},
-  output: {schema: AnswerQuestionsAboutMeOutputSchema},
-  prompt: `You are an AI assistant trained to answer questions about Jesus Mancilla and his work.
+  const prompt = `You are an AI assistant trained to answer questions about Jesus Mancilla and his work.
   Use the following information from his website to answer the question.
   If the answer is not contained in the data, respond that you do not know.
 
@@ -48,24 +41,14 @@ const prompt = ai.definePrompt({
 
   Ensure citations are placed directly after the relevant piece of information.
 
-  Resume: {{{resume}}}
-  ML Portfolio: {{{mlPortfolio}}}
-  Research Portfolio: {{{researchPortfolio}}}
-  Research Papers: {{{researchPapers}}}
+  Resume: ${input.resume}
+  ML Portfolio: ${input.mlPortfolio}
+  Research Portfolio: ${input.researchPortfolio}
+  Research Papers: ${input.researchPapers}
 
-  Question: {{{question}}}
-  `,
-});
+  Question: ${input.question}`;
 
-const answerQuestionsAboutMeFlow = ai.defineFlow(
-  {
-    name: 'answerQuestionsAboutMeFlow',
-    inputSchema: AnswerQuestionsAboutMeInputSchema,
-    outputSchema: AnswerQuestionsAboutMeOutputSchema,
-  },
-  async input => {
-    const {output} = await prompt(input);
-    return output!;
-  }
-);
+  const answer = await generateGeminiContent(prompt);
+  return { answer };
+}
 
