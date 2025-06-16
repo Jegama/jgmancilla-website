@@ -34,7 +34,7 @@ SOLUTIONS
         - 11 Distinct Query Engines: Utilized to search through the vast Christian Classics Ethereal Library (CCEL).
         - OpenAI Integration: Query engines are powered by OpenAI, while the primary agent leverages OpenAI.
     - Library Indexing and Categorization:
-        - Novel Algorithm Development: Created a patent-pending algorithm for analyzing books, generating multiple categories, and forming numerous query engines.
+        - Novel Algorithm Development: Created an algorithm for analyzing books, generating multiple categories, and forming numerous query engines.
         - Accessibility: Made the extensive religious texts accessible and searchable.
 - Further Developments:
     - Multi-Container and Multi-Build Architecture:

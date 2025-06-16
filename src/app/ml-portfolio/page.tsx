@@ -1,5 +1,5 @@
 import { mlPortfolioContent } from "@/lib/content-data";
-import { ProjectCard } from "@/components/ml-portfolio/project-card";
+import { MLProjectSection } from "@/components/ml-portfolio/ml-project-section";
 
 export default function MLPortfolioPage() {
   return (
@@ -7,9 +7,15 @@ export default function MLPortfolioPage() {
       <h1 className="text-4xl font-headline text-primary mb-8 md:mb-12 text-center">
         {mlPortfolioContent.headline}
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8">
+      <div className="space-y-12">
         {mlPortfolioContent.projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <MLProjectSection
+            key={project.id}
+            id={project.id}
+            title={project.title}
+            shortDescription={project.shortDescription}
+            details={project.details}
+          />
         ))}
       </div>
     </div>

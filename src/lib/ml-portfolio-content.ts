@@ -4,76 +4,105 @@ export const mlPortfolioContent = {
     {
       id: "research-librarian",
       title: "Research Librarian Project",
-      shortDescription: "An AI-powered index for UX and CI research.",
-      imageUrl: "https://placehold.co/600x400.png",
+      shortDescription: "AI-powered system for deep, rapid access to UX and CI research, leveraging advanced indexing and autonomous query engines.",
       dataAiHint: "library books",
       details: {
-        introduction: "The Research Librarian Project is an innovative AI-driven system designed to revolutionize how UX (User Experience) and CI (Competitive Intelligence) research is indexed, accessed, and utilized. This tool leverages natural language processing and machine learning to create a dynamic, searchable knowledge base from diverse research materials.",
+        introduction:
+          "The Research Librarian project was a groundbreaking initiative to develop an AI-powered index for UX and CI research. By leveraging advanced AI techniques, the aim was to enhance internal accessibility and search capabilities, providing rapid, accurate, and insightful access to research data.",
         features: [
-          "Automated tagging and categorization of research documents.",
-          "Semantic search capabilities allowing users to find relevant information using natural language queries.",
-          "Trend identification and summarization from large volumes of research data.",
-          "User-friendly interface for easy navigation and information retrieval."
+          "Innovative algorithm for library indexing and categorization (patent pending)",
+          "Autonomous query execution with multiple specialized engines",
+          "Multi-container and multi-build architecture for performance optimization",
+          "Enhanced data retrieval and depth of search"
         ],
-        technologies: ["Python", "TensorFlow", "Elasticsearch", "React"],
-        outcome: "This project resulted in a significant reduction in time spent searching for research insights and improved collaboration among research teams by providing a centralized, intelligent repository for all UX and CI knowledge."
+        technologies: [
+          "LangChain",
+          "Python",
+          "OpenAI API",
+          "Docker",
+          "Streamlit"
+        ],
+        outcome:
+          "The system led to substantial improvements in data retrieval speed and accuracy, improved depth of search, and an optimized user experience. The autonomous, multi-engine approach and novel indexing algorithm were key technical achievements."
       }
     },
     {
       id: "modular-survey-analysis",
       title: "Modular Survey Analysis System",
-      shortDescription: "A machine learning-based report generator for survey analysis.",
-      imageUrl: "https://placehold.co/600x400.png",
+      shortDescription: "Dynamic, modular ML system for survey analysis, featuring context-aware logic and autonomous clustering for open-ended responses.",
       dataAiHint: "charts graph",
       details: {
-        introduction: "The Modular Survey Analysis System is a sophisticated tool that automates the generation of comprehensive reports from survey data. Utilizing machine learning algorithms, it processes raw survey responses to identify key themes, sentiments, and statistical patterns, presenting them in an easily digestible report format.",
+        introduction:
+          "The Modular Survey Analysis System is a dynamic, modular tool that automates comprehensive survey report generation. It leverages machine learning and NLP to analyze diverse survey data, offering flexibility, efficiency, and scalability.",
         features: [
-          "Automated cleaning and preprocessing of survey data.",
-          "Sentiment analysis of open-ended responses.",
-          "Topic modeling to identify key themes and subjects.",
-          "Customizable report templates and visualizations."
+          "Modular report generation adaptable to various survey structures",
+          "Context-aware logic parser for complex survey dependencies",
+          "Autonomous clustering algorithm for open-ended responses (patent pending)",
+          "Rigorous data preprocessing for uniformity"
         ],
-        technologies: ["Python", "Scikit-learn", "NLTK", "Pandas", "Flask"],
-        outcome: "This system dramatically accelerated the survey analysis workflow, enabling organizations to quickly derive actionable insights from customer and employee feedback, and make data-driven decisions."
+        technologies: [
+          "Python",
+          "Scikit-learn",
+          "NLTK",
+          "Pandas",
+          "Flask"
+        ],
+        outcome:
+          "The system reduced survey analysis time by 70% and resource usage by 50%. It enabled swift, reliable analysis and was developed in close collaboration with research stakeholders."
       }
     },
     {
       id: "customer-support-bot",
       title: "Customer Support Bot",
-      shortDescription: "An autonomous agent designed to enhance customer support.",
-      imageUrl: "https://placehold.co/600x400.png",
+      shortDescription: "Autonomous AI agent delivering prompt, relevant support answers using embeddings and LLMs to enhance self-service.",
       dataAiHint: "headset support",
       details: {
-        introduction: "The Customer Support Bot is an AI-powered autonomous agent developed to provide instant, 24/7 customer assistance. It's designed to understand customer queries, provide relevant information, resolve common issues, and escalate complex problems to human agents when necessary.",
+        introduction:
+          "The Customer Support Bot is an AI-powered autonomous agent developed to provide instant, 24/7 customer assistance. It features a 'Solution Spotlight' for curated answers, powered by advanced ML, embeddings, and LLMs, and is supported by a comprehensive index of support articles.",
         features: [
-          "Natural Language Understanding (NLU) for interpreting customer intent.",
-          "Integration with knowledge bases and CRM systems.",
-          "Multi-turn conversation capabilities for complex interactions.",
-          "Sentiment tracking to gauge customer satisfaction during interactions."
+          "Comprehensive indexing and cataloging of support articles",
+          "Embeddings-based semantic search for relevant content",
+          "LLM-powered response generation for user queries",
+          "Solution Spotlight feature for best-answer delivery"
         ],
-        technologies: ["Dialogflow", "Python", "Node.js", "REST APIs"],
-        outcome: "The bot successfully handled over 60% of incoming customer queries, leading to improved customer satisfaction, reduced wait times, and significant operational cost savings for the support department."
+        technologies: [
+          "LangChain",
+          "Python",
+          "OpenAI API",
+          "Node.js",
+          "REST APIs"
+        ],
+        outcome:
+          "The bot improved customer self-service, reduced call center load, and delivered prompt, accurate responses. The Solution Spotlight feature was well-received, and the project highlighted the value of advanced AI in customer support."
       }
     },
     {
       id: "calvinist-parrot",
       title: "Calvinist Parrot",
-      shortDescription: "An AI-driven chatbot for theological research.",
-      imageUrl: "https://placehold.co/600x400.png",
+      shortDescription: "AI-driven chatbot for Reformed theology, featuring multi-engine architecture and advanced library indexing.",
       dataAiHint: "parrot bird",
       details: {
-        introduction: "The Calvinist Parrot is a specialized AI chatbot designed to assist with theological research, particularly focusing on Calvinist theology. It can answer questions, provide summaries of theological texts, and engage in discussions on various doctrinal points, drawing from a curated knowledge base of theological works.",
+        introduction:
+          "The Calvinist Parrot project is an ambitious AI-powered chatbot designed to facilitate deep engagement with Reformed theology and biblical texts. It evolved from a dual-agent system to a robust, multi-engine architecture with advanced library indexing.",
         features: [
-          "Access to a vast database of Calvinist theological texts and commentaries.",
-          "Ability to answer complex theological questions with references.",
-          "Contextual understanding of theological concepts and arguments.",
-          "User-friendly interface for students, researchers, and theologians."
+          "Multiple OpenAI-powered query engines (11 distinct engines)",
+          "Novel algorithm for library indexing and categorization",
+          "Multi-container and multi-build Docker architecture for performance",
+          "Access to 900+ indexed books in the Christian Classics Ethereal Library (CCEL)",
+          "Chain-of-reasoning QA, study helper, devotionals, and sermon review tools"
         ],
-        technologies: ["GPT-3", "Python", "Pinecone", "Streamlit"],
-        outcome: "This chatbot serves as a valuable tool for theological students and researchers, providing quick access to information and facilitating deeper understanding of complex theological topics within the Calvinist tradition."
+        technologies: [
+          "OpenAI API",
+          "Python",
+          "Docker",
+          "Pinecone",
+          "Streamlit"
+        ],
+        outcome:
+          "The project reduced hallucinations, improved response depth, and enhanced user experience. Key takeaways include technical breakthroughs in algorithm development, autonomous query execution, and scalable architecture."
       }
-    },
-  ],
+    }
+  ]
 };
 
 export const getMlPortfolioTextForAI = (): string => {
