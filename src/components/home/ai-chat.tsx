@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useRef, useEffect, useTransition } from 'react';
+import React, { useState, useRef, useEffect, useTransition } from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Send, Loader2, User, Bot } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { answerQuestionsAboutMe } from '@/ai/flows/answer-questions-about-me';
@@ -96,19 +97,51 @@ export function AIChat() {
     });
   };
   
-  // Helper to render message text, potentially with links
-  const renderMessageText = (text: string | React.ReactNode) => {
+  const renderMessageText = (text: string | React.ReactNode): React.ReactNode => {
     if (typeof text !== 'string') {
       return text;
     }
-    // Basic URL detection, can be expanded
-    const urlRegex = /(https?:\/\/[^\s]+)/g;
-    return text.split(urlRegex).map((part, index) => {
-      if (part.match(urlRegex)) {
-        return <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">{part}</a>;
+
+    const markdownLinkRegex = /\[([^\]]+?)\]\(([^)]+?)\)/g;
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = markdownLinkRegex.exec(text)) !== null) {
+      // Add text before the link
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
       }
-      return part;
-    });
+      // Add the link
+      const linkText = match[1];
+      const linkUrl = match[2];
+      // Check if it's an internal or external link
+      if (linkUrl.startsWith('/')) {
+        parts.push(
+          <Link key={`${match.index}-${linkUrl}`} href={linkUrl} className="text-accent hover:underline">
+            {linkText}
+          </Link>
+        );
+      } else {
+        parts.push(
+          <a key={`${match.index}-${linkUrl}`} href={linkUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+            {linkText}
+          </a>
+        );
+      }
+      lastIndex = markdownLinkRegex.lastIndex;
+    }
+
+    // Add any remaining text after the last link
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+    
+    if (parts.length === 0 && lastIndex === 0) {
+        return text; // Return original text if no links found
+    }
+
+    return parts.map((part, index) => <React.Fragment key={index}>{part}</React.Fragment>);
   };
 
 
