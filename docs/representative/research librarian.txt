@@ -11,7 +11,7 @@ SOLUTIONS
 
 The Research Librarian's primary features and enhancements include:
 
-Library Indexing and Categorization: One of the pivotal challenges was indexing the extensive UX and CI research data. This challenge was addressed by developing an innovative algorithm (patent in process) designed to analyze research, establish multiple categories, and set up numerous query engines. This significant step transformed how the vast amount of research data became accessible and searchable.
+Library Indexing and Categorization: One of the pivotal challenges was indexing the extensive UX and CI research data. This challenge was addressed by developing an innovative algorithm designed to analyze research, establish multiple categories, and set up numerous query engines. This significant step transformed how the vast amount of research data became accessible and searchable.
 Autonomous Query Execution: The system autonomously determines the most appropriate query engine to answer user searches, significantly improving the indexing system's efficiency in providing precise and insightful access points.
 
 FINDINGS

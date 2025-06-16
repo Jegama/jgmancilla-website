@@ -9,7 +9,6 @@ ACHIVEMENTS
 Modular Report Generation: Transitioned from a traditional hard-coded question set approach to a dynamic, modular system adept at categorizing questions.
 Context-aware Logic: Incorporated advanced survey logic parsing to discern question interdependencies, ensuring accurate and in-depth data interpretation.
 Autonomous Clustering Algorithm: Pioneered an innovative algorithm that autonomously sorts through open-ended responses, clusters them, assigns category names, and provides detailed descriptions of each category's content.
-This algorithm is currently under the patenting process, reflecting its novelty and potential market value.
 
 CHALLENGES AND SOLUTIONS
 Data Diversity: Confronted challenges stemming from the heterogeneous nature of survey data. Solution: Implemented rigorous data preprocessing methods to ensure uniformity in input data.

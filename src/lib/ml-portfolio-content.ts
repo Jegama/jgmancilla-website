@@ -10,7 +10,7 @@ export const mlPortfolioContent = {
         introduction:
           "The Research Librarian project was a groundbreaking initiative to develop an AI-powered index for UX and CI research. By leveraging advanced AI techniques, the aim was to enhance internal accessibility and search capabilities, providing rapid, accurate, and insightful access to research data.",
         features: [
-          "Innovative algorithm for library indexing and categorization (patent pending)",
+          "Innovative algorithm for library indexing and categorization",
           "Autonomous query execution with multiple specialized engines",
           "Multi-container and multi-build architecture for performance optimization",
           "Enhanced data retrieval and depth of search"
@@ -37,7 +37,7 @@ export const mlPortfolioContent = {
         features: [
           "Modular report generation adaptable to various survey structures",
           "Context-aware logic parser for complex survey dependencies",
-          "Autonomous clustering algorithm for open-ended responses (patent pending)",
+          "Autonomous clustering algorithm for open-ended responses",
           "Rigorous data preprocessing for uniformity"
         ],
         technologies: [
