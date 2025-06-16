@@ -20,6 +20,24 @@ export default function ResumePage() {
         </Button>
       </div>
 
+      {/* Profile Section */}
+      {resumeContent.summary && (
+        <section id="profile" className="mb-12">
+          <Card className="shadow-lg rounded-xl">
+            <CardHeader>
+              <CardTitle className="text-3xl font-headline text-primary border-b pb-2">
+                {resumeContent.summary.headline}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {resumeContent.summary.paragraphs.map((para, idx) => (
+                <p key={idx} className="mb-4 last:mb-0 text-lg">{para}</p>
+              ))}
+            </CardContent>
+          </Card>
+        </section>
+      )}
+
       {/* Experience Section */}
       <section id="experience" className="mb-12">
         <h2 className="text-3xl font-headline text-primary mb-6 border-b pb-2">
