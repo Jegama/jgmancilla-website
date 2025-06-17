@@ -37,7 +37,7 @@ export async function answerQuestionsAboutMe(input: AnswerQuestionsAboutMeInput)
   - Information from the Research Papers section should be cited as: [4](/research-papers)
 
   For example, if discussing experience from the resume and a project from the ML portfolio, the answer might look like:
-  "Jesus Mancilla has experience as a Senior Machine Learning Engineer[1](/resume). One of his notable projects is the Research Librarian Project[2](/ml-portfolio)."
+  "Jesus Mancilla has experience as a Senior Quant UX Researcher ([1](/resume)). One of his notable projects is the Research Librarian Project ([2](/ml-portfolio))."
 
   Ensure citations are placed directly after the relevant piece of information.
 

@@ -1,24 +1,25 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useTransition } from 'react';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Send, Loader2, User, Bot } from 'lucide-react';
+import { Send, Loader2, User, Bot, Trash2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { answerQuestionsAboutMe } from '@/ai/flows/answer-questions-about-me';
-import ReactMarkdown from 'react-markdown';
-import { 
-  aiWelcomeMessage, 
+import {
+  aiWelcomeMessage,
   getResumeTextForAI,
   getMlPortfolioTextForAI,
   getResearchPortfolioTextForAI,
   getResearchPapersTextForAI
 } from '@/lib/content-data';
 import { cn } from '@/lib/utils';
+import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
+
+const MESSAGES_STORAGE_KEY = 'ai-chat-messages';
 
 type Message = {
   id: string;
@@ -30,28 +31,55 @@ export function AIChat() {
   const [messages, setMessages] = useState<Message[]>([
     { id: 'initial', sender: 'bot', text: aiWelcomeMessage },
   ]);
-  const [inputValue, setInputValue] = useState('');
-  const [isPending, startTransition] = useTransition();
+  const [inputValue, setInputValue] = useState(''); const [isPending, startTransition] = useTransition();
   const { toast } = useToast();
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(MESSAGES_STORAGE_KEY);
+      if (stored) {
+        const parsedMessages = JSON.parse(stored);
+        if (parsedMessages.length > 0) {
+          setMessages(parsedMessages);
+        }
+      }
+    } catch (error) {
+      console.error('Error loading messages from localStorage:', error);
+    }
+  }, []);
 
   const resumeData = getResumeTextForAI();
   const mlPortfolioData = getMlPortfolioTextForAI();
   const researchPortfolioData = getResearchPortfolioTextForAI();
-  const researchPapersData = getResearchPapersTextForAI();
+  const researchPapersData = getResearchPapersTextForAI();  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
-  const scrollToBottom = () => {
-    if (scrollAreaRef.current) {
-      const viewport = scrollAreaRef.current.querySelector('div[data-radix-scroll-area-viewport]');
-      if (viewport) {
-        viewport.scrollTop = viewport.scrollHeight;
+  // Save messages to localStorage whenever messages change
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(MESSAGES_STORAGE_KEY, JSON.stringify(messages));
+      } catch (error) {
+        console.error('Error saving messages to localStorage:', error);
       }
     }
-  };
+  }, [messages]);
 
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  const clearMessages = () => {
+    const initialMessages = [{ id: 'initial', sender: 'bot' as const, text: aiWelcomeMessage }];
+    setMessages(initialMessages);
+    toast({
+      title: 'Chat Cleared',
+      description: 'All messages have been cleared.',
+    });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,7 +102,7 @@ export function AIChat() {
           researchPortfolio: researchPortfolioData,
           researchPapers: researchPapersData,
         });
-        
+
         const botMessage: Message = {
           id: (Date.now() + 1).toString(),
           sender: 'bot',
@@ -97,12 +125,23 @@ export function AIChat() {
       }
     });
   };
-  
-  return (
-    <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full max-h-[70vh] rounded-xl">
+  return (    <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full rounded-xl">
       <CardHeader>
-        <CardTitle className="text-2xl font-headline text-primary">AI Representative</CardTitle>
-        <p className="text-sm text-muted-foreground">Ask a question about my work</p>
+        <div className="flex items-center justify-between">
+          <div>
+            <CardTitle className="text-2xl font-headline text-primary">AI Representative</CardTitle>
+            <p className="text-sm text-muted-foreground">Ask a question about my work</p>
+          </div>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            onClick={clearMessages}
+            className="text-muted-foreground hover:text-destructive hover:border-destructive"
+            aria-label="Clear chat"
+          >
+            <Trash2 className="h-4 w-4" />
+          </Button>
+        </div>
       </CardHeader>
       <CardContent className="flex-grow flex flex-col overflow-hidden p-4">
         <ScrollArea className="flex-grow mb-4 pr-4" ref={scrollAreaRef}>
@@ -130,31 +169,20 @@ export function AIChat() {
                 >
                   <div className="text-sm whitespace-pre-wrap break-words">
                     {typeof message.text === 'string' ? (
-                      <ReactMarkdown
-                        components={{
-                          a: ({node, ...props}) => {
-                            if (props.href?.startsWith('/')) {
-                              return <Link href={props.href} {...props} className="text-accent hover:underline" />;
-                            } else {
-                              return <a {...props} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline" />;
-                            }
-                          }
-                        }}
-                      >
-                        {message.text}
-                      </ReactMarkdown>
+                      <MarkdownRenderer content={message.text} />
                     ) : (
                       message.text
                     )}
                   </div>
                 </div>
-                 {message.sender === 'user' && (
+                {message.sender === 'user' && (
                   <Avatar className="h-8 w-8 self-start">
                     <AvatarFallback><User size={18} /></AvatarFallback>
                   </Avatar>
                 )}
               </div>
             ))}
+            <div ref={messagesEndRef} />
           </div>
         </ScrollArea>
         <form onSubmit={handleSubmit} className="flex items-center space-x-2 border-t pt-4">
