@@ -145,7 +145,7 @@ export function AIChat() {
       </CardHeader>
       <CardContent className="flex-grow flex flex-col overflow-hidden p-4">
         <ScrollArea className="flex-grow mb-4 pr-4" ref={scrollAreaRef}>
-          <div className="space-y-4">
+          <div>
             {messages.map((message) => (
               <div
                 key={message.id}

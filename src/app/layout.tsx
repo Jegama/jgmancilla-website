@@ -30,7 +30,7 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased flex flex-col min-h-screen', inter.variable)}>
         <Header />
-        <main className="flex-grow flex flex-col pt-20 sm:pt-24"> {/* Adjust pt to match header height */}
+        <main className="flex-grow flex flex-col pt-10 sm:pt-20"> {/* Adjust pt to match header height */}
           {children}
         </main>
         <Footer />
