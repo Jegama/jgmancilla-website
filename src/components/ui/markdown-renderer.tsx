@@ -19,9 +19,9 @@ export function MarkdownRenderer({ content, className }: MarkdownRendererProps) 
     li: ({ node, ...props }) => <li className="text-primary leading-snug" {...props} />,
     a: ({ node, ...props }) => {
       if (props.href?.startsWith('/')) {
-        return <Link href={props.href} {...props} className="text-primary leading-snug hover:underline" />;
+        return <Link href={props.href} {...props} className="text-accent underline leading-snug hover:opacity-80 transition-colors" />;
       } else {
-        return <a {...props} target="_blank" rel="noopener noreferrer" className="text-primary leading-snug hover:underline" />;
+        return <a {...props} target="_blank" rel="noopener noreferrer" className="text-accent underline leading-snug hover:opacity-80 transition-colors" />;
       }
     },
     p: ({ node, ...props }) => <p className="text-primary leading-snug" {...props} />,
