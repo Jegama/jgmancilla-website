@@ -9,11 +9,10 @@ import { cn } from '@/lib/utils';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'Mancilla Portfolio',
+  title: 'JGMancilla',
   description: 'Personal portfolio website for Jesus Mancilla, Staff Quant UX Researcher, Machine Learning and NLP specialist.',
   icons: {
-    // Consider adding a favicon here later if available
-    // icon: "/favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 

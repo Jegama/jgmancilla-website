@@ -40,8 +40,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary text-primary-foreground shadow-lg backdrop-blur-md bg-opacity-90">
       <div className="container-max flex items-center justify-between h-16 sm:h-20">
         <Link href="/" className="flex items-center gap-2 text-xl sm:text-2xl font-bold hover:opacity-80 transition-opacity">
-          <Brain className="h-7 w-7 sm:h-8 sm:w-8 text-accent" />
-          <span className="font-headline">Jesus Mancilla</span>
+          <span className="font-headline text-4xl">Jesus Mancilla</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -65,8 +64,7 @@ export function Header() {
             <SheetContent side="right" className="w-[280px] bg-primary text-primary-foreground p-0">
               <div className="p-6">
                 <Link href="/" className="flex items-center gap-2 text-xl font-bold mb-6" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Brain className="h-7 w-7 text-accent" />
-                  <span className="font-headline">Jesus Mancilla</span>
+                  <span className="font-headline text-4xl">Jesus Mancilla</span>
                 </Link>
                 <nav className="flex flex-col space-y-3">
                   {navItems.map((item) => (
