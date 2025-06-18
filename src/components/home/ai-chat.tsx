@@ -31,7 +31,8 @@ export function AIChat() {
   const [messages, setMessages] = useState<Message[]>([
     { id: 'initial', sender: 'bot', text: aiWelcomeMessage },
   ]);
-  const [inputValue, setInputValue] = useState(''); const [isPending, startTransition] = useTransition();
+  const [inputValue, setInputValue] = useState('');
+  const [isPending, startTransition] = useTransition();
   const { toast } = useToast();
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -53,8 +54,11 @@ export function AIChat() {
   const resumeData = getResumeTextForAI();
   const mlPortfolioData = getMlPortfolioTextForAI();
   const researchPortfolioData = getResearchPortfolioTextForAI();
-  const researchPapersData = getResearchPapersTextForAI();  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const researchPapersData = getResearchPapersTextForAI();
+  const scrollToBottom = () => {
+    if (scrollAreaRef.current) {
+      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
+    }
   };
 
   // Save messages to localStorage whenever messages change
