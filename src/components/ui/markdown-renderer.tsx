@@ -25,6 +25,11 @@ export function MarkdownRenderer({ content, className }: MarkdownRendererProps) 
       }
     },
     p: ({ node, ...props }) => <p className="text-sm" {...props} />,
+    blockquote: ({ node, ...props }) => (
+      <blockquote className="border-l-4 border-accent pl-2 italic text-muted-foreground">
+        {props.children}
+      </blockquote>
+    ),
   };
 
   return (
