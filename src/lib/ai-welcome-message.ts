@@ -9,3 +9,5 @@ I'm an AI trained on **Jesus Mancilla's** professional work and research. I can 
 - 📚 **Publications** - Research papers and academic contributions([4](/research-papers)
 
 Feel free to ask me anything! I can provide detailed information with proper formatting, code examples, and structured responses.`;
+
+// TODO: fix the additional spacing issue in the markdown renderer `\n1. `

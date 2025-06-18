@@ -7,10 +7,22 @@ if (!API_KEY) {
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
-export async function generateGeminiContent(prompt: string): Promise<string> {
-  const response = await ai.models.generateContent({
+/**
+ * Streams content from Gemini using the generateContentStream API.
+ * Returns an async generator yielding text chunks as they are produced.
+ * Usage example:
+ *   for await (const chunk of generateGeminiContentStream(prompt)) {
+ *     console.log(chunk);
+ *   }
+ */
+export async function* generateGeminiContentStream(prompt: string): AsyncGenerator<string, void, unknown> {
+  const stream = await ai.models.generateContentStream({
     model: "gemini-2.5-flash-preview-05-20",
     contents: prompt,
   });
-  return response.text ?? "";
+  for await (const chunk of stream) {
+    if (chunk.text) {
+      yield chunk.text;
+    }
+  }
 }
