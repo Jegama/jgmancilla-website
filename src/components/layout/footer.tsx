@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Github, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -9,11 +8,11 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Jesus Mancilla. All rights reserved.
         </p>
         <div className="flex space-x-4">
-          <Link href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-accent transition-colors">
-            <Linkedin className="h-6 w-6" />
+          <Link href="https://linkedin.com/in/jegama" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-accent transition-colors">
+            <img src="/linkedin.svg" alt="LinkedIn" className="h-8 w-8" />
           </Link>
-          <Link href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-accent transition-colors">
-            <Github className="h-6 w-6" />
+          <Link href="https://github.com/jegama" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-accent transition-colors">
+            <img src="/github.svg" alt="GitHub" className="h-8 w-8" />
           </Link>
         </div>
       </div>
