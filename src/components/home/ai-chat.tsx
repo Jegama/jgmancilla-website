@@ -236,7 +236,7 @@ export function AIChat() {
                     className={cn(
                       'max-w-[75%] rounded-lg px-4 py-2 shadow',
                       message.sender === 'user'
-                        ? 'bg-accent text-accent-foreground'
+                        ? 'bg-primary text-primary-foreground'
                         : 'bg-secondary text-secondary-foreground'
                     )}
                   >
@@ -254,7 +254,7 @@ export function AIChat() {
             </div>
           </ScrollArea>
         </div>
-        <form onSubmit={handleSubmit} className="flex items-center space-x-2 border-t pt-4">
+        <form onSubmit={handleSubmit} className="flex items-center space-x-2 border-t p-4">
           <Input
             type="text"
             value={inputValue}
