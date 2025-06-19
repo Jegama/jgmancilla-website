@@ -5,8 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Send, Loader2, User, Bot, Trash2 } from 'lucide-react';
+import { Send, Loader2, Trash2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import {
   aiWelcomeMessage,
@@ -221,7 +220,7 @@ export function AIChat() {
           </Button>
         </div>
       </CardHeader>
-      <CardContent className="flex-grow flex flex-col overflow-hidden p-4">
+      <CardContent className="flex-grow flex flex-col overflow-hidden p-0.1">
         <div className="mb-4 max-h-[600px] overflow-y-auto rounded-md" ref={scrollContainerRef}>
           <ScrollArea className="h-full px-4 py-2">
             <div className="space-y-4">
@@ -233,11 +232,6 @@ export function AIChat() {
                     message.sender === 'user' ? 'justify-end' : 'justify-start'
                   )}
                 >
-                  {message.sender === 'bot' && (
-                    <Avatar className="h-8 w-8 self-start">
-                      <AvatarFallback><Bot size={18} /></AvatarFallback>
-                    </Avatar>
-                  )}
                   <div
                     className={cn(
                       'max-w-[75%] rounded-lg px-4 py-2 shadow',
@@ -254,11 +248,6 @@ export function AIChat() {
                       )}
                     </div>
                   </div>
-                  {message.sender === 'user' && (
-                    <Avatar className="h-8 w-8 self-start">
-                      <AvatarFallback><User size={18} /></AvatarFallback>
-                    </Avatar>
-                  )}
                 </div>
               ))}
               <div ref={messagesEndRef} />
