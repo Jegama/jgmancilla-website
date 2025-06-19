@@ -10,23 +10,23 @@ interface MarkdownRendererProps {
 
 export function MarkdownRenderer({ content, className }: MarkdownRendererProps) {
   const components: Components = {
-    h1: ({ node, ...props }) => <h1 className="text-2xl font-bold leading-snug" {...props} />,
-    h2: ({ node, ...props }) => <h2 className="text-xl font-bold leading-snug" {...props} />,
-    h3: ({ node, ...props }) => <h3 className="text-lg font-bold leading-snug" {...props} />,
-    h4: ({ node, ...props }) => <h4 className="text-primary font-bold leading-snug" {...props} />,
-    ul: ({ node, ...props }) => <ul className="list-disc list-inside leading-snug" {...props} />,
-    ol: ({ node, ...props }) => <ol className="list-decimal list-inside leading-snug" {...props} />,
-    li: ({ node, ...props }) => <li className="text-primary leading-snug" {...props} />,
+    h1: ({ node, ...props }) => <h1 className="text-2xl font-bold leading-tight" {...props} />,
+    h2: ({ node, ...props }) => <h2 className="text-xl font-bold leading-tight" {...props} />,
+    h3: ({ node, ...props }) => <h3 className="text-lg font-bold leading-tight" {...props} />,
+    h4: ({ node, ...props }) => <h4 className="text-primary font-bold leading-tight" {...props} />,
+    ul: ({ node, ...props }) => <ul className="list-disc pl-5 leading-tight text-sm" {...props} />,
+    ol: ({ node, ...props }) => <ol className="list-decimal pl-5 leading-tight text-sm" {...props} />,
+    li: ({ node, ...props }) => <li className="text-primary leading-tight" {...props} />,
     a: ({ node, ...props }) => {
       if (props.href?.startsWith('/')) {
-        return <Link href={props.href} {...props} className="text-accent underline leading-snug hover:opacity-80 transition-colors" />;
+        return <Link href={props.href} {...props} className="text-accent underline leading-tight hover:opacity-80 transition-colors" />;
       } else {
-        return <a {...props} target="_blank" rel="noopener noreferrer" className="text-accent underline leading-snug hover:opacity-80 transition-colors" />;
+        return <a {...props} target="_blank" rel="noopener noreferrer" className="text-accent underline leading-tight hover:opacity-80 transition-colors" />;
       }
     },
-    p: ({ node, ...props }) => <p className="text-primary leading-snug" {...props} />,
+    p: ({ node, ...props }) => <p className="text-primary leading-[1.5]" {...props} />,
     blockquote: ({ node, ...props }) => (
-      <blockquote className="border-l-4 border-accent pl-2 italic text-muted-foreground leading-snug">
+      <blockquote className="border-l-4 border-accent pl-2 italic text-muted-foreground leading-tight">
         {props.children}
       </blockquote>
     ),
