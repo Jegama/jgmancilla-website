@@ -213,7 +213,7 @@ export function AIChat() {
             variant="outline"
             size="sm"
             onClick={clearMessages}
-            className="text-muted-foreground hover:text-primary hover:border-primary"
+            className="text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
             aria-label="Clear chat"
           >
             Clear chat

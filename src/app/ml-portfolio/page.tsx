@@ -7,7 +7,18 @@ export default function MLPortfolioPage() {
       <h1 className="text-4xl font-headline text-primary mb-8 md:mb-12 text-center">
         {mlPortfolioContent.headline}
       </h1>
-      <div className="space-y-12">
+      {mlPortfolioContent.intro && (
+        <div className="mb-12">
+          <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border w-full">
+            <div className="p-8 space-y-4 text-foreground/90 leading-relaxed text-lg">
+              {mlPortfolioContent.intro.split(/\n+/).map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {mlPortfolioContent.projects.map((project) => (
           <MLProjectSection
             key={project.id}
