@@ -1,6 +1,6 @@
 export const aiWelcomeMessage = `# Welcome! 👋
 
-I'm an AI trained on **Jesus Mancilla's** professional work and research. I can help you learn about:
+I'm an AI trained on **Jesús Mancilla's** professional work and research. I can help you learn about:
 
 - 💼 **Professional Experience** - Work history and achievements([1](/resume))
 - 🛠️ **Technical Skills** - Programming languages, frameworks, and tools([1](/resume))

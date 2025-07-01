@@ -104,19 +104,19 @@ export const resumeContent = {
         ],
       },
       {
-        title: "Health Psychology Researcher",
-        company: "University of Colima",
-        dates: "2009 - 2014",
-        responsibilities: [
-          "Developed and assessed a psychoeducational program for adults with type 2 diabetes, improving glucose levels in 80% of patients."
-        ],
-      },
-      {
         title: "Data Science Intern",
         company: "Stevens Institute of Technology",
         dates: "June 2015 - August 2015",
         responsibilities: [
           "Developed a visualization technique to classify over 2 million tweets into new depression-related categories using NLP and machine learning methods."
+        ],
+      },
+      {
+        title: "Health Psychology Researcher",
+        company: "University of Colima",
+        dates: "2009 - 2014",
+        responsibilities: [
+          "Developed and assessed a psychoeducational program for adults with type 2 diabetes, improving glucose levels in 80% of patients."
         ],
       },
     ],
@@ -168,7 +168,7 @@ export const resumeContent = {
 };
 
 export const getResumeTextForAI = (): string => {
-  let text = `Resume of Jesus Mancilla\n\n`;
+  let text = `Resume of Jesús Mancilla\n\n`;
   text += `EXPERIENCE:\n`;
   resumeContent.experience.jobs.forEach(job => {
     text += `${job.title} at ${job.company} (${job.dates})\n`;

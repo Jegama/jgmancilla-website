@@ -1,6 +1,6 @@
-# Jesus Mancilla – Personal CV & AI Portfolio
+# Jesús Mancilla – Personal CV & AI Portfolio
 
-This website is the personal CV and interactive AI portfolio of **Jesus Mancilla** – Research Scientist and AI Solutions Architect. It is a site designed to showcase my professional experience, machine learning projects, research, and publications. The site features an AI-powered chat assistant trained exclusively on my work and is intended solely as a digital portfolio and résumé.
+This website is the personal CV and interactive AI portfolio of **Jesús Mancilla** – Research Scientist and AI Solutions Architect. It is a site designed to showcase my professional experience, machine learning projects, research, and publications. The site features an AI-powered chat assistant trained exclusively on my work and is intended solely as a digital portfolio and résumé.
 
 ## 🚀 Features
 

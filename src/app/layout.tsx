@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'JGMancilla',
-  description: 'Personal portfolio website for Jesus Mancilla, Staff Quant UX Researcher, Machine Learning and NLP specialist.',
+  description: 'Personal portfolio website for Jesús Mancilla, Staff Quant UX Researcher, Machine Learning and NLP specialist.',
   icons: {
     icon: "/favicon.ico",
   },

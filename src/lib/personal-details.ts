@@ -1,5 +1,5 @@
 export const personalDetails = {
-  name: "Jesus Mancilla",
+  name: "Jesús Mancilla",
   title: "Machine Learning & NLP Specialist",
   copyrightYear: new Date().getFullYear(),
   linkedInUrl: "https://www.linkedin.com/in/jegama/",
