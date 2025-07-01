@@ -213,10 +213,10 @@ export function AIChat() {
             variant="outline"
             size="sm"
             onClick={clearMessages}
-            className="text-muted-foreground hover:text-destructive hover:border-destructive"
+            className="text-muted-foreground hover:text-primary hover:border-primary"
             aria-label="Clear chat"
           >
-            <Trash2 className="h-4 w-4" />
+            Clear chat
           </Button>
         </div>
       </CardHeader>

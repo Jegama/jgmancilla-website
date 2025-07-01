@@ -17,7 +17,7 @@ const ai = new GoogleGenAI({ apiKey: API_KEY });
  */
 export async function* generateGeminiContentStream(prompt: string): AsyncGenerator<string, void, unknown> {
   const stream = await ai.models.generateContentStream({
-    model: "gemini-2.5-flash-preview-05-20",
+    model: "gemini-2.5-flash-lite-preview-06-17",
     contents: prompt,
   });
   for await (const chunk of stream) {
