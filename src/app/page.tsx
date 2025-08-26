@@ -1,5 +1,6 @@
 import { AboutMe } from "@/components/home/about-me";
 import { AIChat } from "@/components/home/ai-chat";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <div className="flex-grow min-h-0 pb-8">
         <AIChat />
       </div>
+      <Analytics />
     </div>
   );
 }
