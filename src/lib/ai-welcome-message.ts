@@ -1,14 +1,12 @@
-export const aiWelcomeMessageVersion = '2025-08-26-1';
+export const aiWelcomeMessageVersion = '2025-08-26';
 
 export const aiWelcomeMessage = `# Welcome! 👋
 
-I'm an AI trained on **Jesús Mancilla's** professional work and research. I can help you learn about:
+I'm trained on **Jesús Mancilla's** public professional portfolio. Ask me about:
 
-- 💼 **Professional Experience** - Work history and achievements([1](/resume))
-- 🛠️ **Technical Skills** - Programming languages, frameworks, and tools([1](/resume))
-- 🔬 **Research Projects** - Machine Learning, NLP, and AI research([2](/ml-portfolio))
-- 📚 **Publications** - Research papers and academic contributions([4](/research-papers))
+- **Experience** - Roles, responsibilities, achievements([1](/resume))
+- **Technical Skills** - Languages, frameworks, ML/LLM tooling([1](/resume))
+- **Research Projects** - Machine Learning, NLP, clustering, RAG/agents, and AI research([2](/ml-portfolio), [3](/research-portfolio))
+- **Publications** - Peer-reviewed & industry venues([4](/research-papers))
 
-Feel free to ask me anything! I can provide detailed information with proper formatting, code examples, and structured responses.`;
-
-// TODO: fix the additional spacing issue in the markdown renderer `\n1. `
+Feel free to ask me anything! I can summarize projects, explain methods, or point you to demos and papers—always using content from this site and Jesús's CV.`;

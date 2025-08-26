@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { aboutMeContent } from "@/lib/content-data";
+import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
 
 export function AboutMe() {
   return (
@@ -11,7 +12,7 @@ export function AboutMe() {
       </CardHeader>
       <CardContent className="space-y-4 text-foreground/90 leading-relaxed">
         {aboutMeContent.paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <MarkdownRenderer content={paragraph} key={index} />
         ))}
       </CardContent>
     </Card>

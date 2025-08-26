@@ -1,5 +1,6 @@
 import { mlPortfolioContent } from "@/lib/content-data";
 import { MLProjectSection } from "@/components/ml-portfolio/ml-project-section";
+import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
 
 export default function MLPortfolioPage() {
   return (
@@ -11,9 +12,7 @@ export default function MLPortfolioPage() {
         <div className="mb-12">
           <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border w-full">
             <div className="p-8 space-y-4 text-foreground/90 leading-relaxed text-lg">
-              {mlPortfolioContent.intro.split(/\n+/).map((paragraph, idx) => (
-                <p key={idx}>{paragraph}</p>
-              ))}
+              <MarkdownRenderer content={mlPortfolioContent.intro} />
             </div>
           </div>
         </div>

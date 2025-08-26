@@ -3,8 +3,7 @@ export const resumeContent = {
   summary: {
     headline: "Profile",
     paragraphs: [
-      "Research Scientist and AI Solutions Lead with a unique blend of expertise in machine learning, natural language processing, and human-computer interaction (HCI). Proven track record in designing scalable AI systems, leading interdisciplinary teams, and delivering actionable insights for products used by millions.",
-      "My background in UX and HCI enables me to bridge the gap between advanced AI/ML research and real-world user needs. I have pioneered research on user experience and stress detection, and developed tools that optimize both system performance and user impact. This dual focus ensures my solutions are technically robust and user-centric."
+      "Applied Research Scientist & Research Engineer specializing in **HCAI, NLP/LLMs, and scalable ML systems**. I combine mixed-methods research with production engineering: vector DBs and retrieval pipelines, reusable AI components (embeddings, prompt templates, orchestration SDK), and **autonomous agents**. Previously at **Meta** I built a **hybrid classifier** for open-ended responses (clustering, multi-agent chain-of-reasoning, human-in-the-loop feedback, few-shot learning) that **significantly reduced analysis time**. Earlier roles at **Roku, Walmart Global Tech, Stanford,** and **ITAM** shaped a practice that is both **experiment-driven** and **delivery-oriented**."
     ]
   },
   experience: {

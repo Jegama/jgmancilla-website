@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download } from "lucide-react";
+import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
 import { resumeContent, personalDetails } from "@/lib/content-data";
 import { ExperienceItem } from "@/components/resume/experience-item";
 import { SkillCategory } from "@/components/resume/skill-category";
@@ -31,7 +32,7 @@ export default function ResumePage() {
             </CardHeader>
             <CardContent>
               {resumeContent.summary.paragraphs.map((para, idx) => (
-                <p key={idx} className="mb-4 last:mb-0 text-lg">{para}</p>
+                <MarkdownRenderer content={para} key={idx} />
               ))}
             </CardContent>
           </Card>

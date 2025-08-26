@@ -5,16 +5,11 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import siteMetadata from '@/lib/seo';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
-export const metadata: Metadata = {
-  title: 'JGMancilla',
-  description: 'Personal portfolio website for Jesús Mancilla, Staff Quant UX Researcher, Machine Learning and NLP specialist.',
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
   children,
@@ -25,11 +20,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Google Fonts link for Inter is handled by next/font */}
       </head>
       <body className={cn('font-body antialiased flex flex-col min-h-screen', inter.variable)}>
         <Header />
-        <main className="flex-grow flex flex-col pt-10 sm:pt-20"> {/* Adjust pt to match header height */}
+        <main className="flex-grow flex flex-col pt-10 sm:pt-20">
           {children}
         </main>
         <Footer />
