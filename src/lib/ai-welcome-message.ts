@@ -1,3 +1,5 @@
+export const aiWelcomeMessageVersion = '2025-08-26-1';
+
 export const aiWelcomeMessage = `# Welcome! 👋
 
 I'm an AI trained on **Jesús Mancilla's** professional work and research. I can help you learn about:

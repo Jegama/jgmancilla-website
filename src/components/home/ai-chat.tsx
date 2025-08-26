@@ -9,6 +9,7 @@ import { Send, Loader2, Trash2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import {
   aiWelcomeMessage,
+  aiWelcomeMessageVersion,
   getResumeTextForAI,
   getMlPortfolioTextForAI,
   getResearchPortfolioTextForAI,
@@ -18,6 +19,13 @@ import { cn } from '@/lib/utils';
 import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
 
 const MESSAGES_STORAGE_KEY = 'ai-chat-messages';
+const MESSAGES_META_KEY = 'ai-chat-messages-meta';
+const MESSAGES_TTL_MS = 60 * 24 * 60 * 60 * 1000;
+
+type StoredMetadata = {
+  version: string;
+  updatedAt: number; // epoch ms when messages were last written
+};
 
 type Message = {
   id: string;
@@ -37,22 +45,51 @@ export function AIChat() {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(MESSAGES_STORAGE_KEY);
-      if (stored) {
+      const metaRaw = localStorage.getItem(MESSAGES_META_KEY);
+      const now = Date.now();
+      let meta: StoredMetadata | null = null;
+      if (metaRaw) {
+        try {
+          meta = JSON.parse(metaRaw);
+        } catch (e) {
+          console.warn('Invalid metadata JSON, will reset.', e);
+        }
+      }
+
+      const shouldReset = () => {
+        if (!meta) return true;
+        if (meta.version !== aiWelcomeMessageVersion) return true; // version bump
+        if (now - meta.updatedAt > MESSAGES_TTL_MS) return true; // expired
+        return false;
+      };
+
+      if (stored && !shouldReset()) {
         const parsedMessages = JSON.parse(stored);
         if (Array.isArray(parsedMessages) && parsedMessages.length > 0) {
           setMessages(parsedMessages);
         } else {
-          // If localStorage has invalid data, set default message
           setMessages([{ id: 'initial', sender: 'bot', text: aiWelcomeMessage }]);
         }
       } else {
-        // If no localStorage data, set default message
-        setMessages([{ id: 'initial', sender: 'bot', text: aiWelcomeMessage }]);
+        // Reset state (either no stored messages, version changed, corrupted, or expired)
+        const initial = [{ id: 'initial', sender: 'bot' as const, text: aiWelcomeMessage }];
+        setMessages(initial);
+        const newMeta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: now };
+        try {
+          localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(newMeta));
+        } catch (e) {
+          console.warn('Unable to write metadata during reset.', e);
+        }
       }
     } catch (error) {
       console.error('Error loading messages from localStorage:', error);
-      // On error, set default message
       setMessages([{ id: 'initial', sender: 'bot', text: aiWelcomeMessage }]);
+      try {
+        localStorage.setItem(
+          MESSAGES_META_KEY,
+          JSON.stringify({ version: aiWelcomeMessageVersion, updatedAt: Date.now() } satisfies StoredMetadata)
+        );
+      } catch {}
     } finally {
       setIsLoaded(true);
     }
@@ -72,6 +109,8 @@ export function AIChat() {
     if (isLoaded && typeof window !== 'undefined') {
       try {
         localStorage.setItem(MESSAGES_STORAGE_KEY, JSON.stringify(messages));
+        const meta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: Date.now() };
+        localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(meta));
       } catch (error) {
         console.error('Error saving messages to localStorage:', error);
       }
@@ -94,6 +133,10 @@ export function AIChat() {
   const clearMessages = () => {
     const initialMessages = [{ id: 'initial', sender: 'bot' as const, text: aiWelcomeMessage }];
     setMessages(initialMessages);
+    try {
+      const meta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: Date.now() };
+      localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(meta));
+    } catch {}
     toast({
       title: 'Chat Cleared',
       description: 'All messages have been cleared.',
