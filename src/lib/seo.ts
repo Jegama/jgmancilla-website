@@ -33,7 +33,7 @@ export const siteMetadata: Metadata = {
   icons: {
     icon: '/favicon.ico'
   },
-  keywords: ['Applied Research Scientist','Research Engineer','HCAI','NLP','LLMs','RAG','Agents','Evaluation','Jesús Mancilla'],
+  keywords: ['Applied Research Scientist','Research Engineer','HCAI','NLP','LLMs','RAG','Agents','Evaluation','Jesús Mancilla', 'Jesus Mancilla', 'Jesus Garcia-Mancilla', 'Jesus Garcia Mancilla'],
   robots: { index: true, follow: true }
 };
 
