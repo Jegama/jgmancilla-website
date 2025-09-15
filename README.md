@@ -9,7 +9,6 @@ This website is the personal CV and interactive AI portfolio of **Jesús Mancill
 - **ML Portfolio**: In-depth descriptions of machine learning and AI projects, with modal dialogs for project details.
 - **Research Portfolio**: Summaries of research projects, methodologies, and outcomes.
 - **Research Papers**: List of academic publications and contributions.
-- **Modern UI**: Responsive, accessible, and visually appealing design using Tailwind CSS and Radix UI components.
 
 ## 🏆 Representative Work
 
