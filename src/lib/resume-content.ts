@@ -3,7 +3,7 @@ export const resumeContent = {
   summary: {
     headline: "Profile",
     paragraphs: [
-      "Applied Research Scientist & Research Engineer specializing in **HCAI, NLP/LLMs, and scalable ML systems**. I combine mixed-methods research with production engineering: vector DBs and retrieval pipelines, reusable AI components (embeddings, prompt templates, orchestration SDK), and **autonomous agents**. Previously at **Meta** I built a **hybrid classifier** for open-ended responses (clustering, multi-agent chain-of-reasoning, human-in-the-loop feedback, few-shot learning) that **significantly reduced analysis time**. Earlier roles at **Roku, Walmart Global Tech, Stanford,** and **ITAM** shaped a practice that is both **experiment-driven** and **delivery-oriented**."
+      "Applied Research Scientist & Quantitative UX Researcher specializing in **HCAI, NLP/LLMs, and scalable ML systems**. I combine mixed-methods research with production engineering: vector DBs and retrieval pipelines, reusable AI components (embeddings, prompt templates, orchestration SDK), and **autonomous agents**. Previously at **Meta** I built a **hybrid classifier** for open-ended responses (clustering, multi-agent chain-of-reasoning, human-in-the-loop feedback, few-shot learning) that **significantly reduced analysis time**. Earlier roles at **Roku, Walmart Global Tech, Stanford,** and **ITAM** shaped a practice that is both **experiment-driven** and **delivery-oriented**."
     ]
   },
   experience: {
