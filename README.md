@@ -2,6 +2,8 @@
 
 This website is the personal CV and interactive AI portfolio of **Jesús Mancilla** – Research Scientist and AI Solutions Architect. It is a site designed to showcase my professional experience, machine learning projects, research, and publications. The site features an AI-powered chat assistant trained exclusively on my work and is intended solely as a digital portfolio and résumé.
 
+Live site: https://www.jgmancilla.com/
+
 ## 🚀 Features
 
 - **AI Chat Assistant**: Ask questions about my experience, skills, research, and publications. The AI is trained on curated content from my career.
@@ -26,12 +28,42 @@ This site highlights a selection of my most significant projects and research, i
 
 For more details, see the dedicated sections and project descriptions on the site.
 
+## 🧭 Content sources (single source of truth)
+
+Structured content is defined in TypeScript and drives both the UI and the AI assistant grounding:
+
+- `src/lib/resume-content.ts` — Resume profile, experience, skills, education
+- `src/lib/ml-portfolio-content.ts` — ML projects
+- `src/lib/research-portfolio-content.ts` — Research projects
+- `src/lib/research-papers-content.ts` — Publications list
+- `src/lib/about-me-content.ts` — About section copy
+
+The AI chat serializes these sources when building a single composite prompt (no RAG at runtime).
+
 ## 🛠️ Tech Stack
 
 - [Next.js](https://nextjs.org/) (App Router, TypeScript)
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Google Gemini](https://ai.google.dev/)
+
+## 🤖 AI chat architecture (high level)
+
+- Prompt assembly: `src/ai/flows/answer-questions-about-me.ts` (async generator, single-pass)
+- Model client: `src/ai/google-genai.ts` (Gemini streaming)
+- API route: `src/app/api/chat/route.ts` (streams `ReadableStream` to the client)
+- Client UI: `src/components/home/ai-chat.tsx` (optimistic user message + incremental bot chunks)
+
+Design choices:
+- Single composite prompt per question (no retrieval layer yet). If content grows, add chunking/embeddings.
+- Citations enforced in the prompt (deterministic per content area).
+
+## 📄 Resumes
+
+To export PDFs (optional, if LaTeX is installed):
+- `public\cv-jgmancilla.pdf` — Hybrid master - Downloadable from the live site
+- `public\JGMancilla - Applied Scientist.pdf` — Role-targeted Applied Scientist
+- `public\JGMancilla - UX Research.pdf` — Role-targeted Quantitative UX Researcher
 
 ## 📄 Papers
 
