@@ -10,13 +10,13 @@ export const resumeContent = {
     headline: "Experience",
     jobs: [
       {
-        title: "Co-founder & AI Solutions Lead",
+        title: "Staff Applied Scientist (Consultant)",
         company: "Argomai",
         dates: "January 2025 - Present",
         responsibilities: [
           "Own enterprise architecture for multiple AI initiatives, defining domain models, service boundaries, data governance, and NFRs to support highly scalable customer-facing products.",
           "Partner with executives to translate business vision into technical roadmaps; created shared architectural vision that aligns GenAI/ML technologies with business objectives.",
-          "Lead the design and implementation of complex systems, including vector databases, retrieval pipelines, reusable AI component library (embeddings, prompt templates, orchestration SDK), and autonomous agents using LLMs.",
+          "Lead the design and implementation of complex systems, including vector databases, retrieval pipelines, reusable AI component library (embeddings, prompt templates, orchestration SDK), and LangGraph-based autonomous agents using LLMs.",
           "Translate client needs into technical roadmaps, applying abstraction, reuse, and modularization principles to scale ML solutions.",
           "Cut multipage document classification from ~90 min to <5 min via automation & retrieval; reduced PM reporting from 6 hrs/wk to <1 hr through streamlined reporting.",
           "User impact: faster document turnaround, better knowledge searchability, and lower operational cycle time."
