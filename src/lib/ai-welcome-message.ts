@@ -1,4 +1,4 @@
-export const aiWelcomeMessageVersion = '2025-09-15';
+export const aiWelcomeMessageVersion = '2025-10-09';
 
 export const aiWelcomeMessage = `# Welcome! 👋
 

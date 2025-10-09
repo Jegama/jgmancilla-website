@@ -19,7 +19,11 @@ export const resumeContent = {
           "Lead the design and implementation of complex systems, including vector databases, retrieval pipelines, reusable AI component library (embeddings, prompt templates, orchestration SDK), and LangGraph-based autonomous agents using LLMs.",
           "Translate client needs into technical roadmaps, applying abstraction, reuse, and modularization principles to scale ML solutions.",
           "Cut multipage document classification from ~90 min to <5 min via automation & retrieval; reduced PM reporting from 6 hrs/wk to <1 hr through streamlined reporting.",
-          "User impact: faster document turnaround, better knowledge searchability, and lower operational cycle time."
+          "User impact: faster document turnaround, better knowledge searchability, and lower operational cycle time.",
+          "Translated research findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.",
+          "Conducted generative and evaluative user interviews for a new GenAI platform (screeners, protocols, synthesis) to validate value proposition and inform roadmap.",
+          "Authoring a paper and open-sourcing a multilingual QA evaluation pipeline: self-consistency → critique → refinement; judge-centric evaluation with a deterministic audit layer.",
+          "Founding team member.",
         ],
       },
       {
@@ -28,10 +32,13 @@ export const resumeContent = {
         dates: "January 2024 - January 2025",
         responsibilities: [
           "Developed and implemented a hybrid machine learning classifier for open-ended responses, utilizing clustering analysis, multi-agent chain-of-reasoning, human-in-the-loop feedback, and few-shot learning, significantly reducing analysis time.",
+          "Doubled throughput for open-ended analysis via the hybrid ML + human-in-the-loop classifier.",
           "Led the development of Python-based analytical tools to streamline survey data analysis, utilizing statistical methods such as regressions, ANOVA, and T-tests, enabling efficient processing and supporting fellow researchers across multiple projects.",
           "Merged behavioral data from editor logs and in-app surveys, employing data science and machine learning methodologies to produce comprehensive, data-driven insights.",
           "Conducted longitudinal research on a novel machine learning model, overseeing the design and execution of bi-weekly surveys and identifying critical performance metrics for a product with over 500 million monthly active users.",
-          "User impact: accelerated feedback loops for creators and researchers; insights influenced roadmap decisions and prioritization."
+          "User impact: accelerated feedback loops for creators and researchers; insights influenced roadmap decisions and prioritization.",
+          "Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests, pipelines) adopted across multiple research teams.",
+          "Conducted interviews in Spanish and collaborated across multilingual teams to broaden signal quality."
         ],
       },
       {
@@ -43,7 +50,9 @@ export const resumeContent = {
           "Developed the Modular Survey Analysis System, integrating machine learning algorithms for generating detailed reports on survey data, including statistical analysis and NLP-based categorization of open-ended responses.",
           "Led quantitative and qualitative research on physical devices, deriving insights through behavioral log analysis from over 70 million devices to inform product development.",
           "Executed comprehensive UX research on Roku's Customer Support site and call center software, utilizing data-driven methodologies to enhance user experience and optimize support processes.",
-          "User impact: org-wide self-serve insights, faster executive reporting, improved searchability of prior research."
+          "User impact: org-wide self-serve insights, faster executive reporting, improved searchability of prior research.",
+          "Cut weekly survey report generation from ~4 hrs to <5 min via ML automation and LLM summaries.",
+          "Mentored junior researchers in survey design and behavioral data analysis; managed vendors, resource planning, and budget alignment."
         ],
       },
       {
@@ -53,7 +62,9 @@ export const resumeContent = {
         responsibilities: [
           "Orchestrated comprehensive data analytics projects for Sam's Club's mobile app using Tableau, establishing key performance metrics to guide strategic enhancements.",
           "Pioneered a data-centric approach, integrating user interaction data with business metrics to inform and transform the user experience.",
-          "Presented synthesized research findings to diverse stakeholders, including product managers, designers, and executives, influencing the user experience strategy and design decisions."
+          "Presented synthesized research findings to diverse stakeholders, including product managers, designers, and executives, influencing the user experience strategy and design decisions.",
+          "Led bilingual collaboration across Mexico and U.S. teams to unify survey instruments and UX research standards.",
+          "Partnered with designers and content strategists to ensure cultural and linguistic relevance in product testing and insights."
         ],
       },
       {
@@ -86,14 +97,6 @@ export const resumeContent = {
           "Authored and contributed to research papers on automotive UI and pedestrian interactions, enhancing the academic discourse in UX design.",
           "Conducted pioneering UX research for autonomous cars, creating replicable, safe environments to elicit stress in drivers.",
           "Performed advanced signal processing and statistical analysis on physiological data, innovating in driver emotion recognition technology."
-        ],
-      },
-      {
-        title: "User Experience Researcher",
-        company: "Google.org",
-        dates: "January 2016 - June 2016",
-        responsibilities: [
-          "Analyzed technology adoption through a longitudinal ethnographic study, inspiring complex changes in multiple use cases."
         ],
       },
       {
@@ -133,15 +136,63 @@ export const resumeContent = {
       },
       {
         name: "Machine Learning",
-        skills: ["Machine learning", "Deep learning", "NLP", "LLMs", "RNNs", "Transformers", "Prompt engineering"],
+        skills: [
+          "Machine learning",
+          "Deep learning",
+          "NLP",
+          "LLMs",
+          "RNNs",
+          "Transformers",
+          "Prompt engineering",
+          "Retrieval-Augmented Generation (RAG)",
+          "Embeddings",
+          "Vector search",
+          "Few-shot learning",
+          "Chain-of-reasoning",
+          "Multi-agent orchestration",
+          "Model evaluation pipelines",
+          "Observability and monitoring"
+        ],
       },
       {
         name: "Data Analysis",
-        skills: ["Statistical analysis", "Data visualization", "Predictive modeling", "Trend analysis", "KPI development"],
+        skills: [
+          "Statistical analysis",
+          "Data visualization",
+          "Predictive modeling",
+          "Trend analysis",
+          "Survey design and analysis",
+          "Sampling",
+          "Regression",
+          "ANOVA",
+          "T-tests",
+          "A/B testing",
+          "Longitudinal studies",
+          "Experimental design",
+          "Dashboarding",
+          "Large-scale log analysis",
+          "KPI definition",
+          "KPI development",
+          "Signal processing",
+          "Wearables"
+        ],
       },
       {
         name: "Databases",
         skills: ["Vector Databases", "Automation pipelines", "Data processing", "Workflow optimization"],
+      },
+      {
+        name: "UX Research Methods",
+        skills: [
+          "Mixed methods",
+          "User interviews",
+          "Diary studies",
+          "Ethnography",
+          "Usability testing",
+          "Thematic analysis",
+          "Triangulation",
+          "Insight synthesis"
+        ],
       },
       {
         name: "Frameworks",
