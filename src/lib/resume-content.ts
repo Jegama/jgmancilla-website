@@ -23,6 +23,7 @@ export const resumeContent = {
           "Translated research findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.",
           "Conducted generative and evaluative user interviews for a new GenAI platform (screeners, protocols, synthesis) to validate value proposition and inform roadmap.",
           "Authoring a paper and open-sourcing a multilingual QA evaluation pipeline: self-consistency → critique → refinement; judge-centric evaluation with a deterministic audit layer.",
+          "Built document/record ingestion for a healthcare vendor: normalized free-text webform inputs into a governed schema; automated categorization of compounds/volumes; produced model-ready tables and KPIs for dashboards.",
           "Founding team member.",
         ],
       },
