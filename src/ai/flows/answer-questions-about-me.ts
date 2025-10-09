@@ -48,10 +48,10 @@ For example, if discussing experience from the resume and a project from the ML 
 Ensure citations are placed directly after the relevant piece of information.
 
 Here is the information to use:
-Resume: ${input.resume}
-ML Portfolio: ${input.mlPortfolio}
-Research Portfolio: ${input.researchPortfolio}
-Research Papers: ${input.researchPapers}
+Resume ([1](/resume)): ${input.resume}
+ML Portfolio ([2](/ml-portfolio)): ${input.mlPortfolio}
+Research Portfolio ([3](/research-portfolio)): ${input.researchPortfolio}
+Research Papers ([4](/research-papers)): ${input.researchPapers}
 
 Question: ${input.question}`;
 
