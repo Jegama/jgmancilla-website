@@ -53,7 +53,11 @@ ML Portfolio ([2](/ml-portfolio)): ${input.mlPortfolio}
 Research Portfolio ([3](/research-portfolio)): ${input.researchPortfolio}
 Research Papers ([4](/research-papers)): ${input.researchPapers}
 
-Question: ${input.question}`;
+---
+
+Remember to quote accurately and cite properly, for resume ([1](/resume)), ML portfolio ([2](/ml-portfolio)), research portfolio ([3](/research-portfolio)), and research papers ([4](/research-papers)). For multiple references, you can do so like this: ([1](/resume), [2](/ml-portfolio)).
+
+Now, provide a concise, well-cited answer to the following question: ${input.question}`;
 
   for await (const chunk of generateGeminiContentStream(prompt)) {
     yield chunk;
