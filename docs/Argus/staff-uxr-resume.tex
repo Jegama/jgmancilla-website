@@ -1,0 +1,222 @@
+%-------------------------
+% Quantitative UX Researcher Resume - Jesus Mancilla
+% Tailored from hybrid master to emphasize Quant UXR leadership, survey analytics, and experimentation
+% Base template: Aras Gungore (MIT) — adapted for Jesus Mancilla
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+% -------------- PAGE SETUP ------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{12pt}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.05in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+  {\Huge\scshape Jesus Mancilla} \\[4pt]
+  \textbf{Staff User Researcher \,|\, Quant \& Mixed-Methods (ML-enabled)} \\
+  \small
+  Decision-driving insights at scale: survey \& log analytics, ML-assisted research ops, standardized evaluation \\
+  \faMobile\ \href{tel:16503914301}{+1 650 391 4301}  $|$
+  \href{mailto:jesus@jgmancilla.com}{jesus@jgmancilla.com}  $|$
+  \faLinkedinSquare\ \href{https://www.linkedin.com/in/jegama}{LinkedIn.com/in/jegama}  $|$
+  \faGithub\ \href{https://github.com/jegama}{GitHub.com/jegama}  $|$
+  \faGlobe\ \href{https://www.jgmancilla.com/}{jgmancilla.com}
+\end{center}
+
+%---------- SUMMARY ----------
+\section{Professional Summary}
+
+Staff-level UXR leader blending \textbf{quantitative research at scale} with \textbf{ML/LLM tooling} to accelerate product decisions. Shipped reusable analysis pipelines, standardized metrics, and research ops that shortened feedback loops across \textbf{500M+ MAU} and \textbf{70M+ devices}. Noted for turning ambiguity into \textbf{operational, defensible insight systems} (e.g., open-ended survey analysis \textbf{~30h $\rightarrow$ $<$8h}; auto-reporting \textbf{~4h $\rightarrow$ $<$5m}; doc classification \textbf{~90m $\rightarrow$ $<$5m}). Bilingual (English/Spanish); strong cross-functional influence and executive-facing synthesis.
+
+%----------- CORE SKILLS (ATS-optimized) -----------
+\section{Technical Stack \& Domains}
+\small
+\textbf{Quant UX Research:} Survey design \& analytics, longitudinal tracking, KPI frameworks, experimentation, large-scale log analysis, dashboards \\
+\textbf{Mixed-Methods:} Study design (interviews, diaries, ethnography, usability lab/remote/field), triangulation, research ops \\
+\textbf{ML/LLMs:} Text classification, embeddings/vector search, clustering, RAG, prompting, evaluation/observability, HIL pipelines \\
+\textbf{Tooling:} Python, SQL, statistical testing (t-tests/ANOVA/regression), FastAPI, LangChain/LangGraph, CI/CD, Docker \\
+\textbf{Domains \& Scale:} Social/consumer media (500M+ MAU), TV/streaming (\textasciitilde70M devices), commerce, education, automotive/HF
+
+%----------- WORK EXPERIENCE -----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Argomai}{Houston, TX (Remote)}
+      {Senior Applied Scientist / Staff-Level UXR Consultant}{Jan 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Owned enterprise \textbf{GenAI/ML architecture} (domain models, service boundaries, governance) for insight workflows.}
+        \resumeItem{Built \textbf{retrieval pipelines} and a reusable \textbf{AI component library} (embeddings, prompt templates, orchestration SDK).}
+        \resumeItem{\textbf{Reduced document classification} from \textbf{~90m $\rightarrow$ $<$5m} and PM reporting from \textbf{6h/wk $\rightarrow$ $<$1h} via automation.}
+        \resumeItem{Led generative/evaluative interviews (screeners, protocols, synthesis) to validate value prop and de-risk roadmap.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Meta}{Remote}
+      {Senior Quantitative UX Researcher}{Jan 2024 -- Jan 2025}
+      \resumeItemListStart
+        \resumeItem{Deployed \textbf{hybrid ML + HIL classifier} for open-ended surveys; \textbf{cycle time ~30h $\rightarrow$ $<$8h} and \textbf{2$\times$ throughput}.}
+        \resumeItem{Triangulated \textbf{editor logs + surveys} to inform roadmap for a \textbf{500M+ MAU} product; shipped reusable Python analytics toolkit.}
+        \resumeItem{Conducted longitudinal research with bi-weekly surveys; defined critical metrics for a 500M+ MAU product.}
+        \resumeItem{Standardized metrics \& reporting cadence; improved cross-team adoption of quant methods and dashboards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Roku}{San Jose, CA}
+      {Senior User Experience Researcher}{Jan 2021 -- Nov 2023}
+      \resumeItemListStart
+        \resumeItem{Built an \textbf{AI-powered research index} for UX/CI; \textbf{weekly report generation ~4h $\rightarrow$ $<$5m} (ML + LLM summaries).}
+        \resumeItem{Led quant/qual device research; integrated logs across \textbf{\textasciitilde70M devices} with lab findings to guide launches.}
+        \resumeItem{Developed a \textbf{modular survey analysis system} (stats + NLP clustering) enabling at-scale survey analytics.}
+        \resumeItem{Mentored junior researchers in survey design and behavioral data analysis; managed vendors, resource planning, and budget alignment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Walmart Global Tech}{Sunnyvale, CA}
+      {Senior User Experience Researcher}{Aug 2019 -- Nov 2020}
+      \resumeItemListStart
+        \resumeItem{Established KPIs and analytics for Sam’s Club mobile; merged \textbf{user-interaction + business metrics} to inform UX bets.}
+        \resumeItem{Led cross-border (US/MX) standardization of surveys \& research workflows; mentored teams in quant best practices.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Scrapworks Inc.}{Palo Alto, CA}
+      {Data Scientist}{Sep 2017 -- Aug 2019}
+      \resumeItemListStart
+        \resumeItem{\textbf{60\% reduction} in forecasting error; built dashboards over 20 years of sales data (\textbf{\textasciitilde30\% sales growth}).}
+        \resumeItem{Initiated NLP merchandise classifier; productionized ingestion/cleaning pipelines across sources.}
+      \resumeItemListEnd
+      
+  \resumeSubheading
+    {Suggestic}{Mexico City, Mexico}
+    {User Experience Researcher}{Dec 2016 -- Sep 2017}
+      \resumeItemListStart
+        \resumeItem{Data-driven UX iterations and advanced prototyping for health features; informed go/no-go decisions.}
+        \resumeItem{Led transition from conversational to graphical interface using data insights; improved engagement and functionality.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {Stanford University}{Stanford, CA}
+    {User Experience Researcher}{May 2016 -- Nov 2016}
+      \resumeItemListStart
+        \resumeItem{Designed on-road driver-stress protocol; \textbf{\textasciitilde90\%} elicitation, \textbf{\textasciitilde89\%} alignment with road events; published methods.}
+        \resumeItem{Analyzed multi-modal data (vehicle, biometric, video); contributed to reproducible study assets.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {ITAM}{Mexico City, Mexico}
+    {User Experience Researcher}{Aug 2014 -- May 2016}
+      \resumeItemListStart
+        \resumeItem{Psychophysiology + ML for stress/health; wearables \& usability research; Google Glass micro-interactions (IEEE).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- SELECTED PROJECTS -----------
+\section{Selected Projects (Research Systems \& At-Scale Insight)}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Quant UX at Scale} — Hybrid classifier + validation; \textbf{~30h $\rightarrow$ $<$8h}, \textbf{2$\times$ throughput} in \textbf{500M+ MAU} context.}
+    \resumeItem{\textbf{Research Librarian (AI Index)} — Multi-engine semantic retrieval to surface prior insights and drive reuse.}
+    \resumeItem{\textbf{Modular Survey Analysis System} — Auto-reports (stats + NLP clustering) for diverse surveys; large time savings.}
+    \resumeItem{\textbf{Customer Support Bot (Blueprint)} — RAG + evaluation/observability + safety rails; solution-spotlight answers.}
+  \resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducationHeading{Instituto Tecnológico Autónomo de México (ITAM)}{}%
+      {M.S. in Computer Science (HCI/AI Focus)}{2014 -- 2016}
+    \resumeEducationHeading{Universidad de Colima}{}
+      {B.A. in Psychology}{2009 -- 2013}
+  \resumeSubHeadingListEnd
+
+%----------- PUBLICATIONS -----------
+\section{Selected Publications}
+  \resumeSubHeadingListStart
+    \small{\item{
+        {Ramos-Rivera, R. E., Santana Mancilla, P. C., Garcia-Mancilla, J., \& Gaytán-Lugo, L. S. (2025). Language models in education: Generative AI to optimize teacher performance analysis. InnovAcademica, 1(2), 74–85.}
+    
+        {Ramos-Rivera, R. E., Garcia-Mancilla, J., Cárdenas-Villa, G. E., \& Santana-Mancilla, P. C. (2024). Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis: An Approach Using Large Language Models (LLM). Avances en Interacción Humano-Computadora, 9(1), 261-264.}
+    
+        {Baltodano, Sonia, Jesus Garcia-Mancilla, and Wendy Ju. "Eliciting Driver Stress Using Naturalistic Driving Scenarios on Real Roads." In Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 298-309. ACM, 2018.} 
+
+        {Currano, Rebecca, So Yeon Park, Lawrence Domingo, Jesus Garcia-Mancilla, Pedro C. Santana-Mancilla, Victor M. Gonzalez, and Wendy Ju. "¡Vamos!: Observations of Pedestrian Interactions with Driverless Cars in Mexico." In Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 210-220. ACM, 2018.} 
+
+        {J. Garcia-Mancilla, J. E. Ramirez-Marquez, C. Lipizzi, G. T. Vesonder, and V. M. Gonzalez, “Characterizing negative sentiments in at-risk populations via crowd computing: a computational social science approach,” International Journal of Data Science and Analytics, Jun. 2018.}
+        
+        {\small For full list, see: jgmancilla.com/research-papers }
+  }}
+  \resumeSubHeadingListEnd
+
+\end{document}

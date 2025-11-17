@@ -1,0 +1,428 @@
+# People
+
+## User
+
+- Name: Jesús Mancilla
+- Languages: English, Spanish
+
+# Skills
+
+## Programming Languages
+
+- Python
+- R
+- SQL
+- JavaScript
+- TypeScript
+
+## Machine Learning
+
+- Machine learning
+- Deep learning
+- NLP
+- LLMs
+- RNNs
+- Transformers
+- Prompt engineering
+- Retrieval-Augmented Generation (RAG)
+- Embeddings
+- Vector search
+- Few-shot learning
+- Chain-of-reasoning
+- Multi-agent orchestration
+- Model evaluation pipelines
+- Observability and monitoring
+
+## Data Analysis
+
+- Statistical analysis
+- Data visualization
+- Predictive modeling
+- Trend analysis
+- Survey design and analysis
+- Sampling
+- Regression
+- ANOVA
+- T-tests
+- A/B testing
+- Longitudinal studies
+- Experimental design
+- Dashboarding
+- Large-scale log analysis
+- KPI definition
+- KPI development
+- Signal processing
+- Wearables
+
+## Databases
+
+- Vector Databases
+- Automation pipelines
+- Data processing
+- Workflow optimization
+
+## Research Methods (Quant, Qual, Mixed)
+
+- Mixed methods
+- User interviews
+- Diary studies
+- Ethnography
+- Usability testing
+- Thematic analysis
+- Triangulation
+- Insight synthesis
+- Remote unmoderated testing
+- First-click testing
+- Card sorting
+- Tree testing
+- Survey programming
+
+## Frameworks
+
+- FastAPI
+- LangChain
+- LangGraph
+- React
+- Next.js
+- TensorFlow
+- PyTorch
+- Scikit-learn
+
+## Languages
+
+- English (Fluent)
+- Spanish (Fluent)
+
+## Research Platforms & Tooling
+
+- UserTesting
+- Lookback
+- Optimal Workshop (First-click, card sorting, tree testing)
+- dscout
+- Qualtrics
+- SurveyMonkey
+- Medallia
+- Tableau
+- Jupyter
+- Git
+- VS Code
+- Google Analytics
+- Jira
+- Confluence
+
+## Design & Prototyping Tools
+
+- Figma
+- Sketch
+- Balsamiq
+
+# Experience
+
+## Argomai — Senior Applied Scientist (Consultant)
+**Dates:** Jan 2025–Present
+**Scope:** Enterprise AI architecture, agents, RAG, governance
+**Founding context:** Founding team member
+**Title options:** Senior Applied Scientist (Consultant); Senior Quantitative UX Researcher; Senior User Experience Researcher; Senior AI Researcher; AI/ML Systems Architect
+**Skills:** GenAI, RAG, LangGraph, Retrieval, VectorDB, Architecture, Orchestration, Prompting, Evaluation, Observability
+**ID:** `exp_argomai_2025`
+
+- Cut multipage doc classification from approximately 90m to under 5m via retrieval and automation, and reduced PM reporting from 6h/wk to under 1h.
+  (id=b_arg_1; tags=automation,retrieval,efficiency,AppliedScientist)
+- Designed reusable AI component library (embeddings, prompt templates, orchestration SDK) and agent workflows.
+  (id=b_arg_2; tags=platform,reuse,agents,AppliedScientist)
+- Owned enterprise architecture across AI initiatives: domain models, service boundaries, data governance, and NFRs for scalable customer-facing products.
+  (id=b_arg_3; tags=architecture,governance,scalability,AppliedScientist)
+- Partnered with executives to translate business vision into technical roadmaps, aligning GenAI/ML with objectives.
+  (id=b_arg_4; tags=strategy,roadmapping,exec,AppliedScientist)
+- Led design/implementation of vector DBs, retrieval pipelines, reusable components, and autonomous LLM agents.
+  (id=b_arg_5; tags=VectorDB,retrieval,components,agents,AppliedScientist)
+- Applied abstraction, reuse, and modularization to scale ML solutions across clients.
+  (id=b_arg_6; tags=modularization,reuse,scale,AppliedScientist)
+- User impact: faster document turnaround, better knowledge searchability, lower operational cycle time.
+  (id=b_arg_7; tags=impact,efficiency,DX,AppliedScientist)
+- Translated research findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.
+  (id=b_arg_8; tags=strategy,metrics,rollout,decisioning,UXR)
+- Conducted generative and evaluative user interviews for a new GenAI platform (screeners, protocols, synthesis) to validate value proposition and inform roadmap.
+  (id=b_arg_9; tags=interviews,protocols,synthesis,GenAI,UXR)
+- Authoring a paper and open-sourcing a multilingual QA evaluation pipeline: self-consistency → critique → refinement; judge-centric evaluation with a deterministic audit layer.
+  (id=b_arg_10; tags=evaluation,multilingual,QA,pipeline,research,AppliedScientist)
+- Built document/record ingestion for a healthcare vendor: normalized free-text webform inputs into a governed schema; automated categorization of compounds/volumes; produced model-ready tables and KPIs for dashboards.
+  (id=b_arg_11; tags=healthcare,data-ingestion,schema,automation,AppliedScientist)
+- Deployed LLM‑powered survey analysis workflows cutting manual review time and error risk; standardized governance across clients; frameworks later peer‑reviewed.
+  (id=b_arg_12; tags=surveys,LLM,automation,governance,AppliedScientist,QuantUXR)
+- Owned selection and governance of AI/ML and research platforms, defining processes for evaluation, deployment, and monitoring across client projects.
+  (id=b_arg_13; tags=platforms,governance,research-ops,AppliedScientist)
+- Collaborated with designers using Figma prototypes and Balsamiq wireframes to align GenAI workflows with clear, testable user journeys.
+  (id=b_arg_14; tags=Figma,Balsamiq,prototyping,UXR)
+- Co-authored peer-reviewed paper on GenAI survey analysis in education; advanced practical frameworks (domain-specific LLMs, SLMs, few-shot cloud) to curb hallucinations and improve decision quality for institutions.
+  (id=b_arg_pub_1; tags=publications,GenAI,LLM,education,evaluation,governance,AppliedScientist)
+- Published human-centered AI approach using an LLM-powered chatbot to streamline open-ended survey analysis; accelerated insight turnaround while reducing analyst workload; validated via user-centered design.
+  (id=b_arg_pub_2; tags=publications,HCAI,LLM,surveys,UXR,QuantUXR)
+
+## Meta — Senior Quant UX Researcher
+**Dates:** Jan 2024–Jan 2025
+**Scope:** Hybrid ML classifier for open-endeds; 500M+ MAU product
+**Skills:** ML, Clustering, HIL, Stats, Regressions, ANOVA, T-tests, Python, Tooling, Longitudinal, Metrics
+**ID:** `exp_meta_2024`
+
+- Deployed hybrid ML + HIL classifier; reduced open-ended analysis cycle time significantly; doubled throughput.
+  (id=b_meta_1; tags=classifier,h-in-loop,throughput,QuantUXR,AppliedScientist)
+- Merged editor logs with survey outputs to drive data-backed roadmap decisions at 500M+ MAU scale.
+  (id=b_meta_2; tags=triangulation,scale,product-impact,QuantUXR)
+- Built classifier with clustering, multi-agent chain-of-reasoning, HIL feedback, and few-shot learning.
+  (id=b_meta_3; tags=clustering,multi-agent,CoR,few-shot,QuantUXR,AppliedScientist)
+- Developed Python analytics tools using regressions, ANOVA, and T-tests to streamline survey analysis.
+  (id=b_meta_4; tags=python,statistics,tooling,QuantUXR)
+- Conducted longitudinal research with bi-weekly surveys; defined critical metrics for a 500M+ MAU product.
+  (id=b_meta_5; tags=longitudinal,metrics,scale,QuantUXR)
+- User impact: accelerated feedback loops; insights influenced roadmap prioritization.
+  (id=b_meta_6; tags=impact,roadmap,QuantUXR)
+- Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests, pipelines) adopted across multiple research teams.
+  (id=b_meta_7; tags=python,toolkit,reuse,statistics,QuantUXR)
+- Conducted interviews in Spanish and collaborated across multilingual teams to broaden signal quality.
+  (id=b_meta_8; tags=spanish,multilingual,interviews,UXR)
+- Programmed and fielded large-scale surveys in Qualtrics to track satisfaction and classifier impact across a 500M+ MAU product.
+  (id=b_meta_9; tags=surveys,Qualtrics,QuantUXR)
+- Co-managed a global research panel and vendor partnerships to recruit participants worldwide for surveys and usability testing.
+  (id=b_meta_10; tags=panel-management,vendors,recruiting,UXR,QuantUXR)
+- Queried internal data warehouses with SQL to join behavioral logs, survey responses, and classifier outputs for deeper diagnostics.
+  (id=b_meta_11; tags=SQL,logs,surveys,QuantUXR,AppliedScientist)
+- Partnered with designers in Figma to prototype researcher-facing tools and workflows for open-ended analysis and reporting.
+  (id=b_meta_12; tags=Figma,prototyping,UXR)
+
+## Roku Inc. — Senior User Experience Researcher
+**Dates:** Jan 2021–Nov 2023
+**Scope:** AI-powered research knowledge base; modular survey analysis; device and support research
+**Skills:** AI, NLP, Stats, Logs, Search, Survey, KnowledgeBase, Mentoring, VendorManagement, Budgeting
+**ID:** `exp_roku_2021`
+
+- Built an AI-powered indexed database of Roku's UX and CI research to enhance org-wide searchability.
+  (id=b_roku_1; tags=knowledge-base,search,AI,UXR,AppliedScientist)
+- Developed a Modular Survey Analysis System with ML to generate detailed survey reports (stats + NLP categorization).
+  (id=b_roku_2; tags=survey,ML,NLP,automation,QuantUXR,AppliedScientist)
+- Led quant/qual device research; analyzed behavioral logs from 70M+ devices to inform product decisions.
+  (id=b_roku_3; tags=logs,scale,product-impact,QuantUXR,UXR)
+- Executed research on Customer Support site and call center software; improved UX through data-driven methods.
+  (id=b_roku_4; tags=support,UX,data-driven,UXR)
+- User impact: self-serve insights, faster exec reporting, improved research discoverability.
+  (id=b_roku_5; tags=impact,insights,reporting,UXR,QuantUXR)
+- Cut weekly survey report generation from approximately 4 hrs to under 5 min via ML automation and LLM summaries.
+  (id=b_roku_6; tags=automation,surveys,NLP,efficiency,QuantUXR,AppliedScientist)
+- Mentored junior researchers in survey design and behavioral data analysis; managed vendors, resource planning, and budget alignment.
+  (id=b_roku_7; tags=mentoring,research-ops,stakeholders,planning,UXR,QuantUXR)
+- Ran remote unmoderated tests via UserTesting on TV and web flows; prioritized issues and opportunities for roadmap discussions.
+  (id=b_roku_8; tags=remote-testing,UserTesting,UXR)
+- Used Optimal Workshop (first-click tests, card sorting, tree testing) to validate information architecture and navigation before major launches.
+  (id=b_roku_9; tags=OptimalWorkshop,first-click,card-sorting,tree-testing,UXR)
+- Conducted longitudinal diary studies on dscout to capture in-home device usage patterns and translate them into feature recommendations.
+  (id=b_roku_10; tags=dscout,diary-studies,longitudinal,UXR,QuantUXR)
+- Wrote SQL queries against internal analytics platforms to combine device logs, survey data, and support events for study design and diagnostics.
+  (id=b_roku_11; tags=SQL,logs,analytics,QuantUXR,AppliedScientist)
+- Led vendor selection and management for usability testing programs, coordinating scopes, budgets, and quality across multiple partners.
+  (id=b_roku_12; tags=vendors,vendor-selection,research-ops,UXR)
+- Standardized research backlogs and documentation in Jira and Confluence to track studies, insights, and follow-ups across teams.
+  (id=b_roku_13; tags=Jira,Confluence,research-ops,UXR)
+
+## Walmart Global Tech — Senior User Experience Researcher
+**Dates:** Aug 2019–Nov 2020
+**Scope:** Sam's Club mobile analytics; metrics definition; data-integrated UX
+**Skills:** Analytics, Tableau, Metrics, Stakeholders, KPIs, Experimentation, Bilingual
+**ID:** `exp_walmart_2019`
+
+- Led analytics for Sam's Club mobile app in Tableau; established KPIs to guide enhancements.
+  (id=b_wmt_1; tags=analytics,Tableau,KPIs,QuantUXR)
+- Integrated user interaction and business metrics to drive a data-centric UX approach.
+  (id=b_wmt_2; tags=data-integration,UX,strategy,QuantUXR)
+- Presented synthesized findings to PMs, designers, and executives to influence experience strategy.
+  (id=b_wmt_3; tags=stakeholders,communication,strategy,UXR)
+- Led bilingual collaboration across Mexico and U.S. teams to unify survey instruments and UX research standards.
+  (id=b_wmt_4; tags=bilingual,collaboration,surveys,standards,UXR)
+- Partnered with designers and content strategists to ensure cultural and linguistic relevance in product testing and insights.
+  (id=b_wmt_5; tags=localization,culture,testing,UXR)
+- Conducted remote unmoderated usability studies using UserTesting to evaluate Sam's Club mobile flows across markets.
+  (id=b_wmt_6; tags=remote-testing,UserTesting,UXR)
+- Designed and deployed surveys in Medallia and SurveyMonkey to quantify satisfaction, feature adoption, and pain points for mobile experiences.
+  (id=b_wmt_7; tags=surveys,Medallia,SurveyMonkey,QuantUXR)
+- Used Google Analytics to monitor acquisition and behavior funnels for Sam's Club mobile, informing KPI targets and experiment ideas.
+  (id=b_wmt_8; tags=Google Analytics,analytics,KPIs,QuantUXR)
+- Partnered with external vendors for bilingual participant recruiting and tracked studies and decisions in Jira and Confluence.
+  (id=b_wmt_9; tags=vendors,recruiting,Jira,Confluence,research-ops,UXR)
+
+## Scrapworks Inc. — Data Scientist
+**Dates:** Sep 2017–Aug 2019
+**Scope:** Forecasting, NLP classification, BI dashboards
+**Skills:** DeepLearning, NLP, Forecasting, Dashboards
+**ID:** `exp_scrapworks_2017`
+
+- Delivered deep learning forecasts for commodities futures; reduced prediction error by 60%.
+  (id=b_scrap_1; tags=deep-learning,forecasting,accuracy,AppliedScientist)
+- Initiated an NLP-based merchandise classifier; contributed to a patent application.
+  (id=b_scrap_2; tags=NLP,classification,patent,AppliedScientist)
+- Built an interactive dashboard for 20 years of sales data; supported 30% sales growth.
+  (id=b_scrap_3; tags=dashboard,BI,growth,AppliedScientist)
+
+## Suggestic — Senior User Experience Researcher
+**Dates:** Dec 2016–Sep 2017
+**Scope:** Product UX transformation; experimentation; prototyping
+**Skills:** UX, Experimentation, Prototyping, Analytics
+**ID:** `exp_suggestic_2016`
+
+- Led transition from conversational to graphical interface using data insights; improved engagement and functionality.
+  (id=b_sugg_1; tags=UX,redesign,engagement,UXR)
+- Ran data-driven testing and analysis for new features to ensure optimal integration.
+  (id=b_sugg_2; tags=experimentation,analytics,QA,UXR)
+- Designed and developed advanced prototypes; leveraged analytics for rapid iterations.
+  (id=b_sugg_3; tags=prototyping,analytics,iteration,UXR)
+- Used Lookback to run remote usability studies on nutrition coaching flows; iterated interaction patterns based on observed friction.
+  (id=b_sugg_4; tags=remote-testing,Lookback,UXR)
+- Used Google Analytics to track feature adoption and engagement for new nutrition and coaching flows.
+  (id=b_sugg_5; tags=Google Analytics,analytics,UXR)
+- Prototyped new interaction patterns in Sketch to quickly test alternatives with stakeholders.
+  (id=b_sugg_6; tags=Sketch,prototyping,UXR)
+
+## Stanford University — User Experience Researcher
+**Dates:** May 2016–Nov 2016
+**Scope:** Driver stress detection; automotive UI; physiological signal analysis
+**Skills:** ML, SignalProcessing, UX, Automotive, Multimodal, ExperimentalDesign
+**ID:** `exp_stanford_2016`
+
+- Conducted ML research on stress detection with 150+ hours of car, biometric, and video data.
+  (id=b_stan_1; tags=ML,data-collection,signals,AppliedScientist)
+- Contributed to algorithms achieving ~90% accuracy in stress detection.
+  (id=b_stan_2; tags=accuracy,classification,AppliedScientist)
+- Authored contributions on automotive UI and pedestrian interactions.
+  (id=b_stan_3; tags=publications,HCI,automotive,UXR)
+- Designed safe, replicable environments to elicit driver stress for autonomous car UX studies.
+  (id=b_stan_4; tags=experimental-design,UX,UXR)
+- Performed advanced signal processing and statistical analysis on physiological data.
+  (id=b_stan_5; tags=signal-processing,statistics,AppliedScientist)
+- Ran cross‑city field study of pedestrian‑AV interactions, deriving design implications for AV behavior and urban HCI.
+  (id=b_stan_6; tags=field-study,cross-cultural,HCI,autonomous-vehicles,UXR)
+- Validated on‑road driver stress protocol (89% elicitation; physio/video/GPS) informing automotive UI safety reviews and ML datasets.
+  (id=b_stan_7; tags=ML,stress-detection,autonomous-vehicles,UXR)
+- Published validated on-road stress elicitation protocol (89% elicitation rate, multi-modal evidence) informing ML datasets and safety-aware automotive UI design.
+  (id=b_stan_pub_1; tags=publications,automotive,stress-detection,signals,ML,HCI)
+- Co-authored cross-cultural study of pedestrian–AV interactions (Mexico City vs. Colima); produced design implications for AV behavior and urban HCI.
+  (id=b_stan_pub_2; tags=publications,HCI,autonomous-vehicles,field-study,cross-cultural)
+
+## ITAM — User Experience Researcher
+**Dates:** Aug 2014–May 2016
+**Scope:** Psychophysiology + ML; visualization; usability
+**Skills:** Visualization, ML, Usability, Wearables, Statistics
+**ID:** `exp_itam_2014`
+
+- Built custom data visualizations; analyzed psychophysiological signals to identify patterns with ML.
+  (id=b_itam_1; tags=visualization,psychophysiology,ML,UXR,QuantUXR)
+- Crafted personalized UX solutions for wearable, mobile, and web platforms.
+  (id=b_itam_2; tags=UX,wearables,multi-platform,UXR)
+- Conducted usability testing across stages; improved interaction and satisfaction.
+  (id=b_itam_3; tags=usability,testing,UX,UXR)
+- Developed and implemented personalized data-driven solutions for interactive technologies, enhancing user experience across wearable, mobile, and web platforms.
+  (id=b_itam_4; tags=personalization,data-driven,multi-platform,UXR)
+- Led usability testing initiatives, applying analytical insights to improve user interaction and satisfaction metrics significantly.
+  (id=b_itam_5; tags=usability,testing,UX,UXR)
+- Explored micro-interaction design on Google Glass as part of the Explorer Program; conducted usability testing and published findings in IEEE.
+  (id=b_itam_6; tags=AR,wearables,usability,prototyping,UXR)
+- AR localization app on Google Glass; documented micro‑interaction UX and usability trade‑offs.
+  (id=b_itam_7; tags=AR,wearables,usability,prototyping,UXR)
+- Biometric study linking social influence to shopping emotions and its implications for retail UX design.
+  (id=b_itam_8; tags=biometrics,social,retail,UXR)
+- Performed statistical analyses in tools such as SPSS to validate psychophysiological findings and experimental results.
+  (id=b_itam_9; tags=SPSS,statistics,QuantUXR)
+- Published wearable-based stress quantification method enabling daily feedback loops; proposed mobile-ready scoring for user-facing health insights.
+  (id=b_itam_pub_1; tags=publications,wearables,signals,health,ML)
+- Co-authored HCI study linking social influence and shopping emotions; demonstrated biometric correlates and implications for retail experience design.
+  (id=b_itam_pub_2; tags=publications,HCI,biometrics,retail,UXR)
+- Published Google Glass AR urban localization app; documented design/engineering challenges and usability findings for micro-interaction interfaces.
+  (id=b_itam_pub_3; tags=publications,AR,wearables,usability,prototyping)
+- Co-authored comparative study on visual vs. text search in news websites; identified visual search performance as a key usability driver.
+  (id=b_itam_pub_4; tags=publications,usability,information-retrieval,HCI)
+
+## Stevens Institute of Technology — Data Science Intern
+**Dates:** Jun 2015–Aug 2015
+**Scope:** Social media NLP classification; visualization
+**Skills:** NLP, Visualization, Classification
+**ID:** `exp_stevens_2015`
+
+- Developed a visualization technique to classify 2M+ tweets into new depression-related categories using NLP/ML.
+  (id=b_stev_1; tags=NLP,visualization,social,AppliedScientist)
+- Created a web-based interactive dashboard to explore tweet clusters and sentiment trends.
+  (id=b_stev_2; tags=dashboard,visualization,web,AppliedScientist)
+- Co-authored peer-reviewed study on negative sentiment classification in at-risk populations; combined human-in-the-loop labeling with ML to establish evaluation baselines for clinical signal detection.
+  (id=b_stev_pub_1; tags=publications,NLP,social,HIL,evaluation)
+
+## University of Colima — Health Psychology Researcher
+**Dates:** 2009–2014
+**Scope:** Psychoeducational interventions; chronic disease outcomes
+**Skills:** Health, Intervention, Statistics
+**ID:** `exp_colima_2009`
+
+- Developed and assessed a psychoeducational program for adults with type 2 diabetes; improved glucose levels in 80% of patients.
+  (id=b_col_1; tags=health,intervention,outcomes,QuantUXR)
+
+# Projects
+
+## Modular Survey Analysis System
+**ID:** `proj_modular_survey`
+**Link:** ml_portfolio.md#modular-survey-analysis
+
+- Analysis time approximately 30h to under 8h (about 73% reduction); 2× throughput.
+- Resource savings ~50% for survey analysis tasks.
+- Autonomous clustering algorithm for open-endeds; context-aware survey logic parsing.
+
+## Calvinist Parrot v4 (LangGraph, RAG)
+**ID:** `proj_calvinist_parrot_4`
+**Link:** ml_portfolio.md#calvinist-parrot
+
+- TTFT p95 4.3s to under 2s; about 33% hallucination reduction (internal).
+- Re-platformed to Next.js/TypeScript with LangGraph multi-agent 'Council of Three' ensemble.
+- Single RAG pipeline; nightly indexing of a 900-book library; edge streaming UX.
+
+## Research Librarian (AI-powered index)
+**ID:** `proj_research_librarian`
+**Link:** ml_portfolio.md#research-librarian-project
+
+- AI-powered index for UX/CI research with multiple specialized query engines and autonomous selection.
+- Multi-container architecture per engine improved retrieval depth and speed.
+- Enhanced internal accessibility and searchability of research assets.
+
+## Customer Support Bot (Autonomous agent)
+**ID:** `proj_customer_support_bot`
+**Link:** ml_portfolio.md#customer-support-bot
+
+- Indexed 322+ support articles; embeddings + LLM responses orchestrated via LangChain.
+- 'Solution Spotlight' provides curated best answer to reduce call center load and improve self-serve.
+- Improved response accuracy and time-to-answer for common inquiries.
+
+## Quant UX Research at Scale
+**ID:** `proj_quant_ux_scale`
+**Link:** research_portfolio.md#quant-ux-research-at-scale
+
+- Reduced open-ended analysis time from approximately 30h to under 8h (about 73% reduction); doubled throughput (500M+ MAU context).
+- Hybrid classifier: clustering, few-shot prompts, multi-agent chain-of-reasoning with human-in-the-loop feedback.
+- Merged behavioral editor logs with survey outputs; standardized stats validation (regressions/ANOVA/T-tests).
+- Modularized components and documented workflows enabling reuse and self-serve.
+
+## Design Research: Driver Stress Elicitation
+**ID:** `proj_design_research_stress`
+**Link:** research_portfolio.md#design-research
+
+- Real-world driver stress elicitation with repeatable, safe protocol and instrumentation.
+- 90% stress replication rate; 89% alignment with observed road events; open API for detection algorithm.
+- Mixed-methods instrumentation and cross-disciplinary collaboration ensured rigor and safety.
+
+## User Research: Remote Benchmarking Framework
+**ID:** `proj_user_research_remotes`
+**Link:** research_portfolio.md#user-research
+
+- Benchmarked hardware remotes across 70M+ devices by integrating behavioral logs with lab studies.
+- Informed launch of a new remote (Fall '22) with validated interaction improvements.
+- Expanded country/feature metrics and comparative dashboards for rapid evaluation.
+
+## Research Ops: Repository & Reporting Standardization
+**ID:** `proj_research_ops`
+**Link:** research_portfolio.md#research-ops
+
+- Standardized repository and reporting into a searchable knowledge base with org-wide adoption.
+- Visualization layer for leadership triage; self-serve discovery reduced ad-hoc requests.
+- Phased rollout preserved continuity and reduced manual status update cycles (qualitative).

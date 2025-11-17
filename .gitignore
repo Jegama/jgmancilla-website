@@ -43,5 +43,4 @@ firebase-debug.log
 firestore-debug.log
 
 # documentation
-/docs/
-/representative/
+/docs/Deprecated/
