@@ -7,7 +7,7 @@ Purpose and shape
 Argus career corpus
 - Folder `docs/Argus` is the upstream corpus for career materials used in an external ChatGPT project.
 - `docs/Argus/bullet_bank.txt` is the canonical inventory of roles, bullets, skills, tags, metrics, and dates. When adding or editing experience/skills/impact across the site (especially in `src/lib/*-content.ts`), reuse or adapt bullets from here and do not contradict it.
-- `docs/Argus/ChatGPT career coach.md` defines the "Argus" prompt and its truth/evidence rules (no fabrication, action → method → impact bullets, metrics only when evidenced). When designing new content or AI flows that describe experience, mirror those rules rather than inventing new claims.
+- `docs/Argus/Career coach Master Prompt.md` defines the "Argus" prompt and its truth/evidence rules (no fabrication, action → method → impact bullets, metrics only when evidenced). When designing new content or AI flows that describe experience, mirror those rules rather than inventing new claims.
 - Treat `docs/Argus` as upstream and the website content as a curated view; if something is unclear or missing, prefer omitting or simplifying it instead of introducing unverifiable details.
 
 AI flow (single-pass, no RAG)

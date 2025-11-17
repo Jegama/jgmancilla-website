@@ -77,6 +77,13 @@
 - Tree testing
 - Survey programming
 
+## Product & Delivery Methods
+
+- Agile (Kanban boards, sprints)
+- Design thinking
+- Lean UX
+- Cross-functional collaboration
+
 ## Frameworks
 
 - FastAPI
@@ -154,6 +161,10 @@
   (id=b_arg_13; tags=platforms,governance,research-ops,AppliedScientist)
 - Collaborated with designers using Figma prototypes and Balsamiq wireframes to align GenAI workflows with clear, testable user journeys.
   (id=b_arg_14; tags=Figma,Balsamiq,prototyping,UXR)
+- Led Kanban-based agile practices across applied science and research pods, managing WIP and aligning cycles with client milestones.
+  (id=b_arg_15; tags=agile,Kanban,leadership,planning,AppliedScientist,UXR)
+- Created user personas and end-to-end journey maps for GenAI platform users to ground interviews, prototypes, and roadmap decisions.
+  (id=b_arg_16; tags=personas,journey-mapping,GenAI,UXR)
 - Co-authored peer-reviewed paper on GenAI survey analysis in education; advanced practical frameworks (domain-specific LLMs, SLMs, few-shot cloud) to curb hallucinations and improve decision quality for institutions.
   (id=b_arg_pub_1; tags=publications,GenAI,LLM,education,evaluation,governance,AppliedScientist)
 - Published human-centered AI approach using an LLM-powered chatbot to streamline open-ended survey analysis; accelerated insight turnaround while reducing analyst workload; validated via user-centered design.
@@ -189,6 +200,8 @@
   (id=b_meta_11; tags=SQL,logs,surveys,QuantUXR,AppliedScientist)
 - Partnered with designers in Figma to prototype researcher-facing tools and workflows for open-ended analysis and reporting.
   (id=b_meta_12; tags=Figma,prototyping,UXR)
+ - Worked within agile sprints alongside ML engineering teams, aligning research plans and deliverables with classifier release cycles.
+  (id=b_meta_13; tags=agile,sprints,collaboration,QuantUXR)
 
 ## Roku Inc. — Senior User Experience Researcher
 **Dates:** Jan 2021–Nov 2023
@@ -222,6 +235,8 @@
   (id=b_roku_12; tags=vendors,vendor-selection,research-ops,UXR)
 - Standardized research backlogs and documentation in Jira and Confluence to track studies, insights, and follow-ups across teams.
   (id=b_roku_13; tags=Jira,Confluence,research-ops,UXR)
+ - Developed user personas and journey maps combining 70M+ device logs with qual research to inform feature roadmaps and support flows.
+  (id=b_roku_14; tags=personas,journey-mapping,logs,UXR,QuantUXR)
 
 ## Walmart Global Tech — Senior User Experience Researcher
 **Dates:** Aug 2019–Nov 2020
@@ -247,6 +262,10 @@
   (id=b_wmt_8; tags=Google Analytics,analytics,KPIs,QuantUXR)
 - Partnered with external vendors for bilingual participant recruiting and tracked studies and decisions in Jira and Confluence.
   (id=b_wmt_9; tags=vendors,recruiting,Jira,Confluence,research-ops,UXR)
+ - Created Kanban-based research ops boards in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets.
+  (id=b_wmt_10; tags=agile,Kanban,research-ops,Jira,Confluence,UXR)
+ - Defined user personas and journey maps for Sam's Club mobile members to guide KPI selection, experimentation, and content localization.
+  (id=b_wmt_11; tags=personas,journey-mapping,mobile,KPIs,UXR,QuantUXR)
 
 ## Scrapworks Inc. — Data Scientist
 **Dates:** Sep 2017–Aug 2019
@@ -279,6 +298,10 @@
   (id=b_sugg_5; tags=Google Analytics,analytics,UXR)
 - Prototyped new interaction patterns in Sketch to quickly test alternatives with stakeholders.
   (id=b_sugg_6; tags=Sketch,prototyping,UXR)
+ - Applied Lean UX / design thinking loops (hypothesize → prototype → test) with PM, design, and engineering to iterate on nutrition coaching flows.
+  (id=b_sugg_7; tags=LeanUX,design-thinking,experimentation,UXR)
+ - Built user personas and journey maps for nutrition coaching users to prioritize experiments and inform conversational-to-graphical UX changes.
+  (id=b_sugg_8; tags=personas,journey-mapping,UXR)
 
 ## Stanford University — User Experience Researcher
 **Dates:** May 2016–Nov 2016
@@ -337,6 +360,8 @@
   (id=b_itam_pub_3; tags=publications,AR,wearables,usability,prototyping)
 - Co-authored comparative study on visual vs. text search in news websites; identified visual search performance as a key usability driver.
   (id=b_itam_pub_4; tags=publications,usability,information-retrieval,HCI)
+ - Created user personas and journey maps for wearable, mobile, and web experiences to anchor psychophysiology findings in concrete UX scenarios.
+  (id=b_itam_10; tags=personas,journey-mapping,wearables,UXR)
 
 ## Stevens Institute of Technology — Data Science Intern
 **Dates:** Jun 2015–Aug 2015
