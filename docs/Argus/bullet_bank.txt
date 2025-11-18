@@ -180,16 +180,22 @@
   (id=b_meta_1; tags=classifier,h-in-loop,throughput,QuantUXR,AppliedScientist)
 - Merged editor logs with survey outputs to drive data-backed roadmap decisions at 500M+ MAU scale.
   (id=b_meta_2; tags=triangulation,scale,product-impact,QuantUXR)
-- Built classifier with clustering, multi-agent chain-of-reasoning, HIL feedback, and few-shot learning.
-  (id=b_meta_3; tags=clustering,multi-agent,CoR,few-shot,QuantUXR,AppliedScientist)
-- Developed Python analytics tools using regressions, ANOVA, and T-tests to streamline survey analysis.
-  (id=b_meta_4; tags=python,statistics,tooling,QuantUXR)
-- Conducted longitudinal research with bi-weekly surveys; defined critical metrics for a 500M+ MAU product.
+- Engineered a "Council of Agents" pipeline using Self-consistency and Chain-of-reasoning to sample multiple candidates and improve reasoning across tasks.
+  (id=b_meta_3; tags=agents,self-consistency,chain-of-reasoning,GenAI,AppliedScientist)
+- Implemented "LLM-as-a-judge" (Self-reflection) and Verifier-driven revisions (Self-refine) to critique, prune, and rewrite intermediate outputs for higher reliability.
+  (id=b_meta_genai_1; tags=LLM-as-a-judge,self-reflection,verifier,self-refine,GenAI,AppliedScientist)
+- Designed a Human-in-the-loop (HITL) review workflow where experts refine outputs in natural language, creating curated few-shot examples for final prompts; reduced analysis time ~73%.
+  (id=b_meta_genai_2; tags=HITL,few-shot,workflow,GenAI,AppliedScientist)
+- Developed Python analytics tools using regressions, ANOVA, and T-tests to streamline survey analysis; adopted by fellow researchers for their own studies.
+  (id=b_meta_4; tags=python,statistics,tooling,adoption,QuantUXR)
+- Conducted longitudinal research with bi-weekly surveys to track ML model performance before and after official launch.
   (id=b_meta_5; tags=longitudinal,metrics,scale,QuantUXR)
+- Performed log analysis on the current model version to inform decisions and track changes post-launch.
+  (id=b_meta_logs; tags=logs,analysis,product-impact,QuantUXR)
 - User impact: accelerated feedback loops; insights influenced roadmap prioritization.
   (id=b_meta_6; tags=impact,roadmap,QuantUXR)
-- Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests, pipelines) adopted across multiple research teams.
-  (id=b_meta_7; tags=python,toolkit,reuse,statistics,QuantUXR)
+- Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests, pipelines) and served as a technical resource for the research team.
+  (id=b_meta_7; tags=python,toolkit,reuse,statistics,mentoring,QuantUXR)
 - Conducted interviews in Spanish and collaborated across multilingual teams to broaden signal quality.
   (id=b_meta_8; tags=spanish,multilingual,interviews,UXR)
 - Programmed and fielded large-scale surveys in Qualtrics to track satisfaction and classifier impact across a 500M+ MAU product.
@@ -211,10 +217,12 @@
 
 - Built an AI-powered indexed database of Roku's UX and CI research to enhance org-wide searchability.
   (id=b_roku_1; tags=knowledge-base,search,AI,UXR,AppliedScientist)
-- Developed a Modular Survey Analysis System with ML to generate detailed survey reports (stats + NLP categorization).
-  (id=b_roku_2; tags=survey,ML,NLP,automation,QuantUXR,AppliedScientist)
-- Led quant/qual device research; analyzed behavioral logs from 70M+ devices to inform product decisions.
-  (id=b_roku_3; tags=logs,scale,product-impact,QuantUXR,UXR)
+- Developed a Modular Survey Analysis System for a weekly sentiment survey; served as the main dashboard and reporting engine.
+  (id=b_roku_2; tags=survey,dashboard,reporting,automation,QuantUXR,AppliedScientist)
+- Created an open-ended classifier prototype that served as the precursor to the advanced system developed at Meta.
+  (id=b_roku_ml_proto; tags=ML,prototype,classifier,innovation,AppliedScientist)
+- Led quant/qual device research; analyzed behavioral logs from 70M+ devices to support usability testing on remotes.
+  (id=b_roku_3; tags=logs,usability,remotes,scale,QuantUXR,UXR)
 - Executed research on Customer Support site and call center software; improved UX through data-driven methods.
   (id=b_roku_4; tags=support,UX,data-driven,UXR)
 - User impact: self-serve insights, faster exec reporting, improved research discoverability.
@@ -391,9 +399,9 @@
 **ID:** `proj_modular_survey`
 **Link:** ml_portfolio.md#modular-survey-analysis
 
-- Analysis time approximately 30h to under 8h (about 73% reduction); 2× throughput.
-- Resource savings ~50% for survey analysis tasks.
-- Autonomous clustering algorithm for open-endeds; context-aware survey logic parsing.
+- Weekly sentiment survey dashboard; reduced report generation from ~4h to <5m.
+- Prototype open-ended classifier (precursor to Meta system) using NLP and clustering.
+- Context-aware survey logic parsing and automated statistical summaries.
 
 ## Calvinist Parrot v4 (LangGraph, RAG)
 **ID:** `proj_calvinist_parrot_4`
@@ -423,10 +431,10 @@
 **ID:** `proj_quant_ux_scale`
 **Link:** research_portfolio.md#quant-ux-research-at-scale
 
-- Reduced open-ended analysis time from approximately 30h to under 8h (about 73% reduction); doubled throughput (500M+ MAU context).
-- Hybrid classifier: clustering, few-shot prompts, multi-agent chain-of-reasoning with human-in-the-loop feedback.
-- Merged behavioral editor logs with survey outputs; standardized stats validation (regressions/ANOVA/T-tests).
-- Modularized components and documented workflows enabling reuse and self-serve.
+- Reduced open-ended analysis time from ~30h to <8h (~73% reduction) for a 500M+ MAU product.
+- 6-step GenAI pipeline: Embeddings, Council of Agents (Self-consistency), LLM-as-a-judge, Verifier-driven revisions, HITL, Few-shot curation.
+- Longitudinal study tracking model performance pre/post-launch via log analysis.
+- Standardized statistical validation (regressions/ANOVA/T-tests) adopted by the wider research team.
 
 ## Design Research: Driver Stress Elicitation
 **ID:** `proj_design_research_stress`

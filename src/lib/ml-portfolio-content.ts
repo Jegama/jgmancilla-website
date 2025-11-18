@@ -54,49 +54,54 @@ export const mlPortfolioContent = {
       id: "modular-survey-analysis",
       title: "Modular Survey Analysis System",
       shortDescription:
-        "I developed the **Modular Survey Analysis System**, an evolution of the initial survey report generator. This system streamlines analysis by replacing a static, hard-coded approach with a dynamic, modular method for efficient question categorization. A key feature is the **integration of context-aware logic** to enhance data interpretation. I am particularly proud of the **autonomous clustering algorithm** for open-ended responses, which is currently in the patenting process. This algorithm provides a thoughtful solution to a common challenge in survey analysis, demonstrating a significant advancement in automated data processing and insight generation for diverse survey types.",
+        "Developed the main dashboard and reporting engine for a weekly sentiment survey, cutting report generation time from ~4h to <5m. The open-ended classifier I built here served as the **prototype and precursor** to the advanced GenAI system I later deployed at Meta.",
       dataAiHint: "charts graph",
       details: {
         introduction:
-          "I conceptualized, designed, and developed an upgraded version of our report generator that harnesses machine learning to analyze a wide array of surveys autonomously. The **Modular Survey Analysis System** I created has profoundly transformed the survey data analysis process, offering unprecedented flexibility, efficiency, and scalability.",
+          "I conceptualized, designed, and developed this system to automate the analysis of our weekly sentiment survey. It served as the central dashboard for the team, ingesting questions submitted by other researchers and outputting a comprehensive weekly report. This project also laid the technical foundation for the more advanced classifier I would later build at Meta.",
         goal: [
-          "Craft a solution for swift analysis of diverse surveys, enhancing output efficiency while minimizing resource consumption.",
-          "Design a versatile system adaptable to a variety of survey structures, eliminating the need for manual interventions or hard-coding."
+          "Automate the weekly reporting cadence, reducing manual compilation time from hours to minutes.",
+          "Create a flexible system that could handle dynamic question sets submitted by different researchers each week."
         ],
         achievements: [
           {
-            name: "Modular Report Generation",
-            points: ["Transitioned from a traditional hard-coded question set approach to a dynamic, modular system adept at categorizing questions."]
+            name: "Weekly Sentiment Dashboard",
+            points: ["Built the primary dashboard used by the team to track sentiment trends, automatically generating the weekly report distributed to leadership."]
+          },
+          {
+            name: "Automated Statistical Summaries",
+            points: ["The system automatically calculated key statistics (significance testing, trend analysis) alongside the NLP categorization, providing a complete quantitative picture."]
           },
           {
             name: "Context-aware Logic",
             points: ["Incorporated advanced survey logic parsing to discern question interdependencies, ensuring accurate and in-depth data interpretation."]
           },
           {
-            name: "Autonomous Clustering Algorithm",
-            points: ["Pioneered an innovative algorithm that autonomously sorts through open-ended responses, clusters them, assigns category names, and provides detailed descriptions of each category's content."]
+            name: "Open-Ended Classifier (Prototype)",
+            points: ["Developed the initial version of my open-ended classifier using NLP and clustering; this served as the proof-of-concept for the advanced GenAI system I later scaled at Meta."]
+          },
+          {
+            name: "Log Analysis for Usability",
+            points: ["Separately, I led the log analysis to support usability testing on hardware remotes, processing behavioral data from 70M+ devices to validate design changes."]
           }
         ],
         challenges: [
           {
-            name: "Data Diversity",
-            points: ["Heterogeneous survey data required rigorous preprocessing methods to ensure uniformity."]
+            name: "Dynamic Question Sets",
+            points: ["The system had to adapt to varying questions each week without breaking the longitudinal tracking of core metrics."]
           },
           {
-            name: "Complex Survey Logic",
-            points: ["Designed a specialized logic parser to decipher intricate logic and dependencies, ensuring unerring analysis."]
-          },
-          {
-            name: "Open-Ended Response Analysis",
-            points: ["Developed a proprietary clustering algorithm to autonomously categorize and describe subjective responses."]
+            name: "Prototype Limitations",
+            points: ["Early NLP models required significant manual tuning, which taught me the importance of the 'Human-in-the-loop' workflows I later perfected."]
           }
         ],
         impact: [
-          "Curtailed the time needed for survey analysis by **70%**.",
-          "Resulted in a **50% savings** in resources dedicated to survey analysis tasks."
+          "Reduced weekly report generation time from **~4 hours to <5 minutes**.",
+          "Enabled the research team to include ad-hoc questions without delaying the standard reporting cadence.",
+          "Provided the architectural blueprint for my future work on large-scale open-ended classification."
         ],
-        collaboration: "Worked closely with the Director of UX Research, a Sr. Manager of Market Research, and several researchers. Their insights and feedback were invaluable in ensuring the system met diverse needs and expectations.",
-        conclusion: "The Modular Survey Analysis System, with its robust integration of machine learning and NLP, has monumentally revamped our survey analysis methodology. Its success not only showcases the potential of leveraging technology but also underscores my pivotal role in its ideation, development, and triumphant execution."
+        collaboration: "Worked closely with the Director of UX Research and the Market Research team to ensure the dashboard met the needs of both rapid tactical decisions and long-term tracking.",
+        conclusion: "The Modular Survey Analysis System was a pivotal project that not only solved an immediate business need—automating a time-consuming weekly report—but also served as the incubator for the ML/NLP techniques I would later refine and scale at Meta."
       }
     },
     {

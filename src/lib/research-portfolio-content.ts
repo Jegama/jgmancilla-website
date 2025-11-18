@@ -6,54 +6,58 @@ export const researchPortfolioContent = {
       id: "quant-uxr-scale",
       title: "Quant UX Research at Scale",
       shortDescription:
-        "Reduced open‑ended survey analysis time ~30h → <8h and doubled throughput by deploying a hybrid ML + human‑in‑loop classifier and integrated behavioral log triangulation.",
+        "Led a longitudinal study tracking ML model performance pre/post-launch; built a 6-step GenAI classifier pipeline (Self-consistency, LLM-as-a-judge) that reduced analysis time ~73% and was adopted by the wider research team.",
       details: {
-        situation: "Open‑ended survey analysis (multi-project, bi‑weekly cadence) was a bottleneck for product decisions—manual coding cycles (~30h) slowed insight delivery for a 500M+ MAU product.",
-        task: "Accelerate qualitative signal extraction while preserving nuance and statistical rigor; establish a scalable, governable pipeline that stakeholders trust.",
+        situation: "To inform critical roadmap decisions for a 500M+ MAU product, we needed to track how an ML model improved over time, both before and after its official launch. This required a longitudinal survey and deep log analysis of the current version versus post-launch changes, but manual coding of open-ended feedback was too slow.",
+        task: "Develop a scalable, rigorous pipeline to analyze open-ended feedback and behavioral logs; create tooling that could be adopted by other researchers to support their own survey analysis.",
         actions: [
           {
-            name: "Architecture & Automation",
+            name: "Advanced GenAI Classifier Pipeline",
             points: [
-              "Engineered a hybrid classifier combining clustering analysis, few‑shot prompts, and multi‑agent chain‑of‑reasoning to categorize open‑ended responses.",
-              "Implemented Python toolchain (regressions, ANOVA, T‑tests) to standardize post‑classification quantitative validation." 
+              "**Step 1: Embedding & Clustering**: Converted responses to vectors and clustered them using traditional ML to identify core themes.",
+              "**Step 2: Council of Agents (Self-consistency)**: Sampled multiple agent candidates to evaluate responses, selecting the most consistent answer to improve reasoning.",
+              "**Step 3: Self-reflection (LLM-as-a-judge)**: Used a critique model to select and prune low-quality outputs.",
+              "**Step 4: Self-refine (Verifier-driven)**: Applied verifier-driven revisions to check intermediate reasoning and re-rank/rewrite for reliability.",
+              "**Step 5: Human-in-the-loop (HITL)**: Integrated a review stage where I (and other experts) suggested changes in natural language until satisfied.",
+              "**Step 6: Few-shot Curation**: Ran 20 random answers to test, corrected them, and used these curated responses as few-shot examples for the final prompt."
             ]
           },
           {
-            name: "Human‑in‑Loop Quality",
+            name: "Tooling & Democratization",
             points: [
-              "Embedded SME acceptance tests and feedback loops to iteratively refine label taxonomies and guard against semantic drift.",
-              "Merged editor log behavioral data with survey outputs to triangulate emergent patterns and surface actionable discrepancies." 
+              "Built a reusable Python toolchain for survey analysis and database querying that became a go-to resource for other researchers.",
+              "Enabled the team to self-serve advanced analytics, democratizing access to rigorous statistical validation (regressions, ANOVA)."
             ]
           },
           {
-            name: "Scalability & Adoption",
+            name: "Longitudinal Log Analysis",
             points: [
-              "Modularized pipeline components (prompt templates, clustering params, evaluation scripts) enabling reuse across adjacent studies.",
-              "Documented workflows + onboarding guide, enabling fellow researchers to self‑serve advanced analysis routines." 
+              "Merged survey data with behavioral logs to track the model's trajectory from pre-launch beta to post-launch maturity.",
+              "Analyzed the 'current version' performance against subsequent iterations to ground roadmap decisions in empirical reality."
             ]
           }
         ],
         results: [
-          "Cycle time reduced from ~30h manual coding to <8h automated + review.",
+          "Cycle time reduced from ~30h manual coding to <8h automated + review (~73% reduction).",
           "Doubled survey analysis throughput without adding headcount.",
-          "Sustained insight quality via embedded statistical validation + SME acceptance criteria.",
-          "Unlocked faster iteration on a 500M+ MAU product by shortening feedback loops." 
+          "The custom tooling was adopted by multiple researchers, streamlining analysis across the team.",
+          "Longitudinal insights directly influenced the launch strategy and post-launch prioritization for a 500M+ MAU product." 
         ],
         technologies: [
           "Python",
-          "Clustering Analysis",
-          "Few‑Shot Learning",
-          "Multi‑Agent Reasoning",
-          "Human‑in‑Loop Feedback",
-          "Statistical Testing (ANOVA / T‑tests / Regressions)",
-          "Behavioral Log Integration",
-          "Survey Analytics Pipeline"
+          "Embeddings & Clustering",
+          "Self-consistency (Council of Agents)",
+          "LLM-as-a-judge (Self-reflection)",
+          "Verifier-driven Revisions",
+          "Human-in-the-loop",
+          "Few-shot Learning",
+          "Longitudinal Log Analysis"
         ],
         metrics: [
-          "Analysis time: ~30h → <8h (~73% reduction)",
-            "Throughput: 2× surveys processed per cycle",
-          "Product scale: 500M+ MAU context",
-          "Bi‑weekly longitudinal cadence maintained"
+          "Analysis time: ~30h → <8h",
+          "Throughput: 2× surveys processed",
+          "Adoption: Tooling used by wider research team",
+          "Scale: 500M+ MAU product context"
         ]
       }
     },

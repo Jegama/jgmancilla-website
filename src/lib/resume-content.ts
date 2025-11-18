@@ -29,11 +29,11 @@ export const resumeContent = {
         company: "Meta",
         dates: "January 2024 - January 2025",
         responsibilities: [
-          "Deployed hybrid ML + HIL classifier; reduced open-ended analysis cycle time significantly; doubled throughput.",
-          "Merged editor logs with survey outputs to drive data-backed roadmap decisions at 500M+ MAU scale.",
-          "Built classifier with clustering, multi-agent chain-of-reasoning, HIL feedback, and few-shot learning.",
-          "Conducted longitudinal research with bi-weekly surveys; defined critical metrics for a 500M+ MAU product.",
-          "Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests, pipelines) adopted across multiple research teams.",
+          "Engineered a 'Council of Agents' pipeline (Self-consistency, Chain-of-reasoning, Self-reflection, LLM-as-a-judge, Self-refine, Verifier-driven revisions) to classify open-ended feedback, reducing analysis time ~73%.",
+          "Designed a Human-in-the-loop (HITL) workflow where expert review created curated few-shot examples to continuously refine the model.",
+          "Conducted longitudinal research with bi-weekly surveys to track ML model performance pre- and post-launch, informing critical roadmap decisions.",
+          "Merged editor logs with survey outputs to triangulate user sentiment with actual behavior at 500M+ MAU scale.",
+          "Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests) that was adopted by the wider research team to streamline their own analysis.",
           "Co-managed a global research panel and vendor partnerships to recruit participants worldwide for surveys and usability testing.",
           "Queried internal data warehouses with SQL to join behavioral logs, survey responses, and classifier outputs for deeper diagnostics.",
           "User impact: accelerated feedback loops; insights influenced roadmap prioritization."
@@ -44,11 +44,11 @@ export const resumeContent = {
         company: "Roku Inc.",
         dates: "January 2021 - November 2023",
         responsibilities: [
+          "Developed a Modular Survey Analysis System for a weekly sentiment survey, cutting report generation from ~4h to <5m.",
+          "Built an open-ended classifier prototype that served as the precursor to the advanced GenAI system later deployed at Meta.",
+          "Led quant/qual device research; analyzed behavioral logs from 70M+ devices to support usability testing on hardware remotes.",
           "Built an AI-powered indexed database of Roku's UX and CI research to enhance org-wide searchability.",
-          "Developed a Modular Survey Analysis System with ML to generate detailed survey reports (stats + NLP categorization).",
-          "Led quant/qual device research; analyzed behavioral logs from 70M+ devices to inform product decisions.",
           "Executed research on Customer Support site and call center software; improved UX through data-driven methods.",
-          "Cut weekly survey report generation from approximately 4 hrs to under 5 min via ML automation and LLM summaries.",
           "Mentored junior researchers in survey design and behavioral data analysis; managed vendors, resource planning, and budget alignment.",
           "Standardized research backlogs and documentation in Jira and Confluence to track studies, insights, and follow-ups across teams.",
           "Developed user personas and journey maps combining 70M+ device logs with qual research to inform feature roadmaps and support flows."
