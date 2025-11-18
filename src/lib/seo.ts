@@ -4,13 +4,13 @@ import type { Metadata } from 'next';
 export const siteMetadata: Metadata = {
   metadataBase: new URL('https://www.jgmancilla.com/'),
   title: {
-    default: 'Jesús Mancilla — Applied Scientist & Quantitative UX Researcher',
+    default: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
     template: '%s | Jesús Mancilla'
   },
-  description: 'Applied scientist & Quantitative UX Researcher bridging HCI and ML/LLMs. I design evaluation-driven AI systems—vector databases, retrieval (RAG) pipelines, autonomous agents, evaluation/observability, and survey NLP—with measurable impact at scale.',
+  description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems: RAG, Multi-Agent Orchestration, and NLP pipelines. Expert in Python, LLMs, and measuring AI impact at scale.',
   openGraph: {
-    title: 'Jesús Mancilla — Applied Scientist & Quantitative UX Researcher',
-    description: 'Human-centered AI, NLP/LLMs, and scalable systems: RAG retrieval pipelines, autonomous agents, evaluation/observability. Projects: Modular Survey Analysis, Research Librarian, Customer Support Bot; publications in ACM/AutoUI/IJDSA.',
+    title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
+    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems: RAG, Multi-Agent Orchestration, and NLP pipelines. Expert in Python, LLMs, and measuring AI impact at scale.',
     url: 'https://www.jgmancilla.com/',
     siteName: 'Jesús Mancilla',
     locale: 'en_US',
@@ -20,20 +20,49 @@ export const siteMetadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Jesús Mancilla — Applied Scientist & Quantitative UX Researcher'
+        alt: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jesús Mancilla — Applied Scientist & Quantitative UX Researcher',
-    description: 'Human-centered AI, NLP/LLMs, and scalable systems: RAG retrieval pipelines, autonomous agents, evaluation/observability. Projects: Modular Survey Analysis, Research Librarian, Customer Support Bot; publications in ACM/AutoUI/IJDSA.',
+    title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
+    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems: RAG, Multi-Agent Orchestration, and NLP pipelines. Expert in Python, LLMs, and measuring AI impact at scale.',
     images: ['/og-image.png']
   },
   icons: {
     icon: '/favicon.ico'
   },
-  keywords: ['Applied Scientist','Quantitative UX Researcher','HCAI','NLP','LLMs','RAG','Agents','Evaluation','Observability','Vector Databases','Retrieval Pipelines','Autonomous Agents','Jesús Mancilla','Jesus Mancilla','Jesus Garcia-Mancilla','Jesus Garcia Mancilla'],
+  keywords: [
+    'Applied Scientist',
+    'Quantitative UX Researcher',
+    'Senior User Researcher',
+    'HCAI',
+    'Human-Centered AI',
+    'NLP',
+    'LLMs',
+    'Generative AI',
+    'GenAI',
+    'RAG',
+    'Retrieval-Augmented Generation',
+    'Prompt Engineering',
+    'Chain-of-Thought',
+    'Few-Shot Learning',
+    'Embeddings',
+    'Multi-Agent Systems',
+    'Autonomous Agents',
+    'Evaluation Pipelines',
+    'Observability',
+    'Vector Databases',
+    'Mixed Methods',
+    'Python',
+    'SQL',
+    'Jesús Mancilla',
+    'Jesus Mancilla',
+    'Jesus Garcia-Mancilla',
+    'Jesus Garcia Mancilla',
+    'Jesús Garcia Mancilla'
+  ],
   robots: { index: true, follow: true }
 };
 
