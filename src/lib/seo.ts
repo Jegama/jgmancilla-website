@@ -7,10 +7,10 @@ export const siteMetadata: Metadata = {
     default: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
     template: '%s | Jesús Mancilla'
   },
-  description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems: RAG, Multi-Agent Orchestration, and NLP pipelines. Expert in Python, LLMs, and measuring AI impact at scale.',
+  description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and NLP pipelines.',
   openGraph: {
     title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
-    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems: RAG, Multi-Agent Orchestration, and NLP pipelines. Expert in Python, LLMs, and measuring AI impact at scale.',
+    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and NLP pipelines.',
     url: 'https://www.jgmancilla.com/',
     siteName: 'Jesús Mancilla',
     locale: 'en_US',
@@ -27,7 +27,7 @@ export const siteMetadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
-    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems: RAG, Multi-Agent Orchestration, and NLP pipelines. Expert in Python, LLMs, and measuring AI impact at scale.',
+    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and NLP pipelines.',
     images: ['/og-image.png']
   },
   icons: {
@@ -37,6 +37,9 @@ export const siteMetadata: Metadata = {
     'Applied Scientist',
     'Quantitative UX Researcher',
     'Senior User Researcher',
+    'Machine Learning Scientist',
+    'AI Portfolio',
+    'Interactive Resume',
     'HCAI',
     'Human-Centered AI',
     'NLP',

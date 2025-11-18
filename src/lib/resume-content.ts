@@ -29,7 +29,7 @@ export const resumeContent = {
         company: "Meta",
         dates: "January 2024 - January 2025",
         responsibilities: [
-          "Engineered a 'Council of Agents' pipeline (Self-consistency, Chain-of-reasoning, Self-reflection, LLM-as-a-judge, Self-refine, Verifier-driven revisions) to classify open-ended feedback, reducing analysis time ~73%.",
+          "Engineered a 'Council of Agents' pipeline (Self-consistency, Chain-of-thought, Self-reflection, LLM-as-a-judge, Self-refine, Verifier-driven revisions) to classify open-ended feedback, reducing analysis time ~73%.",
           "Designed a Human-in-the-loop (HITL) workflow where expert review created curated few-shot examples to continuously refine the model.",
           "Conducted longitudinal research with bi-weekly surveys to track ML model performance pre- and post-launch, informing critical roadmap decisions.",
           "Merged editor logs with survey outputs to triangulate user sentiment with actual behavior at 500M+ MAU scale.",
@@ -150,7 +150,7 @@ export const resumeContent = {
           "Embeddings",
           "Vector search",
           "Few-shot learning",
-          "Chain-of-reasoning",
+          "Chain-of-thought",
           "Multi-agent orchestration",
           "Model evaluation pipelines",
           "Observability and monitoring"
@@ -193,12 +193,53 @@ export const resumeContent = {
           "Usability testing",
           "Thematic analysis",
           "Triangulation",
-          "Insight synthesis"
+          "Insight synthesis",
+          "Remote unmoderated testing",
+          "First-click testing",
+          "Card sorting",
+          "Tree testing",
+          "Survey programming"
         ],
+      },
+      {
+        name: "Product & Delivery Methods",
+        skills: [
+          "Agile (Kanban boards, sprints)",
+          "Design thinking",
+          "Lean UX",
+          "Cross-functional collaboration"
+        ]
       },
       {
         name: "Frameworks",
         skills: ["FastAPI", "LangChain", "LangGraph", "React", "Next.js", "TensorFlow", "PyTorch", "Scikit-learn"],
+      },
+      {
+        name: "Research Platforms & Tooling",
+        skills: [
+          "UserTesting",
+          "Lookback",
+          "Optimal Workshop (First-click, card sorting, tree testing)",
+          "dscout",
+          "Qualtrics",
+          "SurveyMonkey",
+          "Medallia",
+          "Tableau",
+          "Jupyter",
+          "Git",
+          "VS Code",
+          "Google Analytics",
+          "Jira",
+          "Confluence"
+        ]
+      },
+      {
+        name: "Design & Prototyping Tools",
+        skills: [
+          "Figma",
+          "Sketch",
+          "Balsamiq"
+        ]
       },
       {
         name: "Languages",

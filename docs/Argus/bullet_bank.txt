@@ -28,7 +28,7 @@
 - Embeddings
 - Vector search
 - Few-shot learning
-- Chain-of-reasoning
+- Chain-of-thought
 - Multi-agent orchestration
 - Model evaluation pipelines
 - Observability and monitoring
@@ -180,8 +180,8 @@
   (id=b_meta_1; tags=classifier,h-in-loop,throughput,QuantUXR,AppliedScientist)
 - Merged editor logs with survey outputs to drive data-backed roadmap decisions at 500M+ MAU scale.
   (id=b_meta_2; tags=triangulation,scale,product-impact,QuantUXR)
-- Engineered a "Council of Agents" pipeline using Self-consistency and Chain-of-reasoning to sample multiple candidates and improve reasoning across tasks.
-  (id=b_meta_3; tags=agents,self-consistency,chain-of-reasoning,GenAI,AppliedScientist)
+- Engineered a "Council of Agents" pipeline using Self-consistency and Chain-of-thought to sample multiple candidates and improve reasoning across tasks.
+  (id=b_meta_3; tags=agents,self-consistency,chain-of-thought,GenAI,AppliedScientist)
 - Implemented "LLM-as-a-judge" (Self-reflection) and Verifier-driven revisions (Self-refine) to critique, prune, and rewrite intermediate outputs for higher reliability.
   (id=b_meta_genai_1; tags=LLM-as-a-judge,self-reflection,verifier,self-refine,GenAI,AppliedScientist)
 - Designed a Human-in-the-loop (HITL) review workflow where experts refine outputs in natural language, creating curated few-shot examples for final prompts; reduced analysis time ~73%.
