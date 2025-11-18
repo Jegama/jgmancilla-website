@@ -125,7 +125,7 @@
 
 # Experience
 
-## Argomai — Senior Applied Scientist (Consultant)
+## Argomai - Senior Applied Scientist (Consultant)
 **Dates:** Jan 2025–Present
 **Scope:** Enterprise AI architecture, agents, RAG, governance
 **Founding context:** Founding team member
@@ -170,7 +170,7 @@
 - Published human-centered AI approach using an LLM-powered chatbot to streamline open-ended survey analysis; accelerated insight turnaround while reducing analyst workload; validated via user-centered design.
   (id=b_arg_pub_2; tags=publications,HCAI,LLM,surveys,UXR,QuantUXR)
 
-## Meta — Senior Quant UX Researcher
+## Meta - Senior Quant UX Researcher
 **Dates:** Jan 2024–Jan 2025
 **Scope:** Hybrid ML classifier for open-endeds; 500M+ MAU product
 **Skills:** ML, Clustering, HIL, Stats, Regressions, ANOVA, T-tests, Python, Tooling, Longitudinal, Metrics
@@ -203,7 +203,7 @@
  - Worked within agile sprints alongside ML engineering teams, aligning research plans and deliverables with classifier release cycles.
   (id=b_meta_13; tags=agile,sprints,collaboration,QuantUXR)
 
-## Roku Inc. — Senior User Experience Researcher
+## Roku Inc. - Senior User Experience Researcher
 **Dates:** Jan 2021–Nov 2023
 **Scope:** AI-powered research knowledge base; modular survey analysis; device and support research
 **Skills:** AI, NLP, Stats, Logs, Search, Survey, KnowledgeBase, Mentoring, VendorManagement, Budgeting
@@ -238,7 +238,7 @@
  - Developed user personas and journey maps combining 70M+ device logs with qual research to inform feature roadmaps and support flows.
   (id=b_roku_14; tags=personas,journey-mapping,logs,UXR,QuantUXR)
 
-## Walmart Global Tech — Senior User Experience Researcher
+## Walmart Global Tech - Senior User Experience Researcher
 **Dates:** Aug 2019–Nov 2020
 **Scope:** Sam's Club mobile analytics; metrics definition; data-integrated UX
 **Skills:** Analytics, Tableau, Metrics, Stakeholders, KPIs, Experimentation, Bilingual
@@ -267,7 +267,7 @@
  - Defined user personas and journey maps for Sam's Club mobile members to guide KPI selection, experimentation, and content localization.
   (id=b_wmt_11; tags=personas,journey-mapping,mobile,KPIs,UXR,QuantUXR)
 
-## Scrapworks Inc. — Data Scientist
+## Scrapworks Inc. - Data Scientist
 **Dates:** Sep 2017–Aug 2019
 **Scope:** Forecasting, NLP classification, BI dashboards
 **Skills:** DeepLearning, NLP, Forecasting, Dashboards
@@ -280,7 +280,7 @@
 - Built an interactive dashboard for 20 years of sales data; supported 30% sales growth.
   (id=b_scrap_3; tags=dashboard,BI,growth,AppliedScientist)
 
-## Suggestic — Senior User Experience Researcher
+## Suggestic - Senior User Experience Researcher
 **Dates:** Dec 2016–Sep 2017
 **Scope:** Product UX transformation; experimentation; prototyping
 **Skills:** UX, Experimentation, Prototyping, Analytics
@@ -303,7 +303,7 @@
  - Built user personas and journey maps for nutrition coaching users to prioritize experiments and inform conversational-to-graphical UX changes.
   (id=b_sugg_8; tags=personas,journey-mapping,UXR)
 
-## Stanford University — User Experience Researcher
+## Stanford University - User Experience Researcher
 **Dates:** May 2016–Nov 2016
 **Scope:** Driver stress detection; automotive UI; physiological signal analysis
 **Skills:** ML, SignalProcessing, UX, Automotive, Multimodal, ExperimentalDesign
@@ -328,7 +328,7 @@
 - Co-authored cross-cultural study of pedestrian–AV interactions (Mexico City vs. Colima); produced design implications for AV behavior and urban HCI.
   (id=b_stan_pub_2; tags=publications,HCI,autonomous-vehicles,field-study,cross-cultural)
 
-## ITAM — User Experience Researcher
+## ITAM - User Experience Researcher
 **Dates:** Aug 2014–May 2016
 **Scope:** Psychophysiology + ML; visualization; usability
 **Skills:** Visualization, ML, Usability, Wearables, Statistics
@@ -363,7 +363,7 @@
  - Created user personas and journey maps for wearable, mobile, and web experiences to anchor psychophysiology findings in concrete UX scenarios.
   (id=b_itam_10; tags=personas,journey-mapping,wearables,UXR)
 
-## Stevens Institute of Technology — Data Science Intern
+## Stevens Institute of Technology - Data Science Intern
 **Dates:** Jun 2015–Aug 2015
 **Scope:** Social media NLP classification; visualization
 **Skills:** NLP, Visualization, Classification
@@ -376,7 +376,7 @@
 - Co-authored peer-reviewed study on negative sentiment classification in at-risk populations; combined human-in-the-loop labeling with ML to establish evaluation baselines for clinical signal detection.
   (id=b_stev_pub_1; tags=publications,NLP,social,HIL,evaluation)
 
-## University of Colima — Health Psychology Researcher
+## University of Colima - Health Psychology Researcher
 **Dates:** 2009–2014
 **Scope:** Psychoeducational interventions; chronic disease outcomes
 **Skills:** Health, Intervention, Statistics
