@@ -2,6 +2,14 @@ export const researchPapersContent = {
   headline: "Published Papers",
   papers: [
     {
+      title: "Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization",
+      authors: ["Santana-Mancilla, P. C.", "Guerrero-Ibáñez, A.", "Contreras-Castillo, J.", "Garcia-Mancilla, J.", "Anido-Rifón, L."],
+      publication: "Symmetry, 17(12), 2083",
+      year: "2025",
+      abstract: "Urban intersections are critical nodes where traffic congestion and energy inefficiency converge. Traditional signal control systems often optimize either mobility or sustainability, creating an asymmetry between flow efficiency and environmental impact. This study introduces a symmetry-aware generative optimization framework that leverages Generative Artificial Intelligence (GAI) to balance both dimensions. Using the microscopic simulator SUMO, we modeled a signalized intersection in Colima, Mexico, under five control strategies: Fixed Time (baseline), GPT-4o, GPT-5 Thinking, Gemini 2.5 Pro, and DeepSeek V3. Each Large Language Model (LLM) received structured simulation data and generated new phase-duration configurations to minimize queue length, travel time, and CO2 emissions while improving average speed. Step-level performance was evaluated using descriptive statistics, and Wilcoxon signed-rank tests paired with Holm–Bonferroni correction. Results show that all LLM-based controllers significantly outperformed the Fixed Time baseline (adjusted p ≤ 4.8 × 10−6), with large effect sizes (|dz| ≈ 1.5–2.6). GPT-5 achieved the strongest performance, reducing queue size by ≈ 44%, CO2 emissions by ≈ 17%, and increasing average speed by ≈ 58%. The results validate the feasibility of symmetry-aware generative reasoning for sustainable traffic optimization and establish a reproducible methodological framework applicable to future AI-driven urban mobility systems.",
+      url: "https://www.mdpi.com/2073-8994/17/12/2083",
+    },
+    {
       title: "Language models in education: Generative AI to optimize teacher performance analysis",
       authors: ["Ramos-Rivera, R. E.", "Santana Mancilla, P. C.", "Garcia-Mancilla, J.", "Gaytán-Lugo, L. S."],
       publication: "InnovAcademica, 1(2), 74–85",
