@@ -169,6 +169,8 @@
   (id=b_arg_pub_1; tags=publications,GenAI,LLM,education,evaluation,governance,AppliedScientist)
 - Published human-centered AI approach using an LLM-powered chatbot to streamline open-ended survey analysis; accelerated insight turnaround while reducing analyst workload; validated via user-centered design.
   (id=b_arg_pub_2; tags=publications,HCAI,LLM,surveys,UXR,QuantUXR)
+- Co-authored research on symmetry-aware GenAI framework for sustainable traffic optimization; validated LLM-based traffic signal control (GPT-5, Gemini 2.5 Pro, DeepSeek V3) achieving 44% queue reduction, 17% CO2 reduction, and 58% speed improvement over fixed-time baseline in SUMO simulation.
+  (id=b_arg_pub_3; tags=publications,GenAI,LLM,smart-cities,sustainability,traffic-optimization,urban-mobility,AppliedScientist)
 
 ## Meta - Senior Quant UX Researcher
 **Dates:** Jan 2024–Jan 2025
