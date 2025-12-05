@@ -67,6 +67,7 @@ To export PDFs (optional, if LaTeX is installed):
 
 ## 📄 Papers
 
+- [Santana-Mancilla, P. C., Guerrero-Ibáñez, A., Contreras-Castillo, J., García-Mancilla, J., & Anido-Rifón, L. (2025). Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization. Symmetry, 17(12), 2083.](https://innovacademia.uanl.mx/index.php/revista/article/view/36)
 - [Ramos-Rivera, R. E., Santana Mancilla, P. C., Garcia-Mancilla, J., \& Gaytán-Lugo, L. S. (2025). Language models in education: Generative AI to optimize teacher performance analysis. InnovAcademica, 1(2), 74–85.](https://innovacademia.uanl.mx/index.php/revista/article/view/36)
 - [Ramos-Rivera, R. E., Garcia-Mancilla, J., Cárdenas-Villa, G. E., & Santana-Mancilla, P. C. (2024). Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis: An Approach Using Large Language Models (LLM). Avances en Interacción Humano-Computadora, 9(1), 261-264.](https://revistaaihc.mx/index.php/aihc/article/view/181)
 - [Baltodano, Sonia, Jesus Garcia-Mancilla, and Wendy Ju. "Eliciting Driver Stress Using Naturalistic Driving Scenarios on Real Roads." In Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 298-309. ACM, 2018.](https://dl.acm.org/authorize?N668220)
