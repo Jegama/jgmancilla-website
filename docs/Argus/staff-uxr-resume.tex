@@ -1,7 +1,7 @@
-%-------------------------
+%------------------------
 % Quantitative UX Researcher Resume - Jesus Mancilla
 % Tailored from hybrid master to emphasize Quant UXR leadership, survey analytics, and experimentation
-% Base template: Aras Gungore (MIT) — adapted for Jesus Mancilla
+% Base template: Aras Gungore (MIT) - adapted for Jesus Mancilla
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
@@ -21,6 +21,7 @@
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
+\usepackage{amsmath}
 \input{glyphtounicode}
 
 % -------------- PAGE SETUP ------------------
@@ -37,7 +38,7 @@
 \addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.05in}
 \urlstyle{same}
-\raggedbottom
+\flushbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
@@ -85,7 +86,7 @@
 %---------- HEADING ----------
 \begin{center}
   {\Huge\scshape Jesus Mancilla} \\[4pt]
-  \textbf{Staff User Researcher \,|\, Quant \& Mixed-Methods (ML-enabled)} \\
+  \textbf{Staff Quantitative UX Researcher \,|\, ML-Enabled Insight Systems} \\
   \small
   Decision-driving insights at scale: survey \& log analytics, ML-assisted research ops, standardized evaluation \\
   \faMobile\ \href{tel:16503914301}{+1 650 391 4301}  $|$
@@ -97,8 +98,7 @@
 
 %---------- SUMMARY ----------
 \section{Professional Summary}
-
-Staff-level UXR leader blending \textbf{quantitative research at scale} with \textbf{ML/LLM tooling} to accelerate product decisions. Shipped reusable analysis pipelines, standardized metrics, and research ops that shortened feedback loops across \textbf{500M+ MAU} and \textbf{70M+ devices}. Noted for turning ambiguity into \textbf{operational, defensible insight systems} (e.g., open-ended survey analysis from \textbf{~30h to under 8h}; auto-reporting from \textbf{~4h to under 5m}; doc classification from \textbf{~90m to under 5m}). Bilingual (English/Spanish); strong cross-functional influence and executive-facing synthesis.
+Staff-level UXR leader blending \textbf{quantitative research at scale} with \textbf{ML/LLM tooling} to accelerate product decisions. Shipped reusable analysis pipelines, standardized metrics, and research ops that shortened feedback loops across \textbf{500M+ MAU} and \textbf{70M+ devices}. Noted for turning ambiguity into \textbf{operational, defensible insight systems} (e.g., open-ended survey analysis from \textbf{\textasciitilde30h to under 8h}; auto-reporting from \textbf{\textasciitilde4h to under 5m}; doc classification from \textbf{\textasciitilde90m to under 5m}). Bilingual (English/Spanish); strong cross-functional influence and executive-facing synthesis.
 
 %----------- CORE SKILLS (ATS-optimized) -----------
 \section{Technical Stack \& Domains}
@@ -113,93 +113,75 @@ Staff-level UXR leader blending \textbf{quantitative research at scale} with \te
 \section{Work Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Argomai}{Houston, TX (Remote)}
-      {Senior Applied Scientist / Staff-Level UXR Consultant}{Jan 2025 -- Present}
-      \resumeItemListStart
-        \resumeItem{Owned enterprise \textbf{GenAI/ML architecture and platform governance} (domain models, service boundaries, data governance, NFRs) for insight workflows across clients.}
-        \resumeItem{Led design and implementation of \textbf{vector DBs, retrieval pipelines}, and a reusable \textbf{AI component library} (embeddings, prompt templates, LangGraph-based agents).}
-        \resumeItem{\textbf{Reduced document classification} from approximately \textbf{90m to under 5m} and PM reporting from \textbf{6h/wk to under 1h} via automation and retrieval.}
-        \resumeItem{Deployed \textbf{LLM-powered survey analysis} workflows cutting manual review time and error risk; standardized governance across clients; frameworks later peer-reviewed.}
-        \resumeItem{Ran generative and evaluative interviews (screeners, protocols, synthesis) and translated findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.}
-      \resumeItemListEnd
+    \resumeSubheading{Argomai}{Houston, TX (Remote)}{Senior Applied Scientist (Consultant)}{Jan 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Owned enterprise \textbf{GenAI/ML architecture and platform governance} (domain models, service boundaries, data governance, NFRs) for insight workflows across clients.}
+      \resumeItem{\textbf{Reduced document classification} from \textbf{\textasciitilde90m to under 5m} and PM reporting from \textbf{6h/wk to under 1h} via automation and retrieval.}
+      \resumeItem{Deployed \textbf{LLM-powered survey analysis} workflows cutting manual review time and error risk; standardized governance across clients; frameworks later peer-reviewed.}
+      \resumeItem{Ran generative and evaluative interviews (screeners, protocols, synthesis) and translated findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Meta}{Remote}
-      {Senior Quantitative UX Researcher}{Jan 2024 -- Jan 2025}
-      \resumeItemListStart
-        \resumeItem{Engineered a \textbf{6-step GenAI pipeline} (Council of Agents, Self-consistency, LLM-as-a-judge, HITL) to classify open-ended feedback; \textbf{reduced analysis time ~73\%} (30h $\rightarrow$ <8h).}
-        \resumeItem{Conducted \textbf{longitudinal research} tracking model performance pre/post-launch; merged survey data with \textbf{behavioral logs} to ground roadmap decisions in empirical reality.}
-        \resumeItem{Developed and standardized a \textbf{Python analytics toolkit} (regressions, ANOVA, T-tests) adopted by the wider research team to streamline their own analysis.}
-        \resumeItem{Designed a \textbf{Human-in-the-loop (HITL)} workflow where expert review created curated few-shot examples to continuously refine the model.}
-        \resumeItem{Co-managed a global research panel and vendor partnerships; conducted interviews in Spanish to broaden signal quality across markets.}
-      \resumeItemListEnd
+    \resumeSubheading{Meta}{Houston, TX (Remote)}{Senior Quantitative UX Researcher}{Jan 2024 -- Jan 2025}
+    \resumeItemListStart
+      \resumeItem{Engineered a \textbf{6-step GenAI pipeline} (Council of Agents, Self-consistency, LLM-as-a-judge, HITL) to classify open-ended feedback; \textbf{reduced analysis time \textasciitilde73\%} (30h to under 8h).}
+      \resumeItem{Conducted \textbf{longitudinal research} tracking model performance pre/post-launch; merged survey data with \textbf{behavioral logs} to ground roadmap decisions in empirical reality.}
+      \resumeItem{Developed and standardized a \textbf{Python analytics toolkit} (regressions, ANOVA, T-tests) adopted by the wider research team to streamline their own analysis.}
+      \resumeItem{Designed a \textbf{Human-in-the-loop (HITL)} workflow where expert review created curated few-shot examples to continuously refine the model.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Roku}{San Jose, CA}
-      {Senior User Experience Researcher}{Jan 2021 -- Nov 2023}
-      \resumeItemListStart
-        \resumeItem{Developed a \textbf{Modular Survey Analysis System} for a weekly sentiment survey; \textbf{reduced reporting time from ~4h to <5m} via context-aware logic and automated stats.}
-        \resumeItem{Built an \textbf{open-ended classifier prototype} (NLP + clustering) that served as the precursor to the advanced GenAI system later deployed at Meta.}
-        \resumeItem{Led quant/qual device research; analyzed behavioral logs from \textbf{70M+ devices} to support usability testing on hardware remotes.}
-        \resumeItem{Built an \textbf{AI-powered indexed database} of UX/CI research, enabling org-wide self-serve discovery and faster executive reporting.}
-        \resumeItem{Mentored junior researchers and standardized research ops (Jira/Confluence backlogs, vendor management) across teams.}
-      \resumeItemListEnd
+    \resumeSubheading{Roku}{San Jose, CA}{Senior User Experience Researcher}{Jan 2021 -- Nov 2023}
+    \resumeItemListStart
+      \resumeItem{Developed a \textbf{Modular Survey Analysis System} for a weekly sentiment survey; \textbf{reduced reporting time from 4h to under 5m} via context-aware logic and automated stats.}
+      \resumeItem{Led quant/qual device research; analyzed behavioral logs from \textbf{70M+ devices} to support usability testing on hardware remotes.}
+      \resumeItem{Built an \textbf{AI-powered indexed database} of UX/CI research, enabling org-wide self-serve discovery and faster executive reporting.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Walmart Global Tech}{Sunnyvale, CA}
-      {Senior User Experience Researcher}{Aug 2019 -- Nov 2020}
-      \resumeItemListStart
-        \resumeItem{Led analytics for Sam’s Club mobile in \textbf{Tableau}; established KPIs and dashboards linking \textbf{user-interaction + business metrics} to UX bets.}
-        \resumeItem{Led cross-border (US/MX) standardization of surveys \& research workflows; designed and deployed surveys in \textbf{Medallia} and \textbf{SurveyMonkey}.}
-        \resumeItem{Created \textbf{Kanban-based research ops boards} in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets.}
-      \resumeItemListEnd
+    \resumeSubheading{Walmart Global Tech}{Sunnyvale, CA}{Senior User Experience Researcher}{Aug 2019 -- Nov 2020}
+    \resumeItemListStart
+      \resumeItem{Led analytics for Sam’s Club mobile in \textbf{Tableau}; established KPIs and dashboards linking \textbf{user-interaction + business metrics} to UX bets.}
+      \resumeItem{Led cross-border (US/MX) standardization of surveys \& research workflows; designed and deployed surveys in \textbf{Medallia} and \textbf{SurveyMonkey}.}
+      \resumeItem{Created \textbf{Kanban-based research ops boards} in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Scrapworks Inc.}{Palo Alto, CA}
-      {Data Scientist}{Sep 2017 -- Aug 2019}
-      \resumeItemListStart
-        \resumeItem{\textbf{60\% reduction} in forecasting error; built dashboards over 20 years of sales data (\textbf{\textasciitilde30\% sales growth}).}
-        \resumeItem{Initiated NLP merchandise classifier; productionized ingestion/cleaning pipelines across sources.}
-      \resumeItemListEnd
-      
-  \resumeSubheading
-    {Suggestic}{Mexico City, Mexico}
-    {User Experience Researcher}{Dec 2016 -- Sep 2017}
-      \resumeItemListStart
-        \resumeItem{Data-driven UX iterations and advanced prototyping for health features; informed go/no-go decisions.}
-        \resumeItem{Led transition from conversational to graphical interface using data insights and \textbf{Lean UX} loops (hypothesize $\rightarrow$ prototype $\rightarrow$ test); improved engagement and functionality.}
-      \resumeItemListEnd
+    \resumeSubheading{Scrapworks Inc.}{Palo Alto, CA}{Data Scientist}{Sep 2017 -- Aug 2019}
+    \resumeItemListStart
+      \resumeItem{\textbf{60\% reduction} in forecasting error; built dashboards over 20 years of sales data (\textbf{\textasciitilde30\% sales growth}).}
+      \resumeItem{Initiated NLP merchandise classifier; productionized ingestion/cleaning pipelines across sources.}
+    \resumeItemListEnd
 
-  \resumeSubheading
-    {Stanford University}{Stanford, CA}
-    {User Experience Researcher}{May 2016 -- Nov 2016}
-      \resumeItemListStart
-        \resumeItem{Designed on-road driver-stress protocol; \textbf{\textasciitilde90\%} elicitation, \textbf{\textasciitilde89\%} alignment with road events; published methods.}
-        \resumeItem{Analyzed multi-modal data (vehicle, biometric, video); contributed to reproducible study assets.}
-      \resumeItemListEnd
+    \resumeSubheading{Suggestic}{Mexico City, Mexico}{Senior User Experience Researcher}{Dec 2016 -- Sep 2017}
+    \resumeItemListStart
+      \resumeItem{Led the transition from conversational to graphical interfaces using data insights, improving engagement and functionality for a consumer nutrition coaching app.}
+      \resumeItem{Used Lookback to run remote usability studies on nutrition coaching flows, iterating interaction patterns based on observed friction and analytics.}
+    \resumeItemListEnd
 
-  \resumeSubheading
-    {ITAM}{Mexico City, Mexico}
-    {User Experience Researcher}{Aug 2014 -- May 2016}
-      \resumeItemListStart
-        \resumeItem{Psychophysiology + ML for stress/health; wearables \& usability research; Google Glass micro-interactions (IEEE).}
-      \resumeItemListEnd
+    \resumeSubheading{Stanford University}{Stanford, CA}{User Experience Researcher}{May 2016 -- Nov 2016}
+    \resumeItemListStart
+      \resumeItem{Designed safe, replicable on road driver stress protocols for automotive UX studies, collecting and analyzing over 150 hours of car, biometric, and video data.}
+      \resumeItem{Contributed to algorithms with about 90 percent stress detection accuracy and co authored work on automotive UI and pedestrian interactions.}
+    \resumeItemListEnd
+
+    \resumeSubheading{ITAM}{Mexico City, Mexico}{User Experience Researcher}{Aug 2014 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{Created custom data visualizations and analyzed psychophysiological signals, identifying user behavior patterns with machine learning techniques.}
+      \resumeItem{Led usability testing across wearable, mobile, and web platforms, applying analytical insights to improve interaction and satisfaction metrics.}
+    \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 %----------- SELECTED PROJECTS -----------
 \section{Selected Projects (Research Systems \& At-Scale Insight)}
   \resumeSubHeadingListStart
-    \resumeItem{\textbf{Quant UX at Scale} — 6-step GenAI pipeline (Council of Agents, LLM-as-a-judge); \textbf{time per study reduced from ~30h to under 8h} in \textbf{500M+ MAU} context.}
-    \resumeItem{\textbf{Research Librarian (AI Index)} — Multi-engine semantic retrieval to surface prior insights and drive reuse.}
-    \resumeItem{\textbf{Modular Survey Analysis System} — Weekly sentiment dashboard + prototype classifier; \textbf{reporting time reduced from ~4h to <5m}.}
-    \resumeItem{\textbf{Customer Support Bot (Blueprint)} — RAG + evaluation/observability + safety rails; solution-spotlight answers.}
+    \resumeItem{\textbf{Quant UX at Scale}: 6-step GenAI pipeline (Council of Agents, LLM-as-a-judge); \textbf{time per study reduced from \textasciitilde30h to under 8h} in \textbf{500M+ MAU} context.}
+    \resumeItem{\textbf{Research Librarian (AI Index)}: Multi-engine semantic retrieval to surface prior insights and drive reuse.}
+    \resumeItem{\textbf{Modular Survey Analysis System}: Weekly sentiment dashboard + prototype classifier; \textbf{reporting time reduced from \textasciitilde4h to under 5m}.}
+    \resumeItem{\textbf{Customer Support Bot (Blueprint)}: RAG + evaluation/observability + safety rails; solution-spotlight answers.}
   \resumeSubHeadingListEnd
 
 %----------- EDUCATION -----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeEducationHeading{Instituto Tecnológico Autónomo de México (ITAM)}{}%
+    \resumeEducationHeading{Instituto Tecnológico Autónomo de México (ITAM)}{}
       {M.S. in Computer Science (HCI/AI Focus)}{2014 -- 2016}
     \resumeEducationHeading{Universidad de Colima}{}
       {B.A. in Psychology}{2009 -- 2013}
@@ -209,17 +191,15 @@ Staff-level UXR leader blending \textbf{quantitative research at scale} with \te
 \section{Selected Publications}
   \resumeSubHeadingListStart
     \small{\item{
-        {Ramos-Rivera, R. E., Santana Mancilla, P. C., Garcia-Mancilla, J., \& Gaytán-Lugo, L. S. (2025). Language models in education: Generative AI to optimize teacher performance analysis. InnovAcademica, 1(2), 74–85.}
+      {Santana-Mancilla, P. C., Guerrero-Ibáñez, A., Contreras-Castillo, J., Garcia-Mancilla, J., \& Anido-Rifón, L. (2025). Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization. Symmetry, 17(12), 2083.}
+      
+      {Ramos-Rivera, R. E., Santana Mancilla, P. C., Garcia-Mancilla, J., \& Gaytán-Lugo, L. S. (2025). Language models in education: Generative AI to optimize teacher performance analysis. InnovAcademica, 1(2), 74-85.}
     
-        {Ramos-Rivera, R. E., Garcia-Mancilla, J., Cárdenas-Villa, G. E., \& Santana-Mancilla, P. C. (2024). Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis: An Approach Using Large Language Models (LLM). Avances en Interacción Humano-Computadora, 9(1), 261-264.}
+      {Ramos-Rivera, R. E., Garcia-Mancilla, J., Cárdenas-Villa, G. E., \& Santana-Mancilla, P. C. (2024). Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis: An Approach Using Large Language Models (LLM). Avances en Interacción Humano-Computadora, 9(1), 261-264.}
     
-        {Baltodano, Sonia, Jesus Garcia-Mancilla, and Wendy Ju. "Eliciting Driver Stress Using Naturalistic Driving Scenarios on Real Roads." In Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 298-309. ACM, 2018.} 
-
-        {Currano, Rebecca, So Yeon Park, Lawrence Domingo, Jesus Garcia-Mancilla, Pedro C. Santana-Mancilla, Victor M. Gonzalez, and Wendy Ju. "¡Vamos!: Observations of Pedestrian Interactions with Driverless Cars in Mexico." In Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 210-220. ACM, 2018.} 
-
-        {J. Garcia-Mancilla, J. E. Ramirez-Marquez, C. Lipizzi, G. T. Vesonder, and V. M. Gonzalez, “Characterizing negative sentiments in at-risk populations via crowd computing: a computational social science approach,” International Journal of Data Science and Analytics, Jun. 2018.}
+      {Garcia-Mancilla, J., Ramirez-Marquez, J. E., Lipizzi, C., Vesonder, G. T., \& Gonzalez, V. M. (2018). Characterizing negative sentiments in at-risk populations via crowd computing: A computational social science approach. International Journal of Data Science and Analytics.}
         
-        {\small For full list, see: jgmancilla.com/research-papers }
+      {\small For full list, see: jgmancilla.com/research-papers }
   }}
   \resumeSubHeadingListEnd
 

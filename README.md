@@ -32,11 +32,11 @@ For more details, see the dedicated sections and project descriptions on the sit
 
 Structured content is defined in TypeScript and drives both the UI and the AI assistant grounding:
 
-- `src/lib/resume-content.ts` — Resume profile, experience, skills, education
-- `src/lib/ml-portfolio-content.ts` — ML projects
-- `src/lib/research-portfolio-content.ts` — Research projects
-- `src/lib/research-papers-content.ts` — Publications list
-- `src/lib/about-me-content.ts` — About section copy
+- `src/lib/resume-content.ts`: Resume profile, experience, skills, education
+- `src/lib/ml-portfolio-content.ts`: ML projects
+- `src/lib/research-portfolio-content.ts`: Research projects
+- `src/lib/research-papers-content.ts`: Publications list
+- `src/lib/about-me-content.ts`: About section copy
 
 The AI chat serializes these sources when building a single composite prompt (no RAG at runtime).
 
@@ -58,12 +58,9 @@ Design choices:
 - Single composite prompt per question (no retrieval layer yet). If content grows, add chunking/embeddings.
 - Citations enforced in the prompt (deterministic per content area).
 
-## 📄 Resumes
+## 📄 Resume
 
-To export PDFs (optional, if LaTeX is installed):
-- `public\cv-jgmancilla.pdf` — Hybrid master - Downloadable from the live site
-- `public\JGMancilla - Applied Scientist.pdf` — Role-targeted Applied Scientist
-- `public\JGMancilla - UX Research.pdf` — Role-targeted Quantitative UX Researcher
+- `public\cv-jgmancilla.pdf`: Latest PDF version of my résumé
 
 ## 📄 Papers
 
