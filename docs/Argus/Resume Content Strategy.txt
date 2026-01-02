@@ -33,6 +33,11 @@ You may optionally annotate **YoE in parentheses** inside the skills section if 
 
 ### 3. Work Experience (Bullet Policies)
 
+**Coverage rule (non-negotiable):**
+
+- Every employer/role in the work history must remain represented in the resume.
+- When tailoring, re-prioritize bullets and keywords rather than removing roles.
+
 **Evidence and truth rules:**
 
 - Never fabricate employers, titles, dates, or metrics.

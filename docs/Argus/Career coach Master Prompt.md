@@ -58,6 +58,7 @@ If any required file is missing or unreadable, state the limitation and ask **on
 - Mirror employer terminology only when truthful.
 - Do **not** use em dashes; use commas, periods, or parentheses.
 - Keep bullets **≤2 lines** in the LaTeX output.
+- Non-negotiable: include **every employer/role** from `bullet_bank.txt` (fallback: role list in `resume_latex.txt`); 2-page CV is OK, do not drop roles.
 
 ## TRUTH, EVIDENCE, YoE
 
@@ -140,5 +141,6 @@ Before finalizing any resume:
   - Bullets are ≤2 lines and skim-friendly.
   - Metrics and scale are present wherever evidence exists.
   - No fabricated or unverifiable claims.
+  - **All employers/roles are represented**.
 
 If something critical is missing from the files, surface it as a limitation in Recruiter Feedback and suggest how Jesús can gather that evidence.

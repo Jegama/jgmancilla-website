@@ -88,6 +88,7 @@
 % - Technical Stack & Domains: prioritize JD-relevant clusters; optionally add YoE in parentheses (e.g., LLMs/ML (4+ yrs)).
 % - Bullets: ≤2 lines; Action → Method → Impact (+metric). Align terminology to the JD; never change facts/metrics.
 % - Section heading “Selected Projects ...” may be renamed to fit JD (e.g., Applied ML/LLMs vs Research/Systems).
+% - EXPERIENCE COVERAGE (non-negotiable): keep every employer/role represented; do not drop roles to force a 1-page layout.
 
 \begin{document}
 
