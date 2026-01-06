@@ -1,0 +1,66 @@
+# Projects
+
+## Modular Survey Analysis System
+**ID:** `proj_modular_survey`
+
+- Weekly sentiment survey dashboard; reduced report generation from ~4h to <5m.
+- Prototype open-ended classifier (precursor to Meta system) using NLP and clustering.
+- Context-aware survey logic parsing and automated statistical summaries.
+- Reported end-to-end analysis effort reduced ~70%, with estimated ~50% resource savings.
+- Autonomous clustering for open-endeds: clusters responses, assigns category names, and drafts category descriptions (patent pending/in process).
+
+## Calvinist Parrot v4 (LangGraph, RAG)
+**ID:** `proj_calvinist_parrot_4`
+
+- TTFT p95 4.3s to under 2s; about 33% hallucination reduction (internal).
+- Re-platformed to Next.js/TypeScript with LangGraph multi-agent 'Council of Three' ensemble.
+- Single RAG pipeline; nightly indexing of a 900-book library; edge streaming UX.
+- Added observability/telemetry and review loops to monitor answer quality and prioritize fixes.
+
+## Research Librarian (AI-powered index)
+**ID:** `proj_research_librarian`
+
+- AI-powered index for UX/CI research with multiple specialized query engines and autonomous selection.
+- Multi-container architecture per engine improved retrieval depth and speed.
+- Enhanced internal accessibility and searchability of research assets.
+
+## Customer Support Bot (Autonomous agent)
+**ID:** `proj_customer_support_bot`
+
+- Indexed 322+ support articles; embeddings + LLM responses orchestrated via LangChain.
+- 'Solution Spotlight' provides curated best answer to reduce call center load and improve self-serve.
+- Improved response accuracy and time-to-answer for common inquiries.
+
+## Quant UX Research at Scale
+**ID:** `proj_quant_ux_scale`
+
+- Reduced open-ended analysis time from ~30h to <8h (~73% reduction) for a 500M+ MAU product.
+- 6-step GenAI pipeline: Embeddings, Council of Agents (Self-consistency), LLM-as-a-judge, Verifier-driven revisions, HITL, Few-shot curation.
+- Longitudinal study tracking model performance pre/post-launch via log analysis.
+- Standardized statistical validation (regressions/ANOVA/T-tests) adopted by the wider research team.
+- Embedded SME acceptance tests and feedback loops to refine label taxonomies and prevent semantic drift.
+- Triangulated survey outputs with behavioral logs (e.g., editor log data) to surface actionable discrepancies.
+
+## Design Research: Driver Stress Elicitation
+**ID:** `proj_design_research_stress`
+
+- Real-world driver stress elicitation with repeatable, safe protocol and instrumentation.
+- 90% stress replication rate; 89% alignment with observed road events; open API for detection algorithm.
+- Mixed-methods instrumentation and cross-disciplinary collaboration ensured rigor and safety.
+- Combined scripted stressors (e.g., battery warnings) and unscripted road events (e.g., pedestrians, construction) to increase ecological validity.
+
+## User Research: Remote Benchmarking Framework
+**ID:** `proj_user_research_remotes`
+
+- Benchmarked hardware remotes across 70M+ devices by integrating behavioral logs with lab studies.
+- Informed launch of a new remote (Fall '22) with validated interaction improvements.
+- Expanded country/feature metrics and comparative dashboards for rapid evaluation.
+- Scripted statistical analyses and repeatable workflows to reduce turnaround across a multi-year longitudinal program.
+
+## Research Ops: Repository & Reporting Standardization
+**ID:** `proj_research_ops`
+
+- Standardized repository and reporting into a searchable knowledge base with org-wide adoption.
+- Visualization layer for leadership triage; self-serve discovery reduced ad-hoc requests.
+- Phased rollout preserved continuity and reduced manual status update cycles (qualitative).
+- Introduced structured reporting templates and consolidated prior scattered reports into a single searchable repository.

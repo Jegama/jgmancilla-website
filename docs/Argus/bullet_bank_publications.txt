@@ -1,0 +1,120 @@
+# Publications
+
+## Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization
+**ID:** `pub_symmetry_2025_traffic_genai`
+**Year:** 2025
+**Publication:** Symmetry, 17(12), 2083
+**Authors:** Santana-Mancilla, P. C.; Guerrero-Ibáñez, A.; Contreras-Castillo, J.; Garcia-Mancilla, J.; Anido-Rifón, L.
+**URL:** https://www.mdpi.com/2073-8994/17/12/2083
+
+- Generative AI framework for traffic signal timing optimization balancing mobility and sustainability.
+- Evaluated multiple LLM controllers vs fixed-time baseline in SUMO simulation.
+
+## Language models in education: Generative AI to optimize teacher performance analysis
+**ID:** `pub_innovacademica_2025_llm_education`
+**Year:** 2025
+**Publication:** InnovAcademica, 1(2), 74–85
+**Authors:** Ramos-Rivera, R. E.; Santana Mancilla, P. C.; Garcia-Mancilla, J.; Gaytán-Lugo, L. S.
+**URL:** https://innovacademia.uanl.mx/index.php/revista/article/view/36
+
+- Discusses using LLMs for open-ended teacher performance evaluation responses, with hallucination risk mitigations.
+
+## Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis: An Approach Using Large Language Models (LLM)
+**ID:** `pub_aihc_2024_hcai_survey_analysis`
+**Year:** 2024
+**Publication:** Avances en Interacción Humano-Computadora, 9(1), 261-264
+**Authors:** Ramos-Rivera, R. E.; Garcia-Mancilla, J.; Cárdenas-Villa, G. E.; Santana-Mancilla, P. C.
+**URL:** https://revistaaihc.mx/index.php/aihc/article/view/181
+
+- Human-centered AI approach using an LLM-powered chatbot to streamline open-ended survey analysis.
+
+## Eliciting Driver Stress Using Naturalistic Driving Scenarios on Real Roads
+**ID:** `pub_automotiveui_2018_driver_stress`
+**Year:** 2018
+**Publication:** Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 298-309. ACM
+**Authors:** Baltodano, Sonia; Jesus Garcia-Mancilla; Wendy Ju
+**URL:** https://dl.acm.org/authorize?N668220
+
+- Naturalistic on-road stress elicitation protocol using scripted and unscripted stressors plus instrumentation.
+
+## ¡Vamos!: Observations of Pedestrian Interactions with Driverless Cars in Mexico
+**ID:** `pub_automotiveui_2018_pedestrians_av`
+**Year:** 2018
+**Publication:** Proceedings of the 10th International Conference on Automotive User Interfaces and Interactive Vehicular Applications, pp. 210-220. ACM
+**Authors:** Currano, Rebecca; So Yeon Park; Lawrence Domingo; Jesus Garcia-Mancilla; Pedro C. Santana-Mancilla; Victor M. Gonzalez; Wendy Ju
+**URL:** https://dl.acm.org/authorize?N668239
+
+- Field study comparing pedestrian behavior around an approaching (Wizard-of-Oz) driverless car in Mexico City and Colima.
+
+## Characterizing negative sentiments in at-risk populations via crowd computing: a computational social science approach
+**ID:** `pub_springer_2018_negative_sentiment`
+**Year:** 2018
+**Publication:** International Journal of Data Science and Analytics
+**Authors:** J. Garcia-Mancilla; J. E. Ramirez-Marquez; C. Lipizzi; G. T. Vesonder; V. M. Gonzalez
+**URL:** https://link.springer.com/article/10.1007/s41060-018-0135-9
+
+- Human-in-the-loop tweet categorization and visualization to support negative sentiment classification.
+
+## Social Influence and Emotional State While Shopping
+**ID:** `pub_lncs_2016_social_influence`
+**Year:** 2016
+**Publication:** In: Nah FH., Tan CH. (eds) HCI in Business, Government, and Organizations: eCommerce and Innovation. HCIBGO 2016. Lecture Notes in Computer Science, vol 9751. Springer, Cham.
+**Authors:** Garcia-Mancilla J.; Martinez V.R.; Gonzalez V.M.; Fajardo A.F.
+**URL:** https://link.springer.com/chapter/10.1007/978-3-319-39396-4_35
+
+- Study of social influence mediated by mobile technologies and its effect on emotional state while shopping.
+
+## Stress Quantification Using a Wearable Device for Daily Feedback to Improve Stress Management
+**ID:** `pub_lncs_2016_wearable_stress`
+**Year:** 2016
+**Publication:** In: Zheng X., Zeng D., Chen H., Leischow S. (eds) Smart Health. Lecture Notes in Computer Science, vol 9545. Springer, Cham.
+**Authors:** Garcia-Mancilla J.; Gonzalez V.M.
+**URL:** https://link.springer.com/chapter/10.1007/978-3-319-29175-8_19
+
+- Stress quantification approach using wearable psychophysiological signals for daily feedback.
+
+## Using augmented reality in urban context: Georeferenced system for business localization using Google Glass
+**ID:** `pub_ieee_2015_ar_google_glass`
+**Year:** 2015
+**Publication:** 2015 IEEE First International Smart Cities Conference (ISC2), Guadalajara, 2015, pp. 1-6. doi: 10.1109/ISC2.2015.7366157.
+**Authors:** L. Ferrer; J. Garcia-Mancilla; V. M. Gonzalez; S. Bermudez; P. Bleier; C. Prieto
+**URL:** https://ieeexplore.ieee.org/abstract/document/7366157
+
+- Augmented reality, georeferenced business localization system for Google Glass.
+
+## Searching for Information: Comparing Text vs. Visual Search with Newspapers Websites
+**ID:** `pub_lncs_2015_search_text_vs_visual`
+**Year:** 2015
+**Publication:** In: Yamamoto S. (eds) Human Interface and the Management of Information. Information and Knowledge Design. HIMI 2015. Lecture Notes in Computer Science, vol 9172. Springer, Cham.
+**Authors:** González V.M.; García J.; Muro B.
+**URL:** https://link.springer.com/chapter/10.1007/978-3-319-20612-7_17
+
+- Experiment comparing visual vs written search tasks and usability outcomes on newspaper websites.
+
+## Programas psicoeducativos para el autocontrol de la diabetes de corte cognitivo-conductual
+**ID:** `pub_book_2015_diabetes_psychoeducation`
+**Year:** 2015
+**Publication:** In G. Solano, A. Del Castillo, R. M. E. Guzman, M. Garcia, A. Romero (Ed.), Diabetes y Educacion, de la teoria a la practica (119-146). Ciudad de Mexico: Planeacion y Servicio Editorial S.A.
+**Authors:** Montes R.; Garcia-Mancilla J.
+**URL:**
+
+## Quality of Life (QoL) and self-efficacy on elderly with diabetes mellitus type 2: Study in the Mexican State of Colima
+**ID:** `pub_conf_2012_qol_diabetes`
+**Year:** 2012
+**Publication:** Rendez-Vous 2012, Thunder Bay, Canada, Octubre 2012.
+**Authors:** Garcia-Mancilla J.; Montes-Delgado R.; Santana-Mancilla P.
+**URL:**
+
+## Self-control techniques for the right management of diabetes mellitus type 2 (DM2) in adults
+**ID:** `pub_conf_2012_dm2_self_control`
+**Year:** 2012
+**Publication:** Rendez-Vous 2012, Thunder Bay, Canada, Octubre 2012.
+**Authors:** Montes R.; Garcia-Mancilla J.; Oropeza-Tena R.
+**URL:**
+
+## Análisis de contenidos sobre adultos mayores en las currículas de la Universidad de Colima
+**ID:** `pub_report_2011_curricula_older_adults`
+**Year:** 2011
+**Publication:** Universidad de Colima: Colima, México.
+**Authors:** Garcia-Mancilla, J.; Rodriguez-Morrill, E. I.; Velasco-Alcazar, C. C.
+**URL:**

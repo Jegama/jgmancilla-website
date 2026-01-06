@@ -1,0 +1,117 @@
+# Skills
+
+## Programming Languages
+
+- Python
+- R
+- SQL
+- JavaScript
+- TypeScript
+
+## Machine Learning
+
+- Machine learning
+- Deep learning
+- NLP
+- LLMs
+- RNNs
+- Transformers
+- Prompt engineering
+- Retrieval-Augmented Generation (RAG)
+- Embeddings
+- Vector search
+- Few-shot learning
+- Chain-of-thought
+- Multi-agent orchestration
+- Model evaluation pipelines
+- Observability and monitoring
+
+## Data Analysis
+
+- Statistical analysis
+- Data visualization
+- Predictive modeling
+- Trend analysis
+- Survey design and analysis
+- Sampling
+- Regression
+- ANOVA
+- T-tests
+- A/B testing
+- Longitudinal studies
+- Experimental design
+- Dashboarding
+- Large-scale log analysis
+- KPI definition
+- KPI development
+- Signal processing
+- Wearables
+
+## Databases
+
+- Vector Databases
+- Automation pipelines
+- Data processing
+- Workflow optimization
+
+## Research Methods (Quant, Qual, Mixed)
+
+- Mixed methods
+- User interviews
+- Diary studies
+- Ethnography
+- Usability testing
+- Thematic analysis
+- Triangulation
+- Insight synthesis
+- Remote unmoderated testing
+- First-click testing
+- Card sorting
+- Tree testing
+- Survey programming
+
+## Product & Delivery Methods
+
+- Agile (Kanban boards, sprints)
+- Design thinking
+- Lean UX
+- Cross-functional collaboration
+
+## Frameworks
+
+- FastAPI
+- LangChain
+- LangGraph
+- React
+- Next.js
+- TensorFlow
+- PyTorch
+- Scikit-learn
+
+## Languages
+
+- English (Fluent)
+- Spanish (Fluent)
+
+## Research Platforms & Tooling
+
+- UserTesting
+- Lookback
+- Optimal Workshop (First-click, card sorting, tree testing)
+- dscout
+- Qualtrics
+- SurveyMonkey
+- Medallia
+- Tableau
+- Jupyter
+- Git
+- VS Code
+- Google Analytics
+- Jira
+- Confluence
+
+## Design & Prototyping Tools
+
+- Figma
+- Sketch
+- Balsamiq
