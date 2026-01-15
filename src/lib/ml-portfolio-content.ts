@@ -105,6 +105,109 @@ export const mlPortfolioContent = {
       }
     },
     {
+      id: "ai-knowledge-assistant",
+      title: "AI Knowledge Assistant",
+      shortDescription:
+        "This project is a production-grade **Autonomous Agent** utilizing **LangGraph** for non-linear reasoning. It features a **Postgres-backed Semantic Memory** system and a custom **LLM Evaluation Dashboard** that benchmarks model performance against a rigorous 500+ question dataset. The system also employs an **Automated Entity Evaluator** to crawl and grade organization websites against compliance schemas. By moving from rigid pipelines to adaptive agents and implementing 'LLM-as-a-judge' metrics, the platform achieves high-fidelity domain adherence and effectively automates thousands of hours of manual review.",
+      dataAiHint: "parrot bird",
+      details: {
+        introduction:
+          "Mission: Demonstrate how Large Language Models can serve as rigorous domain experts. Now in Version 5.0, the platform has evolved from linear QA pipelines to a flexible **LangGraph Agent**. This autonomous system dynamically selects tools—retrieval APIs, vector search, or web browsing—to answer complex domain-specific inquiries. To ensure reliability, the system is backed by a custom **Evaluation Dashboard** that continuously measures performance gaps between top-tier models (OpenAI, Google, xAI) using an 'LLM-as-a-judge' framework.",
+        tools: [
+          {
+            name: "Autonomous Agent (LangGraph)",
+            points: [
+              "Replaced linear chains with a graph-based agent that loops, self-corrects, and routes queries to specialized tools (Vector Stores, External APIs, Search).",
+              "Utilizes GPT-5-mini with advanced prompt engineering to ensure high-fidelity adherence to source material."
+            ]
+          },
+          {
+            name: "LLM Evaluation Dashboard",
+            points: [
+              "Built a Next.js analytics suite to visualize model performance across 3 key vectors: Adherence to Compliance Standards, Tone/Sensitivity, and Reasoning Quality.",
+              "Runs automated regression tests on 500+ challenging domain questions to detect model drift or bias."
+            ]
+          },
+          {
+            name: "Parallelized Entity Classification",
+            points: [
+              "A sophisticated pipeline that crawls target websites (via Tavily) and triggers 6 parallel Gemini 2.5 Flash calls.",
+              "Evaluates entities against strict Zod schemas for 'Core Criteria', 'Secondary Attributes', and 'Red Flags'.",
+              "Classifies results into detailed status categories based on automated consensus, achieving >90% alignment with human expert labels."
+            ]
+          },
+          {
+            name: "Long-Term Memory",
+            points: [
+              "Implemented a Postgres-backed semantic memory store that persists user context and preference graphs across sessions."
+            ]
+          }
+        ],
+        goal: [
+          "Provide **hallucination-resistant, sourced answers** to complex domain questions.",
+          "**Quantify trustworthiness** through rigorous, automated benchmarking.",
+          "**Automate the auditing** of thousands of real-world entities against strict definition criteria."
+        ],
+        solutions: [
+          {
+            name: "Linear Pipeline → Autonomous Graph",
+            points: [
+              "Moved from a fixed chain to a recursive LangGraph agent, allowing the AI to 'plan' its retrieval strategy dynamically."
+            ]
+          },
+          {
+            name: "Hierarchical Compliance Framework",
+            points: [
+              "Defined a rigid 3-tier evaluation framework (Core, Secondary, Tertiary rules) to programmatically score model outputs for nuance and accuracy using 'LLM-as-a-judge'."
+            ]
+          },
+          {
+            name: "Parallelized Compliance Auditing",
+            points: [
+              "Solved the bottleneck of manual vetting by building an LLM ensemble that reads entire websites and extracts structured compliance data in seconds."
+            ]
+          },
+          {
+            name: "Semantic Persistence",
+            points: [
+              "Added a memory layer (`langgraph-checkpoint-postgres`) so the agent maintains context of user's historical inquiries and preferences."
+            ]
+          },
+          {
+            name: "Multi-Persona Architecture",
+            points: [
+              "Retained a prompt-injection layer that allows users to toggle 'expert personas' (representing different schools of thought) on the fly."
+            ]
+          }
+        ],
+        findings: [
+          "**Differentiation via Nuance:** While all models scored high (>4.9/5.0) on core domain knowledge and tone, complex scenarios requiring **nuanced alignment on sensitive, multi-perspective topics** proved to be the decisive differentiator, with GPT-5 Mini (4.79) narrowly edging out Grok 4.1 Fast (4.73).",
+          "**Impact of Instruction Tuning:** Custom domain-specific system prompts improved baseline performance for Gemini 2.5 Flash by ~12%, effectively closing the gap with the top performers.",
+          "**Classification Accuracy:** The Entity Evaluator's multi-model consensus correctly identified criteria misalignments in >90% of test cases compared to manual review."
+        ],
+        takeaways: [
+          {
+            name: "Evaluation is Feature #1",
+            points: [
+              "Building the Evaluation Dashboard *first* allowed for aggressive prompt iteration without fear of regression."
+            ]
+          },
+          {
+            name: "Agents > Chains",
+            points: [
+              "Rigid chains break when the user goes off-script; looping agents adapt and recover."
+            ]
+          },
+          {
+            name: "Memory Changes UX",
+            points: [
+              "Long-term memory transforms the product from a transactional 'search engine' into a contextual 'assistant'."
+            ]
+          }
+        ]
+      }
+    },
+    {
       id: "customer-support-bot",
       title: "Customer Support Bot",
       shortDescription:
@@ -132,96 +235,6 @@ export const mlPortfolioContent = {
           "Autonomous agents are effective in dealing with customer inquiries.",
           "A comprehensive indexing system and the use of embeddings are crucial for surfacing the most relevant information.",
           "This project demonstrated how AI can improve the customer experience and streamline support services."
-        ]
-      }
-    },
-    {
-      id: "ai-knowledge-assistant",
-      title: "AI Knowledge Assistant",
-      shortDescription:
-        "The AI Knowledge Assistant project, now in **version 4.0**, has been re-platformed to a production-grade Next.js/TypeScript stack with a LangChain-based multi-agent core. This evolution from a simple duet to a **'Council-of-Three' ensemble** uses a LangGraph state-machine for real-time streaming answers and offers seven switchable denominational 'voices.' These changes have reduced latency by ~40% and cut hallucinations by a third, enabling multilingual growth while keeping all features free. The new architecture features a **single RAG pipeline**, indexing a 900-book library nightly and using an autonomous agent for fetching relevant passages, resulting in a leaner, faster, and more theologically grounded system.",
-      dataAiHint: "parrot bird",
-      details: {
-        introduction:
-          "The AI Knowledge Assistant project continues its mission to merge centuries-old Reformed wisdom with cutting-edge AI. Version 4.0 moves from an early Streamlit proof-of-concept to a production-grade Next.js/TypeScript stack deployed at the edge, adds LangChain-based multi-agent orchestration, widens denominational coverage, and—true to your ministry credo—keeps every feature entirely free.",
-        tools: [
-          {
-            name: "Main Chat (v 4.0 Parrot)",
-            points: [
-              "Streaming real-time conversation powered by a LangGraph state machine and GPT-4o.",
-              "Seven “voices” you can toggle on the fly (Reformed Baptist default plus Presbyterian, Wesleyan, Lutheran, Anglican, Pentecostal/Charismatic, Non-Denominational Evangelical).",
-              "Chat history and user prefs stored with Prisma/PostgreSQL for persistence and analytics."
-            ]
-          },
-          {
-            name: "Quick QA – “Council of Three”",
-            points: [
-              "Four-stage pipeline: (1) question categorisation, (2) parallel answers from three specialised agents, (3) Calvin-style review, (4) synthesis of the final response.",
-              "Cuts hallucinations and flags off-topic queries."
-            ]
-          },
-          {
-            name: "LangGraph Orchestration",
-            points: [
-              "Autonomous agent graph refines long queries, chooses the right search tool (Bible, commentary, CCEL), and loops until no more tool calls are needed."
-            ]
-          },
-          {
-            name: "Public API End-points",
-            points: [
-              "'/api/parrot-qa' and '/api/parrot-chat' expose the QA pipeline and streaming chat for third-party apps."
-            ]
-          }
-        ],
-        goal: [
-          "Provides **faithful, Reformed-grounded** answers to biblical questions.",
-          "**Democratises access**—multilingual, device-agnostic, no paywall.",
-          "Continually enhance the AI\'s comprehension and response capabilities to foster a more profound exploration of Scriptures for users."
-        ],
-        solutions: [
-          {
-            name: "3.x → 4.0 Migration",
-            points: [
-              "Re-platformed to **Next.js 14** with Vercel Edge Functions (~40 % lower median latency).",
-              "Introduced Prisma/PlanetScale Postgres and secure auth."
-            ]
-          },
-          {
-            name: "Multi-Denomination Architecture",
-            points: [
-              "Inserts a denomination-specific prompt layer before every model call; falls back to Reformed Baptist for guests."
-            ]
-          },
-          {
-            name: "“Council of Three” Ensemble",
-            points: [
-              "Fine-tuned, mini, and reviewer models cooperate, then Calvin critiques and synthesises—reducing hallucinations by roughly one-third in internal blind tests."
-            ]
-          },
-          {
-            name: "LangGraph Workflow",
-            points: [
-              "Finite-state graph enforces at least one tool call, then conditionally loops until no further calls are required."
-            ]
-          },
-          {
-            name: "Observability & Telemetry",
-            points: [
-              "Every message, category, and answer stored; cron jobs surface suspect answers for human review and future RLHF."
-            ]
-          }
-        ],
-        findings: [
-          "**Latency:** p95 time-to-first-token fell from 4.3 s (Streamlit) to < 2 s after edge deployment (internal logs).",
-          "**Reduction in Hallucinations:** Multiple query engines significantly reduced inaccuracies, enhancing the reliability of responses.",
-          "**Enhanced User Experience:** The autonomous agent and innovative indexing algorithm provided quicker, more precise answers, enriching user interactions."
-        ],
-        takeaways: [
-          "**Prompt modularity scales**—a single code-path serves multiple traditions.",
-          "**Multi-agent ensembles tame hallucinations** without losing depth.",
-          "**Graph-based orchestration beats linear chains** once you add diverse tools.",
-          "**Persistent telemetry fuels RLHF** and product analytics.",
-          "**Edge streaming UX keeps users engaged,** which is crucial for theological study."
         ]
       }
     }

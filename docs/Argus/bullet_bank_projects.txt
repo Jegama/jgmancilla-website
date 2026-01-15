@@ -14,6 +14,11 @@
 
 - TTFT p95 4.3s to under 2s; about 33% hallucination reduction (internal).
 - Re-platformed to Next.js/TypeScript with LangGraph multi-agent 'Council of Three' ensemble.
+- Built a custom Next.js analytics suite for 'LLM-as-a-judge' benchmarking, running automated regression tests on a 500+ item dataset to track Adherence, Tone, and Reasoning.
+- Benchmarked GPT-5 Mini vs Grok 4.1 Fast; identified complex scenarios requiring nuanced alignment on sensitive topics as the decisive differentiator (4.79 vs 4.73).
+- Tuned Gemini 2.5 Flash system prompts to improve baseline performance by ~12%, closing the gap with top performers.
+- Engineered a parallelized entity classification pipeline (Tavily + 6x Gemini 2.5 Flash instances) to audit organizations against strict Zod compliance schemas.
+- Achieved >90% alignment with human expert labels for entity auditing while reducing costs to fractions of a cent per run using small, fast models.
 - Single RAG pipeline; nightly indexing of a 900-book library; edge streaming UX.
 - Added observability/telemetry and review loops to monitor answer quality and prioritize fixes.
 
@@ -35,6 +40,7 @@
 **ID:** `proj_quant_ux_scale`
 
 - Reduced open-ended analysis time from ~30h to <8h (~73% reduction) for a 500M+ MAU product.
+- Doubled survey analysis throughput without adding headcount, enabling the team to handle higher-volume roadmap validation.
 - 6-step GenAI pipeline: Embeddings, Council of Agents (Self-consistency), LLM-as-a-judge, Verifier-driven revisions, HITL, Few-shot curation.
 - Longitudinal study tracking model performance pre/post-launch via log analysis.
 - Standardized statistical validation (regressions/ANOVA/T-tests) adopted by the wider research team.
