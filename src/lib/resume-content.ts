@@ -10,7 +10,7 @@ export const resumeContent = {
     headline: "Experience",
     jobs: [
       {
-        title: "Senior Applied Scientist (Consultant)",
+        title: "Senior Applied Scientist",
         company: "Argomai",
         dates: "January 2025 - Present",
         responsibilities: [

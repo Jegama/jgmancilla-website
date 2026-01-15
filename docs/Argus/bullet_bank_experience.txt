@@ -7,11 +7,11 @@
 
 # Experience
 
-## Argomai - Senior Applied Scientist (Consultant)
+## Argomai - Senior Applied Scientist
 **Dates:** Jan 2025–Present
 **Scope:** Enterprise AI architecture, agents, RAG, governance
 **Founding context:** Founding team member
-**Title options:** Senior Applied Scientist (Consultant); Senior Quantitative UX Researcher; Senior User Experience Researcher; Senior AI Researcher; AI/ML Systems Architect
+**Title options:** Senior Applied Scientist; Senior Quantitative UX Researcher; Senior User Experience Researcher; Senior AI Researcher; AI/ML Systems Architect
 **Skills:** GenAI, RAG, LangGraph, Retrieval, VectorDB, Architecture, Orchestration, Prompting, Evaluation, Observability
 **ID:** `exp_argomai_2025`
 
