@@ -9,8 +9,8 @@
 - Reported end-to-end analysis effort reduced ~70%, with estimated ~50% resource savings.
 - Autonomous clustering for open-endeds: clusters responses, assigns category names, and drafts category descriptions (patent pending/in process).
 
-## Calvinist Parrot v4 (LangGraph, RAG)
-**ID:** `proj_calvinist_parrot_4`
+## AI Knowledge Assistant (LangGraph, RAG, Evaluation Systems)
+**ID:** `proj_ai_knowledge_assistant_4`
 
 - TTFT p95 4.3s to under 2s; about 33% hallucination reduction (internal).
 - Re-platformed to Next.js/TypeScript with LangGraph multi-agent 'Council of Three' ensemble.

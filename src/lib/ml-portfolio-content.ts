@@ -1,6 +1,6 @@
 export const mlPortfolioContent = {
   headline: "ML Portfolio",
-  intro: 'From a foundation in **quant UX and HCI**, I now focus on **applied ML/NLP**—designing evaluation-driven LLM systems that move from research question to **production impact**. Representative work includes the **Modular Survey Analysis System** (context-aware logic and **autonomous clustering** for open-ended responses), the **Research Librarian** (AI-powered indexing for research discovery), a **Customer Support Bot** (agentic retrieval over a support knowledge base using embeddings + generative responses), and **Calvinist Parrot 4.0** (LangGraph-based multi-agent "Council-of-Three," single-pipeline **RAG** over \~900 books; **\~40% latency reduction** and **\~⅓ fewer hallucinations**). Each project emphasizes **clear problem framing**, **replicable evaluation**, and **maintainable architectures**.',
+  intro: 'From a foundation in **quant UX and HCI**, I now focus on **applied ML/NLP**—designing evaluation-driven LLM systems that move from research question to **production impact**. Representative work includes the **Modular Survey Analysis System** (context-aware logic and **autonomous clustering** for open-ended responses), the **Research Librarian** (AI-powered indexing for research discovery), a **Customer Support Bot** (agentic retrieval over a support knowledge base using embeddings + generative responses), and **AI Knowledge Assistant 4.0** (LangGraph-based multi-agent "Council-of-Three," single-pipeline **RAG** over \~900 books; **\~40% latency reduction** and **\~⅓ fewer hallucinations**). Each project emphasizes **clear problem framing**, **replicable evaluation**, and **maintainable architectures**.',
   projects: [
     {
       id: "research-librarian",
@@ -10,7 +10,7 @@ export const mlPortfolioContent = {
       dataAiHint: "library books",
       details: {
         introduction:
-          "The Research Librarian project was a groundbreaking initiative to develop an AI-powered index for UX and CI research. By leveraging advanced AI techniques similar to the Calvinist Parrot project, the aim was to enhance internal accessibility and search capabilities. This tool was envisioned as a dynamic solution to deepen users' understanding and interactions with the company's research data.",
+          "The Research Librarian project was a groundbreaking initiative to develop an AI-powered index for UX and CI research. By leveraging advanced AI techniques similar to the AI Knowledge Assistant project, the aim was to enhance internal accessibility and search capabilities. This tool was envisioned as a dynamic solution to deepen users' understanding and interactions with the company's research data.",
         goal: [
           "Create an **AI-driven indexing system** that provides rapid, accurate, and insightful access to UX and CI research data.",
           "Continuously refine the AI's comprehension and search capabilities to allow deeper exploration of research data for internal users."
@@ -136,14 +136,14 @@ export const mlPortfolioContent = {
       }
     },
     {
-      id: "calvinist-parrot",
-      title: "Calvinist Parrot",
+      id: "ai-knowledge-assistant",
+      title: "AI Knowledge Assistant",
       shortDescription:
-        "The Calvinist Parrot project, now in **version 4.0**, has been re-platformed to a production-grade Next.js/TypeScript stack with a LangChain-based multi-agent core. This evolution from a simple duet to a **‘Council-of-Three’ ensemble** uses a LangGraph state-machine for real-time streaming answers and offers seven switchable denominational ‘voices.’ These changes have reduced latency by ~40% and cut hallucinations by a third, enabling multilingual growth while keeping all features free. The new architecture features a **single RAG pipeline**, indexing a 900-book library nightly and using an autonomous agent for fetching relevant passages, resulting in a leaner, faster, and more theologically grounded system.",
+        "The AI Knowledge Assistant project, now in **version 4.0**, has been re-platformed to a production-grade Next.js/TypeScript stack with a LangChain-based multi-agent core. This evolution from a simple duet to a **'Council-of-Three' ensemble** uses a LangGraph state-machine for real-time streaming answers and offers seven switchable denominational 'voices.' These changes have reduced latency by ~40% and cut hallucinations by a third, enabling multilingual growth while keeping all features free. The new architecture features a **single RAG pipeline**, indexing a 900-book library nightly and using an autonomous agent for fetching relevant passages, resulting in a leaner, faster, and more theologically grounded system.",
       dataAiHint: "parrot bird",
       details: {
         introduction:
-          "The Calvinist Parrot project continues its mission to merge centuries-old Reformed wisdom with cutting-edge AI. Version 4.0 moves from an early Streamlit proof-of-concept to a production-grade Next.js/TypeScript stack deployed at the edge, adds LangChain-based multi-agent orchestration, widens denominational coverage, and—true to your ministry credo—keeps every feature entirely free.",
+          "The AI Knowledge Assistant project continues its mission to merge centuries-old Reformed wisdom with cutting-edge AI. Version 4.0 moves from an early Streamlit proof-of-concept to a production-grade Next.js/TypeScript stack deployed at the edge, adds LangChain-based multi-agent orchestration, widens denominational coverage, and—true to your ministry credo—keeps every feature entirely free.",
         tools: [
           {
             name: "Main Chat (v 4.0 Parrot)",

@@ -17,7 +17,7 @@ Live site: https://www.jgmancilla.com/
 This site highlights a selection of my most significant projects and research, including:
 
 - **ML Portfolio**: Bridging user experience research and machine learning, my portfolio features user-centric models and solutions. Notable projects include:
-  - **Calvinist Parrot**: An advanced AI chatbot for exploring Reformed theology and biblical texts, featuring a multi-agent, multi-container architecture and a novel library indexing algorithm for the Christian Classics Ethereal Library (CCEL).
+  - **AI Knowledge Assistant**: A production-grade LangGraph-based multi-agent RAG system demonstrating evaluation-driven LLM architecture, featuring a Council-of-Three ensemble, ~40% latency reduction, ~33% fewer hallucinations, and a novel library indexing algorithm for knowledge-intensive applications.
   - **Modular Survey Analysis System**: A dynamic, modular system for survey data analysis, including a patent-pending autonomous clustering algorithm for open-ended responses, context-aware logic, and a logic parser for complex survey dependencies.
   - **Customer Support Bot**: An autonomous agent leveraging embeddings and LLMs to improve customer self-service and support efficiency, with comprehensive article indexing and AI-powered response generation.
 
