@@ -54,7 +54,7 @@ export const mlPortfolioContent = {
       id: "modular-survey-analysis",
       title: "Modular Survey Analysis System",
       shortDescription:
-        "Developed the main dashboard and reporting engine for a weekly sentiment survey, cutting report generation time from ~4h to <5m. The open-ended classifier I built here served as the **prototype and precursor** to the advanced GenAI system I later deployed at Meta.",
+        "This comprehensive system served as the central dashboard for a weekly sentiment survey, automating the reporting pipeline to cut generation time from ~4h to <5m. It featured **context-aware logic** to parse question interdependencies and an engine for **automated statistical summaries**, delivering significance testing and trend analysis alongside the raw data. The **open-ended classifier** I built for this project—using early NLP and clustering—proved to be a critical proof-of-concept, serving as the **prototype and precursor** to the advanced GenAI system I later developed at Meta. By handling dynamic question sets and ad-hoc inquiries, it bridged the gap between rapid tactical needs and long-term longitudinal tracking.",
       dataAiHint: "charts graph",
       details: {
         introduction:
