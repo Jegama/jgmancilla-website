@@ -3,6 +3,55 @@ export const researchPortfolioContent = {
   intro: 'From early psychophysiological driver studies to large‑scale ML‑assisted survey analytics and org‑level research operations, this portfolio highlights a **quantitative + mixed‑methods UX research practice** focused on **scalable insight pipelines, methodological rigor, and adoption-aware process design**. Each project is framed with the STAR model to surface decision context, execution leverage, and measurable impact.',
   projects: [
     {
+      id: "argomai-rag-architecture",
+      title: "Enterprise RAG & Evaluation Architecture",
+      shortDescription:
+        "Architected a RAG-based document classification system reducing processing time from ~90m to <5m; established evaluation governance and QA pipelines for enterprise GenAI adoption.",
+      details: {
+        situation: "An enterprise client faced unscalable manual data extraction workflows (taking ~90 mins per multipage document) and lacked a rigorous governance framework for adopting GenAI tools safely.",
+        task: "Design and implement a scalable retrieval (RAG) pipeline to automate classification and define proper evaluation protocols (NFRs, benchmarks) to de-risk deployment.",
+        actions: [
+          {
+            name: "RAG & Retrieval Pipelines",
+            points: [
+              "Built vector search and retrieval workflows to normalize free-text inputs and automate complex document classification."
+            ]
+          },
+          {
+            name: "Evaluation & Governance",
+            points: [
+              "Engineered a multilingual QA evaluation pipeline (Self-consistency → Critique → Refinement) and judge-centric audit layers.",
+              "Partnered with executives to translate business vision into technical roadmaps and defined 'decision checklists' for launch."
+            ]
+          },
+          {
+            name: "User Validation",
+            points: [
+              "Conducted generative interviews and created journey maps to ensure the GenAI platform architecture solved actual user friction points."
+            ]
+          }
+        ],
+        results: [
+          "Reduced document classification time from ~90m to <5m (>94% reduction).",
+          "Cut Project Manager reporting overhead from 6h/week to <1h.",
+          "Published openness/governance frameworks for GenAI survey analysis that were later peer-reviewed."
+        ],
+        technologies: [
+          "RAG (Retrieval-Augmented Generation)",
+          "Vector Databases",
+          "LangGraph",
+          "Python",
+          "Evaluation Pipelines",
+          "User Interviews"
+        ],
+        metrics: [
+          "Processing time: ~90m → <5m",
+          "Reporting overhead: 6h/wk → <1h/wk",
+          "Governance: Enterprise NFRs established"
+        ]
+      }
+    },
+    {
       id: "quant-uxr-scale",
       title: "Quant UX Research at Scale",
       shortDescription:

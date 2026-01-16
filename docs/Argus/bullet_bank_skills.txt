@@ -25,6 +25,9 @@
 - Multi-agent orchestration
 - Model evaluation pipelines
 - Observability and monitoring
+- AI Safety & Alignment
+- RLHF
+- Explainability (XAI)
 
 ## Data Analysis
 
@@ -32,6 +35,9 @@
 - Data visualization
 - Predictive modeling
 - Trend analysis
+- Cluster Analysis
+- Sentiment Analysis
+- Text Mining
 - Survey design and analysis
 - Sampling
 - Regression
@@ -69,6 +75,11 @@
 - Card sorting
 - Tree testing
 - Survey programming
+- Research Operations (ResearchOps)
+- Human Factors
+- Psychometrics
+- Cognitive Load Measurement
+- Accessibility (a11y) & Inclusive Design
 
 ## Product & Delivery Methods
 

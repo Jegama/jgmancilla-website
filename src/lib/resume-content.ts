@@ -63,7 +63,9 @@ export const resumeContent = {
           "Integrated user interaction and business metrics to drive a data-centric UX approach.",
           "Led bilingual collaboration across Mexico and U.S. teams to unify survey instruments and UX research standards.",
           "Designed and deployed surveys in Medallia and SurveyMonkey to quantify satisfaction, feature adoption, and pain points for mobile experiences.",
-          "Created Kanban-based research ops boards in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets."
+          "Created Kanban-based research ops boards in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets.",
+          "Executed contextual, in-store research on the returns journey (purchase to return) to connect digital workflows with physical service outcomes, identified friction points, and influenced roadmap priorities for member experience.",
+          "Ran in-store app usability testing with active shoppers to validate how mobile features supported real shopping tasks, synthesized findings with analytics and stakeholder input to guide iterative improvements."
         ],
       },
       {
@@ -153,7 +155,10 @@ export const resumeContent = {
           "Chain-of-thought",
           "Multi-agent orchestration",
           "Model evaluation pipelines",
-          "Observability and monitoring"
+          "Observability and monitoring",
+          "AI Safety & Alignment",
+          "RLHF",
+          "Explainability (XAI)"
         ],
       },
       {
@@ -163,6 +168,9 @@ export const resumeContent = {
           "Data visualization",
           "Predictive modeling",
           "Trend analysis",
+          "Cluster Analysis",
+          "Sentiment Analysis",
+          "Text Mining",
           "Survey design and analysis",
           "Sampling",
           "Regression",
@@ -198,7 +206,12 @@ export const resumeContent = {
           "First-click testing",
           "Card sorting",
           "Tree testing",
-          "Survey programming"
+          "Survey programming",
+          "Research Operations (ResearchOps)",
+          "Human Factors",
+          "Psychometrics",
+          "Cognitive Load Measurement",
+          "Accessibility (a11y) & Inclusive Design"
         ],
       },
       {

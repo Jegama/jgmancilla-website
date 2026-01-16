@@ -1,5 +1,14 @@
 # Projects
 
+## Enterprise RAG & Evaluation Architecture
+**ID:** `proj_argomai_rag`
+
+- Cut multipage doc classification from approximately 90m to under 5m via retrieval and automation.
+- Reduced PM reporting load from 6h/wk to under 1h via automated aggregation.
+- Designed enterprise architecture: domain models, service boundaries, and data governance for GenAI.
+- Built a multilingual QA evaluation pipeline: Self-consistency → Critique → Refinement.
+- Conducted generative user interviews to validate the platform's value proposition and roadmap.
+
 ## Modular Survey Analysis System
 **ID:** `proj_modular_survey`
 

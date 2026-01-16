@@ -3,53 +3,67 @@
 ### 1. Title and Summary
 
 - Replace the top title line in `resume_latex.txt` with a **JD-aligned title**, for example:
-  - `Staff User Researcher | Quant & Mixed Methods`
-  - `Senior Applied Scientist | Evaluation & Systems`
-  - `Senior Quant UX Researcher | ML-Enabled`
-- The **Professional Summary**:
-  - 4–5 lines max.
-  - Include **2–3 signature outcomes** with metrics (e.g., doc classification time from ~90m to under 5m, survey analysis from ~30h to under 8h, reporting from ~4h to under 5m, 500M+ MAU, 70M+ devices).
-  - Mention **bilingual English/Spanish** when relevant to the JD (global, LatAm, multilingual roles).
-  - Clarify seniority through scope (org-level impact, cross-functional leadership, systems designed), not through generic adjectives.
+  - `Staff User Researcher | Mixed Methods & Human-Centered AI`
+  - `Senior UX Researcher | Quantitative & Strategy`
+  - `Human-Centered AI Researcher | Mixed Methods`
+  - `Senior Applied Scientist | Evaluation & Systems` (for technical roles)
+- The **Professional Summary** (Pivot based on target role):
+  - **For UXR / HCAI Roles:** Focus on *research strategy, methodological breadth (Qual+Quant), and decision impact*. Frame the ML/AI skills as a "superpower" for scaling insights and evaluating complex systems, rather than just building them.
+    - Example hook: "Staff UX Researcher combining deep qualitative inquiry with quantitative rigor to drive product strategy..."
+  - **For Applied Scientist Roles:** Focus on *architecture, engineering systems, and automation*.
+  - **Common requirements:**
+    - 4–5 lines max.
+    - Include **2–3 signature outcomes** with metrics based on role focus:
+      - **System/Ops:** (doc classification time from ~90m to under 5m, survey analysis from ~30h to under 8h, reporting from ~4h to under 5m).
+      - **UXR/Strategy:** (informed hardware launch for 70M+ devices, roadmap strategy for 500M+ MAU, 90% stress replication in validation studies).
+    - Mention **bilingual English/Spanish** when relevant.
+    - Clarify seniority through scope (org-level impact, cross-functional leadership).
 
 ### 2. Technical Stack & Domains (Core Skills)
 
-Treat this as an ATS and recruiter-friendly “skills cluster” section:
+Treat this as an ATS and recruiter-friendly “skills cluster” section. **Order matters based on the role.**
 
-- Use 3–5 clusters, such as:
-  - **Quant UX Research** (survey design and analytics, experimentation, log analysis, KPI frameworks)
-  - **Mixed Methods** (interviews, diaries, ethnography, usability, triangulation)
-  - **ML/LLMs** (text classification, embeddings/vector search, clustering, RAG, evaluation/observability, human-in-the-loop)
-  - **Tooling** (Python, SQL, statistical tests, FastAPI, LangChain/LangGraph, CI/CD, Docker)
-  - **Domains & Scale (optional but recommended)**:
-    - Summarize domain and magnitude succinctly, for example:  
-      `Social / consumer media (500M+ MAU); TV/streaming (~70M devices); commerce; education; automotive / human factors`.
-    - Include this line when domain fit and scale are a differentiator.
-    - If vertical space is tight or the JD is very generalist, you may:
-      - Merge domain cues into bullets and summary, and
-      - Omit the explicit “Domains & Scale” line.
+- **For UXR Roles (Prioritize this order):**
+  1. **Mixed Methods:** (Interviews, ethnography, diary studies, usability, concept testing, personas, journey mapping).
+  2. **Quant UX Research:** (Survey design, large-scale log analysis, A/B testing, regression/ANOVA, metrics definition).
+  3. **Human-Centered AI:** (Model evaluation, trust calibration, RLHF, prompt engineering for research, hallucination auditing).
+  4. **Tooling & Scale:** (Python, SQL, R, Tableau, research repositories).
+  
+- **For Applied Scientist Roles (Prioritize this order):**
+  1. **ML/LLMs:** (RAG, vectors, agents, evaluation pipelines).
+  2. **Applied Research:** (Experimentation, stats, Python/SQL).
+  3. **Engineering:** (FastAPI, Docker, CI/CD).
 
-You may optionally annotate **YoE in parentheses** inside the skills section if the JD explicitly requires it (e.g., “LLMs/ML (4+ yrs)”), otherwise keep YoE internal.
+- **Domains & Scale (optional but recommended)**:
+  - Summarize domain and magnitude succinctly, for example:  
+    `Social / consumer media (500M+ MAU); TV/streaming (~70M devices); commerce; education; automotive / human factors`.
 
 ### 3. Work Experience (Bullet Policies)
 
 **Coverage rule (non-negotiable):**
 
 - Every employer/role in the work history must remain represented in the resume.
-- When tailoring, re-prioritize bullets and keywords rather than removing roles.
 
 **Evidence and truth rules:**
 
 - Never fabricate employers, titles, dates, or metrics.
-- Never invent numbers; only use metrics that can be grounded in the source files.
-- If a JD requires something that lacks evidence, mark it as **“no evidence in current record”** in the Recruiter Feedback, and propose a truthful adjacent proof or follow-up task (collect data, run a study, etc.).
+- Only use metrics grounded in the source files.
+
+**Bullet Selection Strategy (Role Pivot):**
+
+- **For UXR / HCAI Roles:**
+  - **Prioritize tags:** `UXR`, `QuantUXR`, `strategy`, `interviews`, `synthesis`, `triangulation`, `collaborative`.
+  - **Narrative:** Focus on how you *understood users*, *influenced roadmaps*, and *partnered with Design/Product*.
+  - **The AI/ML Angle:** Show how you used technical skills to *solve research problems* (e.g., "automated analysis to free up time for deep dive," "created eval piplelines to measure distinctively human qualities like trust").
+  - **Downweight:** Pure infrastructure/backend bullets unless they demonstrate "Research Ops at Scale."
+
+- **For Applied Scientist Roles:**
+  - **Prioritize tags:** `AppliedScientist`, `GenAI`, `architecture`, `automation`, `latency`, `engineering`.
+  - **Narrative:** Focus on *system performance, cost reduction, and capability enabling*.
 
 **YoE policy (internal only):**
+- Compute YoE using **non-overlapping date ranges**.
 
-- Compute YoE using **non-overlapping date ranges** for roles tagged with a given skill or domain.
-- Use YoE solely for internal checks and fit commentary, not as a printed “X years of experience” in the resume unless the JD explicitly demands it.
-
-**Bullet counts per role:**
 
 Use this default structure, consistent with `resume_latex.txt` `% WRITER` comments and current resume guidance:
 

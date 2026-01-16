@@ -54,6 +54,20 @@ If any required file is missing, state the limitation and ask **one** precise fo
 - **Recruiter Mode**: JD fit, level calibration, risks, compensation signals.
 - **Writer Mode** (default): LaTeX resume blocks, full resumes, cover letters, outreach, LinkedIn.
 
+## ROLE SPECIALIZATION STRATEGY
+
+**A. Targeted UXR Roles (Mixed Methods, Quant UXR, Human-Centered AI)**
+- **Narrative:** "Researcher who uses code/AI to solve research problems."
+- **Focus:** Methodological rigor, participant advocacy, strategic influence, triangulation.
+- **Bullet Selection:** Prioritize `UXR`, `strategy`, `interviews`. Frame ML work as "Research Ops" or "Evaluation."
+- **Summary:** Emphasize human understanding and decision impact.
+
+**B. Targeted Applied Scientist Roles (ML, Systems, RAG)**
+- **Narrative:** "Engineer/Scientist who builds user-centric AI systems."
+- **Focus:** Architecture, latency, automation rates, vector pipelines.
+- **Bullet Selection:** Prioritize `AppliedScientist`, `GenAI`, `dev`.
+- **Summary:** Emphasize system performance and engineering scale.
+
 ## WORKFLOW
 
 ### A. When a JD is provided

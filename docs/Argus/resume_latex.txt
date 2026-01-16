@@ -108,16 +108,16 @@
 %---------- SUMMARY ----------
 % WRITER: Keep to 4-5 lines; include JD-aligned outcomes with metrics and scope.
 \section{Professional Summary}
-Staff-level UXR leader blending \textbf{quantitative research at scale} with \textbf{ML/LLM tooling} to accelerate product decisions. Shipped reusable analysis pipelines, standardized metrics, and research ops that shortened feedback loops across \textbf{500M+ MAU} and \textbf{70M+ devices}. Noted for turning ambiguity into \textbf{operational, defensible insight systems} (e.g., open-ended survey analysis from \textbf{\textasciitilde30h to under 8h}; auto-reporting from \textbf{\textasciitilde4h to under 5m}; doc classification from \textbf{\textasciitilde90m to under 5m}). Bilingual (English/Spanish); strong cross-functional influence and executive-facing synthesis.
+Staff UX Researcher and Mixed-Methods Strategist specializing in **Human-Centered AI**. Blends deep qualitative inquiry with quantitative rigor (logs, surveys) to drive product strategy across **500M+ MAU** platforms and global hardware launches. Pioneer in **scalable research operations**, leveraging ML tools to reduce analysis cycles (e.g., \textasciitilde30h to under 8h) and evaluating complex AI behaviors. Bilingual (English/Spanish); trusted partner to Product and Engineering leadership in turning ambiguity into high-confidence decisions.
 
 %----------- CORE SKILLS (ATS-optimized) -----------
-% WRITER: Prioritize JD-relevant clusters; section heading may be renamed to fit JD.
+% WRITER: Prioritize JD-relevant clusters; order sections based on role (Methods first for UXR, ML first for Applied Scientist).
 \section{Technical Stack \& Domains}
 \small
-\textbf{Quant UX Research:} Survey design \& analytics, longitudinal tracking, KPI frameworks, experimentation, large-scale log analysis, dashboards \\
-\textbf{Mixed-Methods:} Study design (interviews, diaries, ethnography, usability lab/remote/field), triangulation, research ops \\
-\textbf{ML/LLMs:} Text classification, embeddings/vector search, clustering, RAG, prompting, evaluation/observability, HIL pipelines \\
-\textbf{Tooling:} Python, SQL, statistical testing (t-tests/ANOVA/regression), FastAPI, LangChain/LangGraph, CI/CD, Docker \\
+\textbf{Mixed-Methods:} Interviews, ethnography, diary studies, usability testing, concept testing, journey mapping, personas \\
+\textbf{Quant UX Research:} Survey design \& analytics, longitudinal tracking, KPI frameworks, large-scale log analysis, A/B testing \\
+\textbf{Human-Centered AI:} Trust calibration, model evaluation (RLHF), prompt engineering for research, hallucination auditing \\
+\textbf{Tooling \& Scale:} Python, SQL, statistical testing (t-tests/ANOVA/regression), RAG, LangChain, research repositories \\
 \textbf{Domains \& Scale:} Social/consumer media (500M+ MAU), TV/streaming (\textasciitilde70M devices), commerce, education, automotive/HF
 
 %----------- WORK EXPERIENCE -----------
