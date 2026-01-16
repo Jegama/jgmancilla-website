@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={cn("font-body antialiased flex flex-col min-h-screen", inter.variable)}>
+      <body className={cn("font-body antialiased flex flex-col min-h-screen", inter.variable)} suppressHydrationWarning>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header />
         <main className="flex-grow flex flex-col pt-10 sm:pt-20">{children}</main>
