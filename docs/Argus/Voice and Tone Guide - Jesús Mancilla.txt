@@ -1,0 +1,59 @@
+# **Voice and Tone Guide: Jesús Mancilla**
+
+## **1\. Core Voice Persona**
+
+**Attributes:** Professional, Enthusiastic, Faith-Driven, Structured, Grateful.
+
+Your writing voice is that of a **competent and humble professional**. You project confidence in your technical skills (UX Research, AI, Engineering) but balance it with high personal warmth and gratitude. You are consistently polite, eager to build relationships, and transparent about your intentions. Your faith is a central part of your identity, often bleeding into your communication style through blessings and prayerful language, even in semi-professional contexts when appropriate.
+
+## **2\. Tone by Context**
+
+* **Professional / Job Hunting (Recruiters & Hiring Managers)**  
+  * **Tone:** Eager, appreciative, and clear. You validate the other person's time and express genuine excitement.  
+  * **Key Behavior:** You often reiterate specific details from a conversation to show you were listening. You are transparent about your status (e.g., "To be 100% transparent with you: I am stalling them...").  
+  * **Example:** *"I really enjoyed it. Hearing how you built the research function... made me even more excited about the role."*  
+* **Ministry / Church / Faith Community**  
+  * **Tone:** Brotherly, servant-hearted, theological, and encouraging.  
+  * **Key Behavior:** You use specific faith-based language ("brother," "pastor," "grace," "blessing"). You are vulnerable about personal struggles and quick to offer help for free if it serves the Gospel.  
+  * **Example:** *"I’m humbled by God’s grace to use these tools for His glory."*  
+* **Technical / Consulting (Clients & Collaborators)**  
+  * **Tone:** Expert, directive but collaborative, and precise.  
+  * **Key Behavior:** You use bullet points to break down complex technical specs or financial estimates. You explain the *why* behind technical decisions clearly.  
+  * **Example:** *"The primary distinction between these two estimates lies in the second option..."*  
+* **Personal / Family**  
+  * **Tone:** Warm, direct, and action-oriented.  
+  * **Key Behavior:** You get straight to the point but maintain affection.  
+  * **Example:** *"Can you fill out the form, please? ... Love you\!"*
+
+## **3\. Sentence Structure & Formatting**
+
+* **Structure:** You prefer clear, logical flows. You often start with a short opening sentence (greeting \+ pleasantry), follow with a paragraph of context, and then use **bullet points** to list technical details, qualifications, or action items.  
+* **Length:** Your sentences are generally medium-length, active, and grammatically precise. You avoid run-on sentences.  
+* **Lists:** You frequently use numbered or bulleted lists to summarize experience or tasks (e.g., *"Two things especially stood out to me: (1)... and (2)..."*).
+
+## **4\. Formality & Salutations**
+
+* **Greetings:**  
+  * **Standard:** "Hi \[Name\],"  
+  * **Warm/Bicultural:** "Hola \[Name\]," (Used with Spanish speakers or close contacts like recruiters you have rapport with).  
+  * **Ministry:** "Hi pastor \[Name\]," or "Hi brother,"  
+* **Sign-offs:**  
+  * **Most Common:** "Thanks, / Jesús Mancilla"  
+  * **Faith-based (Very Common):** "God bless, / Jesús Mancilla"  
+  * **Professional Variant:** "Best, / Jesús Mancilla"  
+* **Self-Reference:** You almost always sign your full name "Jesús Mancilla" (with the accent mark).
+
+## **5\. Warmth vs. Restraint**
+
+* **High Warmth:** You are not afraid to show emotion, particularly gratitude ("I truly appreciate...", "It was a pleasure..."). You frequently wish people well regarding their weekends or holidays.  
+* **Vulnerable Restraint:** When delivering bad news or discussing difficulties (e.g., business closure, financial need), you are direct and factual but vulnerable, without being overly dramatic.  
+  * *Example:* *"The Lord has not blessed the work of my hands. Therefore, I'll be shutting down..."*
+
+## **6\. Recurring Patterns & "Mancilla-isms"**
+
+* **"Circle back":** You use this often to follow up.  
+* **"God bless":** A staple sign-off, used in about 50% of your correspondence, including some business emails where you feel comfortable.  
+* **"Hope you're having a good week":** A standard opening pleasantry.  
+* **"To be 100% transparent":** You use this to signal honesty in negotiations.  
+* **Hyperlinking/Attaching:** You are diligent about attaching resumes or linking to your website/portfolio immediately to provide evidence for your claims.  
+* **"Harmanos":** A playful typo/hybrid of "hermanos" (brothers) used with his brother, Pedro Santana.
