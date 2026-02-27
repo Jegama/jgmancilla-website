@@ -7,10 +7,10 @@ export const siteMetadata: Metadata = {
     default: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
     template: '%s | Jesús Mancilla'
   },
-  description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and NLP pipelines.',
+  description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation benchmark suites, human-in-the-loop scoring, and GenAI Quality Systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and LLM-as-a-judge pipelines.',
   openGraph: {
     title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
-    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and NLP pipelines.',
+    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation benchmark suites, human-in-the-loop scoring, and GenAI Quality Systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and LLM-as-a-judge pipelines.',
     url: 'https://www.jgmancilla.com/',
     siteName: 'Jesús Mancilla',
     locale: 'en_US',
@@ -27,7 +27,7 @@ export const siteMetadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
-    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation-driven systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and NLP pipelines.',
+    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation benchmark suites, human-in-the-loop scoring, and GenAI Quality Systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and LLM-as-a-judge pipelines.',
     images: ['/og-image.png']
   },
   icons: {
@@ -42,6 +42,7 @@ export const siteMetadata: Metadata = {
     'Jesús Mancilla Portfolio',
     'Jesús Mancilla Quantitative UX Researcher',
     'Jesús Mancilla Applied Scientist',
+    'Jesús Mancilla AI Researcher',
     'Jesús Mancilla UX Researcher',
     'Jesús Mancilla Quant UXR',
     'Jesús Mancilla Meta',

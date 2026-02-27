@@ -3,7 +3,8 @@ export const resumeContent = {
   summary: {
     headline: "Profile",
     paragraphs: [
-      "Senior **User Researcher** at the intersection of **Quantitative UX Research** and **Applied ML/LLMs**. I build evaluation-driven research and insight systems—survey classifiers, modular analysis pipelines, **vector search/RAG**, and AI-powered knowledge bases—that compress analysis and reporting from hours to minutes. Highlights: **reduced open-ended survey analysis from ~30h to under 8h**, **cut weekly survey reporting from ~4h to under 5m**, **shortened multipage document classification from ~90m to under 5m**, and **triangulated behavioral logs across 70M+ devices and a 500M+ MAU product**. Blend of peer‑reviewed research and industry impact at **Meta, Roku, Walmart,** and **Argomai**."
+      "Senior applied scientist and platform builder focused on **evaluation systems for AI-driven experiences**. I build offline benchmark suites, automated regression tests, and human-in-the-loop scoring loops (including **LLM-as-judge** and verifier-driven refinement) to support eval-driven development. Combining a strong **UX Research** foundation with **Applied ML/LLMs**, I ensure that generative AI solutions are rigorously validated for quality and user impact.",
+      "Track record of reliability and performance gains: **~33% hallucination reduction**, **p95 TTFT cut from 4.3s to <2s** (internal), reduced open-ended analysis from **~30h to under 8h**, and shrunk multipage document workflows from **~90m to under 5m**. Known as a strong cross-functional partner who ships reusable tooling, clear documentation, and drives adoption. Delivered measurable impact at **Meta, Roku, Walmart,** and **Argomai**."
     ]
   },
   experience: {
@@ -14,29 +15,29 @@ export const resumeContent = {
         company: "Argomai",
         dates: "January 2025 - Present",
         responsibilities: [
-          "Cut multipage doc classification from approximately 90m to under 5m via retrieval and automation, and reduced PM reporting from 6h/wk to under 1h.",
+          "Built and governed enterprise AI evaluation and deployment processes, defining review loops, monitoring expectations, and quality gates across client projects.",
+          "Authored and open-sourced a multilingual QA evaluation pipeline (self-consistency → critique → refinement) with judge-centric scoring and deterministic audit checks.",
+          "Designed reusable AI platform components (embeddings, prompt templates, orchestration SDK) and agent workflows to standardize evaluation and reuse across initiatives.",
+          "Cut multipage doc classification from ~90m to under 5m via retrieval automation, and reduced PM reporting from 6h/wk to under 1h via structured aggregation.",
           "Owned enterprise architecture across AI initiatives: domain models, service boundaries, data governance, and NFRs for scalable customer-facing products.",
-          "Partnered with executives to translate business vision into technical roadmaps, aligning GenAI/ML with objectives.",
-          "Led design/implementation of vector DBs, retrieval pipelines, reusable components, and autonomous LLM agents.",
-          "Deployed LLM‑powered survey analysis workflows cutting manual review time and error risk; standardized governance across clients; frameworks later peer‑reviewed.",
+          "Deployed LLM‑powered survey analysis workflows cutting manual review time and error risk; standardized governance frameworks later submitted for peer‑review.",
           "Conducted generative and evaluative user interviews for a new GenAI platform (screeners, protocols, synthesis) to validate value proposition and inform roadmap.",
-          "Translated research findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.",
-          "Owned selection and governance of AI/ML and research platforms, defining processes for evaluation, deployment, and monitoring across client projects.",
+          "Translated research findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches."
         ],
       },
       {
-        title: "Senior Quantitative User Experience Researcher",
+        title: "Senior Quantitative UX Researcher",
         company: "Meta",
         dates: "January 2024 - January 2025",
         responsibilities: [
-          "Engineered a 'Council of Agents' pipeline (Self-consistency, Chain-of-thought, Self-reflection, LLM-as-a-judge, Self-refine, Verifier-driven revisions) to classify open-ended feedback, reducing analysis time ~73%.",
-          "Designed a Human-in-the-loop (HITL) workflow where expert review created curated few-shot examples to continuously refine the model.",
-          "Conducted longitudinal research with bi-weekly surveys to track ML model performance pre- and post-launch, informing critical roadmap decisions.",
-          "Merged editor logs with survey outputs to triangulate user sentiment with actual behavior at 500M+ MAU scale.",
-          "Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests) that was adopted by the wider research team to streamline their own analysis.",
+          "Implemented evaluation pipeline patterns, including LLM-as-judge self-reflection and verifier-driven revisions, improving reliability of intermediate outputs for production research workflows.",
+          "Designed human-in-the-loop (HITL) expert review to refine outputs in natural language and curate few-shot examples, reducing analysis time ~73% (~30h to under 8h).",
+          "Engineered multi-agent sampling (self-consistency with chain-of-thought) to generate and score candidate outputs across tasks, enabling hill-climbing style iteration.",
+          "Ran pre- and post-launch monitoring using bi-weekly surveys and SQL-based log analysis to track model quality changes and guide roadmap decisions at 500M+ MAU scale.",
+          "Shipped a reusable Python analytics toolkit (regressions/ANOVA/T-tests) adopted widely by the research team to streamline their own statistical analyses.",
+          "Merged editor logs with survey outputs to triangulate user sentiment and validate predictive behavior models.",
           "Co-managed a global research panel and vendor partnerships to recruit participants worldwide for surveys and usability testing.",
-          "Queried internal data warehouses with SQL to join behavioral logs, survey responses, and classifier outputs for deeper diagnostics.",
-          "User impact: accelerated feedback loops; insights influenced roadmap prioritization."
+          "User impact: accelerated feedback loops significantly, turning open-ended insights into fast, data-backed roadmap prioritization."
         ],
       },
       {
@@ -44,28 +45,26 @@ export const resumeContent = {
         company: "Roku Inc.",
         dates: "January 2021 - November 2023",
         responsibilities: [
-          "Developed a Modular Survey Analysis System for a weekly sentiment survey, cutting report generation from ~4h to <5m.",
-          "Built an open-ended classifier prototype that served as the precursor to the advanced GenAI system later deployed at Meta.",
-          "Led quant/qual device research; analyzed behavioral logs from 70M+ devices to support usability testing on hardware remotes.",
-          "Built an AI-powered indexed database of Roku's UX and CI research to enhance org-wide searchability.",
-          "Executed research on Customer Support site and call center software; improved UX through data-driven methods.",
-          "Mentored junior researchers in survey design and behavioral data analysis; managed vendors, resource planning, and budget alignment.",
-          "Standardized research backlogs and documentation in Jira and Confluence to track studies, insights, and follow-ups across teams.",
-          "Developed user personas and journey maps combining 70M+ device logs with qual research to inform feature roadmaps and support flows."
+          "Built a modular survey analysis and reporting engine, cutting weekly report generation from ~4h to under 5m via automation and reusable logic.",
+          "Created an open-ended classifier prototype (NLP, clustering) that later informed the scaled system deployed at Meta.",
+          "Developed an AI-powered indexed research database enabling self-serve discovery and faster executive reporting across orgs.",
+          "Led quant/qual device research; analyzed behavioral logs from 70M+ devices using SQL to support usability testing and remote design.",
+          "Executed mixed-methods research on Customer Support sites and call center software, directly translating data into UX improvements.",
+          "Mentored junior researchers in survey design/analysis; managed vendors, resource planning, and multi-team budget alignment.",
+          "Ran remote unmoderated tests via UserTesting and conducted longitudinal diary studies via dscout to capture in-home device usage.",
+          "Applied Optimal Workshop for first-click, card sorting, and tree testing to validate information architecture."
         ],
       },
       {
         title: "Senior User Experience Researcher",
         company: "Walmart Global Tech",
-        dates: "August 2019 - Nov 2020",
+        dates: "August 2019 - November 2020",
         responsibilities: [
-          "Led analytics for Sam's Club mobile app in Tableau; established KPIs to guide enhancements.",
-          "Integrated user interaction and business metrics to drive a data-centric UX approach.",
-          "Led bilingual collaboration across Mexico and U.S. teams to unify survey instruments and UX research standards.",
-          "Designed and deployed surveys in Medallia and SurveyMonkey to quantify satisfaction, feature adoption, and pain points for mobile experiences.",
-          "Created Kanban-based research ops boards in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets.",
-          "Executed contextual, in-store research on the returns journey (purchase to return) to connect digital workflows with physical service outcomes, identified friction points, and influenced roadmap priorities for member experience.",
-          "Ran in-store app usability testing with active shoppers to validate how mobile features supported real shopping tasks, synthesized findings with analytics and stakeholder input to guide iterative improvements."
+          "Owned product analytics for Sam's Club mobile app, defining KPIs and Tableau dashboards linking behavioral and business metrics to feature decisions.",
+          "Standardized cross-team research operations using Jira and Confluence workflows to prioritize requests, track WIP, and improve delivery predictability.",
+          "Integrated user interaction data (Medallia, SurveyMonkey) with app analytics to drive a robust, data-centric UX approach.",
+          "Executed contextual, in-store research on the purchase-to-return journey to connect digital workflows with physical service outcomes.",
+          "Ran in-store app usability testing with active shoppers, synthesizing findings with engagement metrics to guide iterative feature enhancements."
         ],
       },
       {
@@ -73,9 +72,9 @@ export const resumeContent = {
         company: "Scrapworks Inc.",
         dates: "September 2017 - August 2019",
         responsibilities: [
-          "Delivered deep learning forecasts for commodities futures; reduced prediction error by 60%.",
-          "Initiated an NLP-based merchandise classifier; contributed to a patent application.",
-          "Built an interactive dashboard for 20 years of sales data; supported 30% sales growth."
+          "Delivered deep learning forecasting for commodities futures, reducing prediction error by 60% and improving trader decision support.",
+          "Initiated an NLP-based merchandise classifier, building end-to-end data pipelines that supported a successful patent application.",
+          "Constructed interactive dashboards spanning 20 years of sales data, identifying trends that supported 30% sales growth."
         ],
       },
       {
@@ -119,14 +118,6 @@ export const resumeContent = {
         responsibilities: [
           "Developed a visualization technique to classify 2M+ tweets into new depression-related categories using NLP/ML.",
           "Co-authored peer-reviewed study on negative sentiment classification in at-risk populations; combined human-in-the-loop labeling with ML to establish evaluation baselines for clinical signal detection."
-        ],
-      },
-      {
-        title: "Health Psychology Researcher",
-        company: "University of Colima",
-        dates: "2009 - 2014",
-        responsibilities: [
-          "Developed and assessed a psychoeducational program for adults with type 2 diabetes; improved glucose levels in 80% of patients."
         ],
       },
     ],
@@ -189,10 +180,15 @@ export const resumeContent = {
       },
       {
         name: "Databases",
-        skills: ["Vector Databases", "Automation pipelines", "Data processing", "Workflow optimization"],
+        skills: [
+          "Vector Databases",
+          "Automation pipelines",
+          "Data processing",
+          "Workflow optimization"
+        ],
       },
       {
-        name: "UX Research Methods",
+        name: "Research Methods (Quant, Qual, Mixed)",
         skills: [
           "Mixed methods",
           "User interviews",
@@ -221,11 +217,20 @@ export const resumeContent = {
           "Design thinking",
           "Lean UX",
           "Cross-functional collaboration"
-        ]
+        ],
       },
       {
         name: "Frameworks",
-        skills: ["FastAPI", "LangChain", "LangGraph", "React", "Next.js", "TensorFlow", "PyTorch", "Scikit-learn"],
+        skills: [
+          "FastAPI",
+          "LangChain",
+          "LangGraph",
+          "React",
+          "Next.js",
+          "TensorFlow",
+          "PyTorch",
+          "Scikit-learn"
+        ],
       },
       {
         name: "Research Platforms & Tooling",
@@ -244,7 +249,7 @@ export const resumeContent = {
           "Google Analytics",
           "Jira",
           "Confluence"
-        ]
+        ],
       },
       {
         name: "Design & Prototyping Tools",
@@ -252,11 +257,11 @@ export const resumeContent = {
           "Figma",
           "Sketch",
           "Balsamiq"
-        ]
+        ],
       },
       {
         name: "Languages",
-        skills: ["English (Fluent)", "Spanish (Fluent)"]
+        skills: ["English (Fluent)", "Spanish (Fluent)"],
       },
     ],
   },
