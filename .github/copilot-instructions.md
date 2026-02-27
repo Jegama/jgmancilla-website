@@ -19,7 +19,7 @@ AI flow (single-pass, no RAG)
 1) Client `AIChat` collects serialized content via getters and POSTs to `/api/chat` with `{ question, resume, mlPortfolio, researchPortfolio, researchPapers }`.
 2) API `src/app/api/chat/route.ts` validates fields, then streams chunks from `answerQuestionsAboutMeStream` as `text/plain`.
 3) Flow `src/ai/flows/answer-questions-about-me.ts` builds one composite prompt and yields text via `generateGeminiContentStream()`.
-4) Model client `src/ai/google-genai.ts` wraps `@google/genai` with `model: "gemini-2.5-flash-lite-preview-06-17"`; hard-fails if `GEMINI_API_KEY` is missing.
+4) Model client `src/ai/google-genai.ts` wraps `@google/genai` with `model: "gemini-3-flash-preview"`; hard-fails if `GEMINI_API_KEY` is missing.
 5) UI `src/components/home/ai-chat.tsx` inserts an optimistic bot message and incrementally replaces its content as chunks arrive.
 
 Conventions that matter

@@ -20,7 +20,7 @@ import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
 
 const MESSAGES_STORAGE_KEY = 'ai-chat-messages';
 const MESSAGES_META_KEY = 'ai-chat-messages-meta';
-const MESSAGES_TTL_MS = 60 * 24 * 60 * 60 * 1000;
+const MESSAGES_TTL_MS = 60 * 24 * 60 * 60 * 1000; // 60 days in milliseconds
 
 type StoredMetadata = {
   version: string;

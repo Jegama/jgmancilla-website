@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, ThinkingLevel } from "@google/genai";
 
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) {
@@ -10,15 +10,17 @@ const ai = new GoogleGenAI({ apiKey: API_KEY });
 /**
  * Streams content from Gemini using the generateContentStream API.
  * Returns an async generator yielding text chunks as they are produced.
- * Usage example:
- *   for await (const chunk of generateGeminiContentStream(prompt)) {
- *     console.log(chunk);
- *   }
  */
 export async function* generateGeminiContentStream(prompt: string): AsyncGenerator<string, void, unknown> {
   const stream = await ai.models.generateContentStream({
-    model: "gemini-2.5-flash-lite-preview-09-2025",
+    model: "gemini-3-flash-preview",
     contents: prompt,
+    config: {
+      thinkingConfig: {
+        thinkingLevel: ThinkingLevel.LOW,
+      }
+    },
+
   });
   for await (const chunk of stream) {
     if (chunk.text) {
