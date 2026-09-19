@@ -4,13 +4,13 @@ import type { Metadata } from 'next';
 export const siteMetadata: Metadata = {
   metadataBase: new URL('https://www.jgmancilla.com/'),
   title: {
-    default: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
+    default: 'Jesús Mancilla — Lead AI Developer & Applied Scientist',
     template: '%s | Jesús Mancilla'
   },
-  description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation benchmark suites, human-in-the-loop scoring, and GenAI Quality Systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and LLM-as-a-judge pipelines.',
+  description: 'Lead AI Developer and applied scientist (ex-Meta, Roku). I own production AI systems end to end — autonomous pricing engines, spatial ML, RAG and multi-agent orchestration — with the evaluation rigour of a quantitative UX research background. Interact with my AI agent to explore my work.',
   openGraph: {
-    title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
-    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation benchmark suites, human-in-the-loop scoring, and GenAI Quality Systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and LLM-as-a-judge pipelines.',
+    title: 'Jesús Mancilla — Lead AI Developer & Applied Scientist',
+    description: 'Lead AI Developer and applied scientist (ex-Meta, Roku). I own production AI systems end to end — autonomous pricing engines, spatial ML, RAG and multi-agent orchestration — with the evaluation rigour of a quantitative UX research background. Interact with my AI agent to explore my work.',
     url: 'https://www.jgmancilla.com/',
     siteName: 'Jesús Mancilla',
     locale: 'en_US',
@@ -20,14 +20,14 @@ export const siteMetadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher'
+        alt: 'Jesús Mancilla — Lead AI Developer & Applied Scientist'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jesús Mancilla — Senior Applied Scientist & Quantitative UX Researcher',
-    description: 'Senior Applied Scientist & Quantitative UX Researcher (ex-Meta, Roku). Bridging HCI and AI to build evaluation benchmark suites, human-in-the-loop scoring, and GenAI Quality Systems. Interact with my AI agent to explore my work in RAG, Multi-Agent Orchestration, and LLM-as-a-judge pipelines.',
+    title: 'Jesús Mancilla — Lead AI Developer & Applied Scientist',
+    description: 'Lead AI Developer and applied scientist (ex-Meta, Roku). I own production AI systems end to end — autonomous pricing engines, spatial ML, RAG and multi-agent orchestration — with the evaluation rigour of a quantitative UX research background. Interact with my AI agent to explore my work.',
     images: ['/og-image.png']
   },
   icons: {
@@ -37,16 +37,23 @@ export const siteMetadata: Metadata = {
     'Jesús Mancilla',
     'Jesus Mancilla',
     'Jesus Garcia-Mancilla',
+    'Jesús Garcia-Mancilla',
     'Jesus Garcia Mancilla',
     'Jesús Garcia Mancilla',
-    'Jesús Mancilla Portfolio',
-    'Jesús Mancilla Quantitative UX Researcher',
-    'Jesús Mancilla Applied Scientist',
-    'Jesús Mancilla AI Researcher',
-    'Jesús Mancilla UX Researcher',
-    'Jesús Mancilla Quant UXR',
-    'Jesús Mancilla Meta',
-    'Jesús Mancilla Roku'
+    'Jesus Mancilla Portfolio',
+    'Jesus Mancilla Quantitative UX Researcher',
+    'Jesus Mancilla Applied Scientist',
+    'Jesus Mancilla AI Researcher',
+    'Jesus Mancilla UX Researcher',
+    'Jesus Mancilla Quant UXR',
+    'Jesus Mancilla Meta',
+    'Jesus Mancilla Roku',
+    'Jesus Mancilla AnyTickets',
+    'Jesus Mancilla SI Tickets',
+    'Jesus Mancilla Lead AI Developer',
+    'Jesus Mancilla AI Developer',
+    'Jesus Mancilla Applied ML',
+    'Jesus Mancilla Pricing Systems'
   ],
   robots: { index: true, follow: true }
 };

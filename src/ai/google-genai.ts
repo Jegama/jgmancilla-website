@@ -13,7 +13,7 @@ const ai = new GoogleGenAI({ apiKey: API_KEY });
  */
 export async function* generateGeminiContentStream(prompt: string): AsyncGenerator<string, void, unknown> {
   const stream = await ai.models.generateContentStream({
-    model: "gemini-3-flash-preview",
+    model: "gemini-3.5-flash-lite",
     contents: prompt,
     config: {
       thinkingConfig: {

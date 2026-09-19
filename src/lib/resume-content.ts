@@ -1,19 +1,64 @@
+export type ExperienceRole = {
+  /** Title held during this stretch. */
+  title: string;
+  /** Date range for this specific title, e.g. "September 2026 - Present". */
+  dates: string;
+};
+
+export type ExperienceJob = {
+  /** Current (or most senior) title at this employer. Used when `roles` is absent. */
+  title: string;
+  company: string;
+  /** Full tenure at the employer, across every role held. */
+  dates: string;
+  responsibilities: string[];
+  /**
+   * Role history, newest first. Present only when more than one title was held
+   * at the same employer. When set, the UI renders LinkedIn-style nested roles
+   * and `title`/`dates` are NOT shown as the card heading, so the card never
+   * implies the current title was held for the whole tenure.
+   */
+  roles?: ExperienceRole[];
+};
+
 export const resumeContent = {
   downloadButtonLabel: "Download Resume",
   summary: {
     headline: "Profile",
     paragraphs: [
-      "Senior applied scientist and platform builder focused on **evaluation systems for AI-driven experiences**. I build offline benchmark suites, automated regression tests, and human-in-the-loop scoring loops (including **LLM-as-judge** and verifier-driven refinement) to support eval-driven development. Combining a strong **UX Research** foundation with **Applied ML/LLMs**, I ensure that generative AI solutions are rigorously validated for quality and user impact.",
-      "Track record of reliability and performance gains: **~33% hallucination reduction**, **p95 TTFT cut from 4.3s to <2s** (internal), reduced open-ended analysis from **~30h to under 8h**, and shrunk multipage document workflows from **~90m to under 5m**. Known as a strong cross-functional partner who ships reusable tooling, clear documentation, and drives adoption. Delivered measurable impact at **Meta, Roku, Walmart,** and **Argomai**."
+      "**Lead AI Developer** and applied scientist who owns production AI systems end to end. I build the engine, the evaluation harness and the release path: offline benchmark suites, automated regression tests, and human-in-the-loop scoring loops (including **LLM-as-judge** and verifier-driven refinement), applied to systems that make commercial decisions in production rather than to research tooling alone.",
+      "At **AnyTickets** I own an autonomous pricing platform — comp modeling, demand curves, guardrails and the public APIs. In a controlled A/B against the manual pricing baseline on split inventory from the same event, it reached **higher sell-through (34.8% vs 30.2%)** and **price realization (42.8% vs 34.5%)** while **narrowing margin loss from −7.7% to −0.7%**, at comparable total revenue. I rebuilt the company\'s canonical event catalog (**~222.5k events ingested hourly**) and took automated venue seat-map ingestion from **~5% to ~95% coverage** with mirror accuracy from **1% to 94%**.",
+      "Earlier track record of reliability and performance gains: **~33% hallucination reduction**, **p95 TTFT cut from 4.3s to <2s** (internal), reduced open-ended analysis from **~30h to under 8h**, and shrunk multipage document workflows from **~90m to under 5m**. Delivered measurable impact at **Meta, Roku, Walmart,** and **Argomai**. Known as a strong cross-functional partner who ships reusable tooling, clear documentation, and drives adoption."
     ]
   },
   experience: {
     headline: "Experience",
     jobs: [
       {
+        title: "Lead AI Developer",
+        company: "AnyTickets",
+        dates: "March 2026 - Present",
+        roles: [
+          { title: "Lead AI Developer", dates: "September 2026 - Present" },
+          { title: "Senior AI Developer", dates: "March 2026 - September 2026" },
+        ],
+        responsibilities: [
+          "Own the backend engine, pricing algorithm and public APIs for an autonomous ticket-pricing platform; in a controlled A/B against the manual pricing baseline on split inventory from one event, the model reached 34.8% sell-through vs 30.2% and 42.8% price realization vs 34.5%, and narrowed net margin loss from −7.7% to −0.7% on comparable revenue.",
+          "Shipped a suggested-price model with a fixed -13%/+15% band back-tested against 140,000 prior-season transactions covering 80-90% of sales, with guardrails (step-down cuts, hard and dynamic floors, spike detection) and a two-cron repricing architecture.",
+          "Rebuilt the company's canonical event catalog from scratch over two months - dedup/matching engine, ELT sync job, admin monitoring UI and a read-only public API - ingesting ~222.5k events hourly and staging ~144k cross-marketplace event mappings.",
+          "Built a polygon-geometry system automating venue seat-map ingestion (levels, verticals, horizontals, neighbours, mirrors), lifting automated coverage from ~5% to ~95% and mirror accuracy from 1% to 94%; hand-built the ~696-section golden set and the evaluation harness that scores the algorithm against it.",
+          "Applied research methodology to production ML: found that ~80% of the model's comparable inputs were the company's own listings (circular pricing), that only 12-15% of available comparables sat where sales actually occurred, and that the assumed normal distribution was empirically wrong - each finding redirected the algorithm.",
+          "Stood up QA and UAT environments from nothing in eight days on top of a full feature load; designed and published the weekly release train (QA to UAT to production) and hold sole production-release authority for the platform.",
+          "Remediated pre-existing API security exposure where unsecured internal endpoints permitted production-database writes to anyone holding the URL, completing the pass before the first external consumers came online.",
+          "Run weekly 1:1s with three engineers and own the hiring loop end to end (rubric design, scoring, executive brief, onboarding); set team policy including an 8-story-point ticket ceiling and a 5,000-line PR split rule.",
+          "Established the team's agentic-engineering practice: a nested CLAUDE.md context architecture with CI-enforced file-size caps and a multi-model adversarial review loop (Claude authoring, Copilot/Cursor/Bugbot as independent critics), now taught to engineering teams outside the org.",
+          "Designed the rollout safety model for autonomous pricing: a global kill switch requiring an explicit typed confirmation to arm, per-event defaults-off, and full attribution logging on every price and settings change."
+        ],
+      },
+      {
         title: "Senior Applied Scientist",
         company: "Argomai",
-        dates: "January 2025 - Present",
+        dates: "January 2025 - March 2026",
         responsibilities: [
           "Built and governed enterprise AI evaluation and deployment processes, defining review loops, monitoring expectations, and quality gates across client projects.",
           "Authored and open-sourced a multilingual QA evaluation pipeline (self-consistency → critique → refinement) with judge-centric scoring and deterministic audit checks.",
@@ -44,6 +89,10 @@ export const resumeContent = {
         title: "Senior User Experience Researcher",
         company: "Roku Inc.",
         dates: "January 2021 - November 2023",
+        roles: [
+          { title: "Senior User Experience Researcher", dates: "July 2022 - November 2023" },
+          { title: "User Experience Researcher", dates: "January 2021 - July 2022" },
+        ],
         responsibilities: [
           "Built a modular survey analysis and reporting engine, cutting weekly report generation from ~4h to under 5m via automation and reusable logic.",
           "Created an open-ended classifier prototype (NLP, clustering) that later informed the scaled system deployed at Meta.",
@@ -120,7 +169,7 @@ export const resumeContent = {
           "Co-authored peer-reviewed study on negative sentiment classification in at-risk populations; combined human-in-the-loop labeling with ML to establish evaluation baselines for clinical signal detection."
         ],
       },
-    ],
+    ] as ExperienceJob[],
   },
   skills: {
     headline: "Skills",
@@ -149,7 +198,12 @@ export const resumeContent = {
           "Observability and monitoring",
           "AI Safety & Alignment",
           "RLHF",
-          "Explainability (XAI)"
+          "Explainability (XAI)",
+          "Agentic engineering",
+          "Spatial & geometry algorithms",
+          "Demand modeling & decay curves",
+          "Golden-set evaluation harnesses",
+          "Production ML systems"
         ],
       },
       {
@@ -179,12 +233,45 @@ export const resumeContent = {
         ],
       },
       {
-        name: "Databases",
+        name: "Databases & Data Engineering",
         skills: [
+          "PostgreSQL",
+          "MSSQL / T-SQL",
+          "Stored procedures",
           "Vector Databases",
+          "ELT pipelines",
+          "Schema migration",
           "Automation pipelines",
           "Data processing",
+          "Data integrity auditing",
           "Workflow optimization"
+        ],
+      },
+      {
+        name: "Cloud & Platform Engineering",
+        skills: [
+          "AWS (ECS, SQS, SNS, Lambda, RDS)",
+          "Terraform",
+          "Docker",
+          "CI/CD (GitHub Actions)",
+          "Keycloak / Auth0",
+          "Datadog",
+          "API design & documentation",
+          "Release engineering",
+          "QA / UAT environment setup",
+          "Application security remediation"
+        ],
+      },
+      {
+        name: "Engineering Leadership",
+        skills: [
+          "Technical team leadership",
+          "Hiring loop & rubric design",
+          "1:1s and mentorship",
+          "Code review standards",
+          "Technical roadmapping",
+          "Stakeholder & executive communication",
+          "Agile delivery (Kanban, release trains)"
         ],
       },
       {
@@ -248,7 +335,10 @@ export const resumeContent = {
           "VS Code",
           "Google Analytics",
           "Jira",
-          "Confluence"
+          "Confluence",
+          "Claude Code",
+          "GitHub Copilot",
+          "Cursor"
         ],
       },
       {
@@ -286,7 +376,14 @@ export const getResumeTextForAI = (): string => {
   let text = `Resume of Jesús Mancilla\n\n`;
   text += `EXPERIENCE:\n`;
   resumeContent.experience.jobs.forEach(job => {
-    text += `${job.title} at ${job.company} (${job.dates})\n`;
+    if (job.roles && job.roles.length > 0) {
+      // Multiple titles at one employer: spell out each title's own date range so
+      // the assistant never reports the current title as spanning the full tenure.
+      text += `${job.company} (${job.dates})\n`;
+      job.roles.forEach(role => text += `  ${role.title} (${role.dates})\n`);
+    } else {
+      text += `${job.title} at ${job.company} (${job.dates})\n`;
+    }
     job.responsibilities.forEach(resp => text += `- ${resp}\n`);
     text += '\n';
   });

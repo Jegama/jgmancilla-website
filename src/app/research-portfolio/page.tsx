@@ -10,7 +10,7 @@ export default function ResearchPortfolioPage() {
       </h1>
       {researchPortfolioContent.intro && (
         <div className="mb-12">
-          <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border w-full">
+          <div className="bg-card rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-border w-full">
             <div className="p-8 space-y-4 text-foreground/90 leading-relaxed text-lg">
               <MarkdownRenderer content={researchPortfolioContent.intro} />
             </div>

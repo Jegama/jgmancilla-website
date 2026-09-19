@@ -253,10 +253,10 @@ export function AIChat() {
             <p className="text-sm text-muted-foreground">Ask a question about my work</p>
           </div>
           <Button
-            variant="outline"
+            variant="secondary"
             size="sm"
             onClick={clearMessages}
-            className="text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
+            className="text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
             aria-label="Clear chat"
           >
             Clear chat
