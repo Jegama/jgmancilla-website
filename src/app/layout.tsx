@@ -22,7 +22,7 @@ export default function RootLayout({
     "@type": "Person",
     name: personalDetails.name,
     url: "https://www.jgmancilla.com/",
-    jobTitle: "Senior Applied Scientist & Quantitative UX Researcher",
+    jobTitle: personalDetails.title,
     sameAs: [personalDetails.linkedInUrl, personalDetails.githubUrl],
   };
 

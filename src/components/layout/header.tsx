@@ -5,7 +5,8 @@ import { NavLink } from './nav-link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, Brain } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useIsHydrated } from '@/hooks/use-is-hydrated';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -17,12 +18,7 @@ const navItems = [
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
+  const isMounted = useIsHydrated();
 
   if (!isMounted) {
     return (

@@ -40,11 +40,11 @@ export function ResearchProjectSection({ id, title, shortDescription, details }:
       <CardFooter>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline" className="w-full group hover:bg-accent hover:text-accent-foreground transition-colors duration-300">
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-accent transition-colors duration-200">
               Learn More
             </Button>
           </DialogTrigger>
-          <DialogContent className="w-[90vw] max-w-6xl bg-background text-foreground p-0 rounded-lg">
+          <DialogContent className="w-[90vw] max-w-6xl bg-popover text-popover-foreground p-0 rounded-xl">
             <DialogHeader className="p-6 pb-4 border-b">
               <DialogTitle className="text-2xl font-headline text-primary">{title}</DialogTitle>
             </DialogHeader>
@@ -101,7 +101,7 @@ export function ResearchProjectSection({ id, title, shortDescription, details }:
                   <h3 className="font-semibold text-lg text-primary mb-1">Technologies</h3>
                   <div className="flex flex-wrap gap-2">
                     {d.technologies.map((tech: string, index: number) => (
-                      <span key={index} className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-full shadow-sm">{tech}</span>
+                      <span key={index} className="px-2.5 py-1 bg-secondary text-secondary-foreground text-xs rounded-full">{tech}</span>
                     ))}
                   </div>
                 </section>

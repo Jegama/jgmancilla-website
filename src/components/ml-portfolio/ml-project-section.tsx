@@ -44,11 +44,11 @@ export function MLProjectSection({ id, title, shortDescription, details }: MLPro
       <CardFooter>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline" className="w-full group hover:bg-accent hover:text-accent-foreground transition-colors duration-300">
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-accent transition-colors duration-200">
               Learn More
             </Button>
           </DialogTrigger>
-          <DialogContent className="w-[90vw] max-w-6xl bg-background text-foreground p-0 rounded-lg">
+          <DialogContent className="w-[90vw] max-w-6xl bg-popover text-popover-foreground p-0 rounded-xl">
             <DialogHeader className="p-6 pb-4 border-b">
               <DialogTitle className="text-2xl font-headline text-primary">{title}</DialogTitle>
             </DialogHeader>

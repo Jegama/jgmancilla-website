@@ -8,74 +8,91 @@ body {
 
 @layer base {
   :root {
-    --background: 210 33% 96%; /* #F0F4F8 Light Gray */
-    --foreground: 210 29% 24%; /* #2C3E50 Dark Blue */
-    --card: 210 33% 96%;
-    --card-foreground: 210 29% 24%;
-    --popover: 210 33% 96%;
-    --popover-foreground: 210 29% 24%;
-    --primary: 210 29% 24%; /* #2C3E50 Dark Blue */
-    --primary-foreground: 0 0% 98%; /* White for contrast on dark blue */
-    --secondary: 210 10% 85%; /* Lighter gray for secondary elements */
-    --secondary-foreground: 210 29% 24%;
-    --muted: 210 10% 85%;
-    --muted-foreground: 210 10% 45%;
-    --accent: 204 69% 53%; /* #3498DB Teal */
-    --accent-foreground: 0 0% 98%; /* White for contrast on teal */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 210 10% 80%; /* Slightly darker border */
-    --input: 210 10% 90%;
-    --ring: 204 69% 53%; /* Teal for focus rings */
-    --chart-1: 12 76% 61%;
+    /* Surfaces: near-neutral canvas, white cards. Separation comes from
+       elevation (shadow) + whitespace, NOT from heavy outlines. Saturation is
+       deliberately low (14-20%) so the page reads neutral rather than blue. */
+    --background: 220 20% 97%;      /* #F5F6F9 canvas */
+    --foreground: 210 29% 20%;      /* deep navy ink */
+    --card: 0 0% 100%;              /* white surface */
+    --card-foreground: 210 29% 20%;
+    --popover: 0 0% 100%;           /* dialogs/menus sit on white, not the canvas */
+    --popover-foreground: 210 29% 20%;
+
+    --primary: 210 29% 24%;         /* #2C3E50 brand navy - filled buttons */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 16% 94%;       /* chips, subtle fills */
+    --secondary-foreground: 210 20% 28%;
+    --muted: 220 16% 94%;
+    --muted-foreground: 215 14% 40%; /* 5.6:1 on white, 5.3:1 on canvas */
+
+    --accent: 202 76% 36%;          /* deepened teal: 5.4:1 on white, usable as link TEXT */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 46%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Hairlines. Intentionally near-invisible - the shadow does the work. */
+    --border: 220 16% 90%;
+    --input: 220 12% 58%;           /* real form fields only (input/textarea/select): 3.1:1 on white */
+    --ring: 202 76% 42%;            /* focus ring */
+
+    --chart-1: 202 76% 40%;
     --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --chart-3: 210 29% 30%;
+    --chart-4: 43 74% 55%;
+    --chart-5: 27 80% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 20% 28%;
+    --sidebar-primary: 210 29% 24%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 16% 94%;
+    --sidebar-accent-foreground: 210 29% 24%;
+    --sidebar-border: 220 16% 90%;
+    --sidebar-ring: 202 76% 42%;
   }
 
   .dark {
-    --background: 210 29% 10%; /* Darker background for dark mode */
-    --foreground: 0 0% 98%; /* Light foreground for dark mode */
-    --card: 210 29% 10%;
-    --card-foreground: 0 0% 98%;
-    --popover: 210 29% 10%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 204 69% 53%; /* Teal as primary in dark mode */
-    --primary-foreground: 210 29% 10%;
-    --secondary: 210 29% 15%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 210 29% 15%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 210 33% 96%; /* Light gray as accent in dark mode */
-    --accent-foreground: 210 29% 10%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 210 29% 20%;
-    --input: 210 29% 20%;
-    --ring: 204 69% 53%;
-    --chart-1: 220 70% 50%;
+    /* Dark mode inverts the elevation rule: raised surfaces get LIGHTER. */
+    --background: 220 20% 9%;
+    --foreground: 210 20% 96%;
+    --card: 220 17% 14%;
+    --card-foreground: 210 20% 96%;
+    --popover: 220 17% 16%;
+    --popover-foreground: 210 20% 96%;
+
+    --primary: 202 74% 60%;
+    --primary-foreground: 220 20% 9%;
+
+    --secondary: 220 14% 22%;
+    --secondary-foreground: 210 20% 94%;
+    --muted: 220 14% 22%;
+    --muted-foreground: 215 15% 70%;
+
+    --accent: 202 74% 64%;
+    --accent-foreground: 220 20% 9%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 24%;
+    --input: 220 12% 44%;
+    --ring: 202 74% 60%;
+
+    --chart-1: 202 74% 60%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 17% 14%;
+    --sidebar-foreground: 210 20% 94%;
+    --sidebar-primary: 202 74% 60%;
+    --sidebar-primary-foreground: 220 20% 9%;
+    --sidebar-accent: 220 14% 22%;
+    --sidebar-accent-foreground: 210 20% 94%;
+    --sidebar-border: 220 14% 24%;
+    --sidebar-ring: 202 74% 60%;
   }
 }
 
@@ -86,6 +103,15 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer base {
+  /* Layered, low-opacity elevation. Stock Tailwind shadows are too grey//hard
+     for a light neutral canvas; these read as depth rather than as a grey box. */
+  .shadow-sm  { box-shadow: 0 1px 2px 0 hsl(215 25% 20% / 0.04); }
+  .shadow-md  { box-shadow: 0 1px 2px 0 hsl(215 25% 20% / 0.04), 0 4px 12px -2px hsl(215 25% 20% / 0.07); }
+  .shadow-lg  { box-shadow: 0 1px 3px 0 hsl(215 25% 20% / 0.05), 0 10px 24px -4px hsl(215 25% 20% / 0.09); }
+  .shadow-xl  { box-shadow: 0 2px 4px 0 hsl(215 25% 20% / 0.05), 0 18px 40px -8px hsl(215 25% 20% / 0.12); }
 }
 
 @layer utilities {

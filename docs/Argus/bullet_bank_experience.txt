@@ -7,8 +7,55 @@
 
 # Experience
 
+## AnyTickets - Lead AI Developer
+**Dates:** Mar 2026-Present
+**Promotion:** Promoted from Senior AI Developer to Lead AI Developer on 2026-09-15, at the six-month mark
+**Scope:** Autonomous pricing platform (backend engine + APIs), canonical event catalog, venue geometry ML, release engineering, team leadership
+**Title options:** Lead AI Developer; Senior AI Developer; AI Platform Lead; Applied ML Engineer; Engineering Lead - Applied AI
+**Skills:** Applied ML, Pricing Systems, Spatial/Geometry Algorithms, Python, FastAPI, TypeScript, PostgreSQL, MSSQL, AWS (ECS/SQS/SNS/Lambda/RDS), Terraform, LangChain, Agentic Engineering, Evaluation, API Design, Data Integrity, Hiring, Mentorship, Release Engineering
+**Publication policy:** Employer commercial figures (bid values, consignment valuations, named-competitor comparisons, internal cost data) and named-colleague quotes are 1:1 / interview material only. Do not place on the public site.
+**ID:** `exp_anytickets_2026`
+
+- Own the backend engine, pricing algorithm and public APIs for an autonomous ticket-pricing platform; in a controlled A/B against the manual pricing baseline on split inventory from one event, the model reached 34.8 percent sell-through versus 30.2 percent and 42.8 percent price realization versus 34.5 percent, and narrowed net margin loss from minus 7.7 percent to minus 0.7 percent on comparable total revenue.
+  (id=b_at_1; tags=ownership,ML,pricing,architecture,impact,LeadAIDev,AppliedScientist)
+  [VERIFIED 2026-09-19 against the Madrid dashboard. Do NOT restate as "beat human pricing on all five KPIs": the baseline led on realized quantity (1322 vs 1263) and realized revenue ($231,665 vs $224,997), so the model led on 3 of 5. Both margins are negative - it lost less, it did not turn a profit. n = 1 event, 255 vs 250 sections. The retired "~25% revenue / ~15% average price" figures were mislabelled: 24.1% is the relative gain in PRICE REALIZATION and 15.2% the relative gain in SELL-THROUGH.]
+- Shipped a suggested-price model with a fixed -13/+15 percent band back-tested against 140,000 prior-season transactions covering 80-90 percent of sales, with guardrails (step-down cuts, hard and dynamic floors, spike detection) and a two-cron repricing architecture.
+  (id=b_at_2; tags=ML,evaluation,backtesting,guardrails,LeadAIDev,AppliedScientist)
+- Scaled the platform from 100 to 300 enrolled events in a single week and put the pricing API into production with full league coverage three weeks ahead of the committed date.
+  (id=b_at_3; tags=scale,delivery,latency,LeadAIDev,engineering)
+- Rebuilt the company's canonical event catalog from scratch over two months - dedup/matching engine, ELT sync job, admin monitoring UI and a read-only public API - ingesting approximately 222,500 events hourly and staging approximately 144,000 cross-marketplace event mappings.
+  (id=b_at_4; tags=architecture,dataeng,ELT,API,platform,LeadAIDev,engineering)
+- Diagnosed and cleared a pipeline guard that silently blocked 14,440 upcoming events (7.1 percent of the catalog) from ever reaching downstream systems; shipped to production.
+  (id=b_at_5; tags=debugging,dataeng,impact,engineering)
+- Built a polygon-geometry system that automates venue seat-map ingestion - levels, verticals, horizontals, neighbours and mirrors - lifting automated coverage from approximately 5 percent to approximately 95 percent and mirror accuracy from 1 percent to 94 percent.
+  (id=b_at_6; tags=ML,geometry,automation,accuracy,AppliedScientist,LeadAIDev)
+- Created the labelled training corpus the models required, hand-verifying approximately 696 sections across 30 venues, then defined a golden-set evaluation harness scoring algorithm output against it.
+  (id=b_at_7; tags=evaluation,goldenset,dataset,HITL,AppliedScientist)
+- Delivered seat-map configurations for all 32 stadiums of a major professional sports league ahead of schedule, then generalized the classifier across four additional sports against a >0.9 accuracy bar.
+  (id=b_at_8; tags=delivery,generalization,ML,scale,AppliedScientist)
+- Applied research methodology to production ML: identified that approximately 80 percent of the model's comparable inputs were the company's own listings (circular pricing), that only 12-15 percent of available comparables sat where sales actually occurred, and that the model's assumed normal distribution was empirically wrong - each finding redirected the pricing algorithm.
+  (id=b_at_9; tags=UXR,QuantUXR,dataintegrity,validity,triangulation,AppliedScientist)
+- Stood up QA and UAT environments from nothing in eight days on top of a full feature load, then designed and published the team's weekly release train (QA to UAT to production) with named reviewers and automated Jira routing.
+  (id=b_at_10; tags=engineering,releaseops,infrastructure,LeadAIDev)
+- Remediated pre-existing API security exposure in which unsecured internal endpoints permitted production-database writes to anyone holding the URL, completing the pass before the first external API consumers came online; separately found and revoked a departed employee's cloud credential that had survived four months past offboarding.
+  (id=b_at_11; tags=security,ownership,engineering,LeadAIDev)
+- Promoted to Lead AI Developer at the six-month mark; run weekly 1:1s with three engineers, own the hiring loop end to end (rubric design, scoring, executive brief, onboarding), and hold sole production-release authority for the pricing platform.
+  (id=b_at_12; tags=leadership,hiring,mentorship,management,LeadAIDev)
+- Set the team's engineering policy - an 8-story-point ticket ceiling, a 5,000-line PR split rule, and a scope-growth-becomes-an-epic norm - after diagnosing an unreviewable 30,000-line branch as a management gap rather than an individual failure.
+  (id=b_at_13; tags=leadership,process,management,coaching,LeadAIDev)
+- Established the team's agentic-engineering practice: a nested CLAUDE.md context architecture with CI-enforced file-size caps, a multi-model adversarial review loop (Claude authoring, Copilot/Cursor/Bugbot as independent critics), and a review skill built from analysis of the 17 most-contested pull requests - now taught to engineering teams outside the org.
+  (id=b_at_14; tags=GenAI,agentic,practice,enablement,collaborative,LeadAIDev)
+- Reduced LLM operating cost by migrating the model layer to smaller models and retooling the LLM wrapper onto LangChain for provider flexibility.
+  (id=b_at_15; tags=GenAI,cost,architecture,LangChain,AppliedScientist)
+- Created 558 issues, was assigned 384, and resolved 316 to Done in the team's Jira project across roughly six months.
+  (id=b_at_16; tags=throughput,delivery,verified,engineering)
+- Onboarded and mentored an engineer entirely in Spanish, delivered his first-month review (4 PRs merged, 1 in draft), and set the team principle "problem solvers, not problem finders."
+  (id=b_at_17; tags=mentorship,bilingual,leadership,LeadAIDev)
+- Designed the rollout safety model for autonomous pricing - a global kill switch requiring an explicit typed confirmation to arm, per-event defaults-off, and full attribution logging on every price and settings change.
+  (id=b_at_18; tags=safety,AISafety,governance,design,AppliedScientist,LeadAIDev)
+
 ## Argomai - Senior Applied Scientist
-**Dates:** Jan 2025–Present
+**Dates:** Jan 2025–Mar 2026
 **Scope:** Enterprise AI architecture, agents, RAG, governance
 **Founding context:** Founding team member
 **Title options:** Senior Applied Scientist; Senior Quantitative UX Researcher; Senior User Experience Researcher; Senior AI Researcher; AI/ML Systems Architect
