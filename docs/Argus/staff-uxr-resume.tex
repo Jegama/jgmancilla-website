@@ -98,22 +98,30 @@
 
 %---------- SUMMARY ----------
 \section{Professional Summary}
-Staff-level UXR leader blending \textbf{quantitative research at scale} with \textbf{ML/LLM tooling} to accelerate product decisions. Shipped reusable analysis pipelines, standardized metrics, and research ops that shortened feedback loops across \textbf{500M+ MAU} and \textbf{70M+ devices}. Noted for turning ambiguity into \textbf{operational, defensible insight systems} (e.g., open-ended survey analysis from \textbf{\textasciitilde30h to under 8h}; auto-reporting from \textbf{\textasciitilde4h to under 5m}; doc classification from \textbf{\textasciitilde90m to under 5m}). Bilingual (English/Spanish); strong cross-functional influence and executive-facing synthesis.
+Staff-level UXR leader blending \textbf{quantitative research at scale} with \textbf{ML/LLM tooling} to accelerate product decisions. Now leads an AI team where research methodology sets the agenda: input-validity audits and golden-set evaluation redirected a production pricing algorithm. Shipped reusable analysis pipelines, standardized metrics, and research ops that shortened feedback loops across \textbf{500M+ MAU} and \textbf{70M+ devices} (open-ended survey analysis from \textbf{\textasciitilde30h to under 8h}; auto-reporting from \textbf{\textasciitilde4h to under 5m}). Bilingual (English/Spanish); strong cross-functional influence and executive-facing synthesis.
 
 %----------- CORE SKILLS (ATS-optimized) -----------
 \section{Technical Stack \& Domains}
 \small
 \textbf{Quant UX Research:} Survey design \& analytics, longitudinal tracking, KPI frameworks, experimentation, large-scale log analysis, dashboards \\
 \textbf{Mixed-Methods:} Study design (interviews, diaries, ethnography, usability lab/remote/field), triangulation, research ops \\
-\textbf{ML/LLMs:} Text classification, embeddings/vector search, clustering, RAG, prompting, evaluation/observability, HIL pipelines \\
-\textbf{Tooling:} Python, SQL, statistical testing (t-tests/ANOVA/regression), FastAPI, LangChain/LangGraph, CI/CD, Docker \\
-\textbf{Domains \& Scale:} Social/consumer media (500M+ MAU), TV/streaming (\textasciitilde70M devices), commerce, education, automotive/HF
+\textbf{ML/LLMs:} Text classification, embeddings/vector search, clustering, RAG, prompting, evaluation/observability, golden-set harnesses, HIL pipelines \\
+\textbf{Tooling:} Python, SQL (PostgreSQL/MSSQL), statistical testing (t-tests/ANOVA/regression), FastAPI, LangChain/LangGraph, AWS, Terraform, CI/CD, Docker \\
+\textbf{Domains \& Scale:} Social/consumer media (500M+ MAU), TV/streaming (\textasciitilde70M devices), ticketing marketplace (\textasciitilde222.5k events hourly), commerce, education, automotive/HF
 
 %----------- WORK EXPERIENCE -----------
 \section{Work Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading{Argomai}{Houston, TX (Remote)}{Senior Applied Scientist}{Jan 2025 -- Present}
+    \resumeSubheading{AnyTickets}{Houston, TX (Remote)}{Lead AI Developer (prev. Senior AI Developer)}{Mar 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Audited production model inputs and found \textbf{\textasciitilde80\%} of comparables were the company's own listings (circular pricing) and the assumed distribution empirically wrong, redirecting the algorithm.}
+      \resumeItem{Built a \textbf{golden-set evaluation harness} over a hand-verified \textbf{696-section} corpus (30 venues), lifting automated seat-map coverage from \textbf{\textasciitilde5\% to \textasciitilde95\%}.}
+      \resumeItem{Ran a controlled \textbf{A/B} against the manual pricing baseline on split inventory: \textbf{34.8\% vs 30.2\%} sell-through and \textbf{42.8\% vs 34.5\%} price realization.}
+      \resumeItem{Established the team's \textbf{agentic-engineering practice} (nested context architecture, multi-model adversarial review), now taught to engineering teams outside the org.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Argomai}{Houston, TX (Remote)}{Senior Applied Scientist}{Jan 2025 -- Mar 2026}
     \resumeItemListStart
       \resumeItem{Owned enterprise \textbf{GenAI/ML architecture and platform governance} (domain models, service boundaries, data governance, NFRs) for insight workflows across clients.}
       \resumeItem{\textbf{Reduced document classification} from \textbf{\textasciitilde90m to under 5m} and PM reporting from \textbf{6h/wk to under 1h} via automation and retrieval.}
@@ -126,7 +134,6 @@ Staff-level UXR leader blending \textbf{quantitative research at scale} with \te
       \resumeItem{Engineered a \textbf{6-step GenAI pipeline} (Council of Agents, Self-consistency, LLM-as-a-judge, HITL) to classify open-ended feedback; \textbf{reduced analysis time \textasciitilde73\%} (30h to under 8h).}
       \resumeItem{Conducted \textbf{longitudinal research} tracking model performance pre/post-launch; merged survey data with \textbf{behavioral logs} to ground roadmap decisions in empirical reality.}
       \resumeItem{Developed and standardized a \textbf{Python analytics toolkit} (regressions, ANOVA, T-tests) adopted by the wider research team to streamline their own analysis.}
-      \resumeItem{Designed a \textbf{Human-in-the-loop (HITL)} workflow where expert review created curated few-shot examples to continuously refine the model.}
     \resumeItemListEnd
 
     \resumeSubheading{Roku}{San Jose, CA}{Senior User Experience Researcher}{Jan 2021 -- Nov 2023}

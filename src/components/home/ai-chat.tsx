@@ -17,6 +17,7 @@ import {
 } from '@/lib/content-data';
 import { cn } from '@/lib/utils';
 import { MarkdownRenderer } from '@/components/ui/markdown-renderer';
+import { useIsHydrated } from '@/hooks/use-is-hydrated';
 
 const MESSAGES_STORAGE_KEY = 'ai-chat-messages';
 const MESSAGES_META_KEY = 'ai-chat-messages-meta';
@@ -33,67 +34,73 @@ type Message = {
   text: string | React.ReactNode;
 };
 
+const welcomeTranscript = (): Message[] => [{ id: 'initial', sender: 'bot', text: aiWelcomeMessage }];
+
+/**
+ * Reads the persisted transcript, discarding it when the welcome-message version
+ * has moved on or the TTL has lapsed.
+ *
+ * Runs on the client only: `AIChat` withholds `AIChatContent` until after
+ * hydration, so `localStorage` is available and this can seed `useState`
+ * directly rather than being pushed in from an effect.
+ */
+function loadStoredMessages(): Message[] {
+  try {
+    const stored = localStorage.getItem(MESSAGES_STORAGE_KEY);
+    const metaRaw = localStorage.getItem(MESSAGES_META_KEY);
+
+    let meta: StoredMetadata | null = null;
+    if (metaRaw) {
+      try {
+        meta = JSON.parse(metaRaw);
+      } catch (e) {
+        console.warn('Invalid metadata JSON, will reset.', e);
+      }
+    }
+
+    const shouldReset =
+      !meta ||
+      meta.version !== aiWelcomeMessageVersion || // version bump
+      Date.now() - meta.updatedAt > MESSAGES_TTL_MS; // expired
+
+    if (stored && !shouldReset) {
+      const parsedMessages = JSON.parse(stored);
+      if (Array.isArray(parsedMessages) && parsedMessages.length > 0) {
+        return parsedMessages;
+      }
+    }
+  } catch (error) {
+    console.error('Error loading messages from localStorage:', error);
+  }
+
+  // No stored messages, version changed, corrupted, or expired. The persist
+  // effect below rewrites the metadata as soon as this transcript mounts.
+  return welcomeTranscript();
+}
+
 export function AIChat() {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const isHydrated = useIsHydrated();
+
+  if (!isHydrated) {
+    return (
+      <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full rounded-xl">
+        <CardContent className="flex items-center justify-center h-64">
+          <Loader2 className="h-8 w-8 animate-spin" />
+        </CardContent>
+      </Card>
+    );
+  }
+
+  return <AIChatContent />;
+}
+
+function AIChatContent() {
+  const [messages, setMessages] = useState<Message[]>(loadStoredMessages);
   const [inputValue, setInputValue] = useState('');
   const [isPending, startTransition] = useTransition();
-  const [isLoaded, setIsLoaded] = useState(false);
   const { toast } = useToast();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(MESSAGES_STORAGE_KEY);
-      const metaRaw = localStorage.getItem(MESSAGES_META_KEY);
-      const now = Date.now();
-      let meta: StoredMetadata | null = null;
-      if (metaRaw) {
-        try {
-          meta = JSON.parse(metaRaw);
-        } catch (e) {
-          console.warn('Invalid metadata JSON, will reset.', e);
-        }
-      }
-
-      const shouldReset = () => {
-        if (!meta) return true;
-        if (meta.version !== aiWelcomeMessageVersion) return true; // version bump
-        if (now - meta.updatedAt > MESSAGES_TTL_MS) return true; // expired
-        return false;
-      };
-
-      if (stored && !shouldReset()) {
-        const parsedMessages = JSON.parse(stored);
-        if (Array.isArray(parsedMessages) && parsedMessages.length > 0) {
-          setMessages(parsedMessages);
-        } else {
-          setMessages([{ id: 'initial', sender: 'bot', text: aiWelcomeMessage }]);
-        }
-      } else {
-        // Reset state (either no stored messages, version changed, corrupted, or expired)
-        const initial = [{ id: 'initial', sender: 'bot' as const, text: aiWelcomeMessage }];
-        setMessages(initial);
-        const newMeta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: now };
-        try {
-          localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(newMeta));
-        } catch (e) {
-          console.warn('Unable to write metadata during reset.', e);
-        }
-      }
-    } catch (error) {
-      console.error('Error loading messages from localStorage:', error);
-      setMessages([{ id: 'initial', sender: 'bot', text: aiWelcomeMessage }]);
-      try {
-        localStorage.setItem(
-          MESSAGES_META_KEY,
-          JSON.stringify({ version: aiWelcomeMessageVersion, updatedAt: Date.now() } satisfies StoredMetadata)
-        );
-      } catch {}
-    } finally {
-      setIsLoaded(true);
-    }
-  }, []);
 
   const resumeData = getResumeTextForAI();
   const mlPortfolioData = getMlPortfolioTextForAI();
@@ -104,18 +111,16 @@ export function AIChat() {
       scrollContainerRef.current.scrollTop = scrollContainerRef.current.scrollHeight;
     }
   };
-  // Save messages to localStorage whenever messages change (but only after initial load)
+  // Save messages to localStorage whenever messages change.
   useEffect(() => {
-    if (isLoaded && typeof window !== 'undefined') {
-      try {
-        localStorage.setItem(MESSAGES_STORAGE_KEY, JSON.stringify(messages));
-        const meta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: Date.now() };
-        localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(meta));
-      } catch (error) {
-        console.error('Error saving messages to localStorage:', error);
-      }
+    try {
+      localStorage.setItem(MESSAGES_STORAGE_KEY, JSON.stringify(messages));
+      const meta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: Date.now() };
+      localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(meta));
+    } catch (error) {
+      console.error('Error saving messages to localStorage:', error);
     }
-  }, [messages, isLoaded]);
+  }, [messages]);
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
@@ -131,28 +136,14 @@ export function AIChat() {
     }
   }, [isPending]);
   const clearMessages = () => {
-    const initialMessages = [{ id: 'initial', sender: 'bot' as const, text: aiWelcomeMessage }];
-    setMessages(initialMessages);
-    try {
-      const meta: StoredMetadata = { version: aiWelcomeMessageVersion, updatedAt: Date.now() };
-      localStorage.setItem(MESSAGES_META_KEY, JSON.stringify(meta));
-    } catch {}
+    // The persist effect rewrites both the transcript and its metadata.
+    setMessages(welcomeTranscript());
     toast({
       title: 'Chat Cleared',
       description: 'All messages have been cleared.',
     });
   };
 
-  // Don't render until localStorage is loaded
-  if (!isLoaded) {
-    return (
-      <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full rounded-xl">
-        <CardContent className="flex items-center justify-center h-64">
-          <Loader2 className="h-8 w-8 animate-spin" />
-        </CardContent>
-      </Card>
-    );
-  }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!inputValue.trim() || isPending) return;

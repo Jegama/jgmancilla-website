@@ -1,6 +1,5 @@
 %------------------------
-% Quantitative UX Researcher Resume - Jesus Mancilla
-% Tailored from hybrid master to emphasize Quant UXR leadership, survey analytics, and experimentation
+% Targeted Resume - Jesus Mancilla
 % Base template: Aras Gungore (MIT) - adapted for Jesus Mancilla
 %------------------------
 
@@ -95,9 +94,9 @@
 %---------- HEADING ----------
 \begin{center}
   {\Huge\scshape Jesus Mancilla} \\[4pt]
-  \textbf{Staff Quantitative UX Researcher \,|\, ML-Enabled Insight Systems} \\
+  \textbf{Senior Applied Scientist \,|\, AI Evaluation \& GenAI Quality Systems} \\
   \small
-  Decision-driving insights at scale: survey \& log analytics, ML-assisted research ops, standardized evaluation \\
+  Evaluation-driven development: offline benchmarks, online monitoring, HITL scoring, and LLM-as-judge pipelines \\
   \faMobile\ \href{tel:16503914301}{+1 650 391 4301}  $|$
   \href{mailto:jesus@jgmancilla.com}{jesus@jgmancilla.com}  $|$
   \faLinkedinSquare\ \href{https://www.linkedin.com/in/jegama}{LinkedIn.com/in/jegama}  $|$
@@ -108,87 +107,90 @@
 %---------- SUMMARY ----------
 % WRITER: Keep to 4-5 lines; include JD-aligned outcomes with metrics and scope.
 \section{Professional Summary}
-Staff UX Researcher and Mixed-Methods Strategist specializing in **Human-Centered AI**. Blends deep qualitative inquiry with quantitative rigor (logs, surveys) to drive product strategy across **500M+ MAU** platforms and global hardware launches. Pioneer in **scalable research operations**, leveraging ML tools to reduce analysis cycles (e.g., \textasciitilde30h to under 8h) and evaluating complex AI behaviors. Bilingual (English/Spanish); trusted partner to Product and Engineering leadership in turning ambiguity into high-confidence decisions.
+Applied scientist and engineering lead focused on \textbf{evaluation systems for AI-driven experiences}, currently owning an autonomous pricing platform and the harness that governs it. Builds offline benchmark suites, golden-set corpora, automated regression tests, and human-in-the-loop scoring loops (including \textbf{LLM-as-judge} and verifier-driven refinement) to support eval-driven development. Delivered \textbf{\textasciitilde33\% hallucination reduction} and \textbf{p95 TTFT 4.3s to under 2s} (internal), lifted automated seat-map coverage from \textbf{\textasciitilde5\% to \textasciitilde95\%}, and reduced open-ended analysis from \textbf{\textasciitilde30h to under 8h}. Leads three engineers with sole production-release authority; known for reusable tooling and adoption. Bilingual (English/Spanish).
 
 %----------- CORE SKILLS (ATS-optimized) -----------
-% WRITER: Prioritize JD-relevant clusters; order sections based on role (Methods first for UXR, ML first for Applied Scientist).
 \section{Technical Stack \& Domains}
 \small
-\textbf{Mixed-Methods:} Interviews, ethnography, diary studies, usability testing, concept testing, journey mapping, personas \\
-\textbf{Quant UX Research:} Survey design \& analytics, longitudinal tracking, KPI frameworks, large-scale log analysis, A/B testing \\
-\textbf{Human-Centered AI:} Trust calibration, model evaluation (RLHF), prompt engineering for research, hallucination auditing \\
-\textbf{Tooling \& Scale:} Python, SQL, statistical testing (t-tests/ANOVA/regression), RAG, LangChain, research repositories \\
-\textbf{Domains \& Scale:} Social/consumer media (500M+ MAU), TV/streaming (\textasciitilde70M devices), commerce, education, automotive/HF
+\textbf{AI Evaluation \& Quality:} Offline benchmarks, golden-set harnesses, online monitoring, acceptance tests, curated benchmark datasets, label taxonomy refinement, human-in-the-loop review, LLM-as-judge, prompt and evaluation criteria iteration \\
+\textbf{Programming:} Python, SQL, JavaScript, TypeScript, PostgreSQL, MSSQL, Git \\
+\textbf{LLM Systems:} Agents (LangGraph), RAG, vector search, multi-agent orchestration, observability and monitoring, agentic engineering \\
+\textbf{Data \& Experimentation:} Regression, ANOVA, t-tests, online experiments (A/B testing), longitudinal tracking, large-scale log analysis, KPI definition \\
+\textbf{Frameworks \& Infrastructure:} LangChain, LangGraph, FastAPI, React, Next.js, AWS (ECS/SQS/SNS/Lambda/RDS), Terraform \\
+\textbf{Domains \& Scale:} Consumer media (500M+ MAU), TV/streaming (\textasciitilde70M devices), ticketing marketplace (\textasciitilde222.5k events hourly), education, commerce, automotive/HF
 
 %----------- WORK EXPERIENCE -----------
 % WRITER: 3-4 bullets for 2 most recent roles; 2-3 bullets for older ones.
 \section{Work Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading{Argomai}{Houston, TX (Remote)}{Senior Applied Scientist}{Jan 2025 -- Present}
+    \resumeSubheading{AnyTickets}{Houston, TX (Remote)}{Lead AI Developer (prev. Senior AI Developer)}{Mar 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{Owned enterprise \textbf{GenAI/ML architecture and platform governance} (domain models, service boundaries, data governance, NFRs) for insight workflows across clients.} % IDs: b_arg_3
-      \resumeItem{\textbf{Reduced document classification} from \textbf{\textasciitilde90m to under 5m} and PM reporting from \textbf{6h/wk to under 1h} via automation and retrieval.} % IDs: b_arg_1
-      \resumeItem{Deployed \textbf{LLM-powered survey analysis} workflows cutting manual review time and error risk; standardized governance across clients; frameworks later peer-reviewed.} % IDs: b_arg_12
-      \resumeItem{Ran generative and evaluative interviews (screeners, protocols, synthesis) and translated findings into metrics, roll-out plans, and decision checklists with executives to de-risk launches.} % IDs: b_arg_9, b_arg_8
+      \resumeItem{Audited production model inputs and found \textbf{\textasciitilde80\%} of comparables were the company's own listings (circular pricing) and the assumed distribution empirically wrong, redirecting the algorithm.} % IDs: b_at_9
+      \resumeItem{Built a \textbf{golden-set evaluation harness} over a hand-verified \textbf{696-section} corpus (30 venues), lifting automated seat-map coverage from \textbf{\textasciitilde5\% to \textasciitilde95\%}.} % IDs: b_at_7, b_at_6
+      \resumeItem{Ran a controlled \textbf{A/B} against the manual pricing baseline on split inventory: \textbf{34.8\% vs 30.2\%} sell-through and \textbf{42.8\% vs 34.5\%} price realization.} % IDs: b_at_1
+      \resumeItem{Established the team's \textbf{agentic-engineering practice} (nested context architecture, multi-model adversarial review), now taught to engineering teams outside the org.} % IDs: b_at_14, b_at_12
+    \resumeItemListEnd
+
+    \resumeSubheading{Argomai}{Houston, TX (Remote)}{Senior Applied Scientist}{Jan 2025 -- Mar 2026}
+    \resumeItemListStart
+      \resumeItem{Built and governed enterprise \textbf{AI evaluation and deployment processes}, defining review loops, monitoring expectations, and quality gates across client projects.} % IDs: b_arg_13
+      \resumeItem{Authored and open-sourcing a \textbf{multilingual QA evaluation pipeline} (self-consistency $\rightarrow$ critique $\rightarrow$ refinement) with judge-centric scoring and deterministic audit checks.} % IDs: b_arg_10
+      \resumeItem{Designed reusable \textbf{platform components} (embeddings, prompt templates, orchestration SDK) and agent workflows to standardize evaluation and reuse across initiatives.} % IDs: b_arg_2, b_arg_6
+      \resumeItem{Reduced document workflow cycle time from \textbf{\textasciitilde90m to under 5m} and PM reporting from \textbf{6h/wk to under 1h} via retrieval automation and structured aggregation.} % IDs: b_arg_1
     \resumeItemListEnd
 
     \resumeSubheading{Meta}{Houston, TX (Remote)}{Senior Quantitative UX Researcher}{Jan 2024 -- Jan 2025}
     \resumeItemListStart
-      \resumeItem{Engineered a \textbf{6-step GenAI pipeline} (Council of Agents, Self-consistency, LLM-as-a-judge, HITL) to classify open-ended feedback; \textbf{reduced analysis time \textasciitilde73\%} (30h to under 8h).} % IDs: b_meta_3, b_meta_genai_1, b_meta_genai_2
-      \resumeItem{Conducted \textbf{longitudinal research} tracking model performance pre/post-launch; merged survey data with \textbf{behavioral logs} to ground roadmap decisions in empirical reality.} % IDs: b_meta_5, b_meta_2, b_meta_logs
-      \resumeItem{Developed and standardized a \textbf{Python analytics toolkit} (regressions, ANOVA, T-tests) adopted by the wider research team to streamline their own analysis.} % IDs: b_meta_7, b_meta_4
-      \resumeItem{Designed a \textbf{Human-in-the-loop (HITL)} workflow where expert review created curated few-shot examples to continuously refine the model.} % IDs: b_meta_genai_2
+      \resumeItem{Implemented evaluation pipeline patterns, including \textbf{LLM-as-judge} self-reflection and verifier-driven revisions, improving reliability of intermediate outputs for production research workflows.} % IDs: b_meta_genai_1
+      \resumeItem{Designed \textbf{human-in-the-loop} expert review to refine outputs in natural language and curate few-shot examples, reducing analysis time \textbf{\textasciitilde73\%} (\textasciitilde30h to under 8h).} % IDs: b_meta_genai_2
+      \resumeItem{Ran \textbf{pre and post-launch monitoring} using bi-weekly surveys and \textbf{SQL}-based log analysis to track model quality changes and guide roadmap decisions at \textbf{500M+ MAU} scale.} % IDs: b_meta_5, b_meta_logs, b_meta_11, b_meta_2
     \resumeItemListEnd
 
     \resumeSubheading{Roku}{San Jose, CA}{Senior User Experience Researcher}{Jan 2021 -- Nov 2023}
     \resumeItemListStart
-      \resumeItem{Developed a \textbf{Modular Survey Analysis System} for a weekly sentiment survey; \textbf{reduced reporting time from 4h to under 5m} via context-aware logic and automated stats.} % IDs: b_roku_2, b_roku_6
-      \resumeItem{Led quant/qual device research; analyzed behavioral logs from \textbf{70M+ devices} to support usability testing on hardware remotes.} % IDs: b_roku_3
-      \resumeItem{Built an \textbf{AI-powered indexed database} of UX/CI research, enabling org-wide self-serve discovery and faster executive reporting.} % IDs: b_roku_1, b_roku_5
+      \resumeItem{Built a \textbf{modular survey analysis and reporting engine}, cutting weekly report generation from \textbf{\textasciitilde4h to under 5m} via automation and reusable analysis logic.} % IDs: b_roku_2, b_roku_6
+      \resumeItem{Developed an \textbf{AI-powered indexed research database} enabling self-serve discovery and faster executive reporting across orgs.} % IDs: b_roku_1, b_roku_5
     \resumeItemListEnd
+
+    \pagebreak
 
     \resumeSubheading{Walmart Global Tech}{Sunnyvale, CA}{Senior User Experience Researcher}{Aug 2019 -- Nov 2020}
     \resumeItemListStart
-      \resumeItem{Led analytics for Sam’s Club mobile in \textbf{Tableau}; established KPIs and dashboards linking \textbf{user-interaction + business metrics} to UX bets.} % IDs: b_wmt_1, b_wmt_2
-      \resumeItem{Led cross-border (US/MX) standardization of surveys \& research workflows; designed and deployed surveys in \textbf{Medallia} and \textbf{SurveyMonkey}.} % IDs: b_wmt_4, b_wmt_7
-      \resumeItem{Created \textbf{Kanban-based research ops boards} in Jira/Confluence to prioritize requests, visualize WIP, and coordinate stakeholders across markets.} % IDs: b_wmt_10
+      \resumeItem{Owned product analytics for Sam's Club mobile, defining KPIs and dashboards that linked behavioral and business metrics to feature decisions.} % IDs: b_wmt_1, b_wmt_2
+      \resumeItem{Standardized cross-team research operations using Jira and Confluence workflows to prioritize requests, track WIP, and improve delivery predictability.} % IDs: b_wmt_10
     \resumeItemListEnd
 
     \resumeSubheading{Scrapworks Inc.}{Palo Alto, CA}{Data Scientist}{Sep 2017 -- Aug 2019}
     \resumeItemListStart
-      \resumeItem{\textbf{60\% reduction} in forecasting error; built dashboards over 20 years of sales data (\textbf{\textasciitilde30\% sales growth}).} % IDs: b_scrap_1, b_scrap_3
-      \resumeItem{Initiated NLP merchandise classifier; productionized ingestion/cleaning pipelines across sources.} % IDs: b_scrap_2
+      \resumeItem{Delivered deep learning forecasting for commodities, reducing prediction error by \textbf{60\%} and improving decision support for traders.} % IDs: b_scrap_1
+      \resumeItem{Initiated an NLP-based merchandise classifier and contributed to a patent application, building end-to-end data preparation and modeling workflows.} % IDs: b_scrap_2
     \resumeItemListEnd
 
     \resumeSubheading{Suggestic}{Mexico City, Mexico}{Senior User Experience Researcher}{Dec 2016 -- Sep 2017}
     \resumeItemListStart
-      \resumeItem{Led the transition from conversational to graphical interfaces using data insights, improving engagement and functionality for a consumer nutrition coaching app.} % IDs: b_sugg_1
-      \resumeItem{Used Lookback to run remote usability studies on nutrition coaching flows, iterating interaction patterns based on observed friction and analytics.} % IDs: b_sugg_4, b_sugg_2
+      \resumeItem{Ran data-driven testing and analysis for new features, using analytics to iterate quickly and improve engagement in a consumer coaching app.} % IDs: b_sugg_2, b_sugg_5
+      \resumeItem{Transitioned core product experience from conversational to graphical UI using insights from experimentation and behavioral signals.} % IDs: b_sugg_1
     \resumeItemListEnd
 
     \resumeSubheading{Stanford University}{Stanford, CA}{User Experience Researcher}{May 2016 -- Nov 2016}
     \resumeItemListStart
-      \resumeItem{Designed safe, replicable on road driver stress protocols for automotive UX studies, collecting and analyzing over 150 hours of car, biometric, and video data.} % IDs: b_stan_4, b_stan_1
-      \resumeItem{Contributed to algorithms with about 90 percent stress detection accuracy and co authored work on automotive UI and pedestrian interactions.} % IDs: b_stan_2, b_stan_3
+      \resumeItem{Conducted ML research on stress detection with 150+ hours of multimodal data and contributed to models reaching \textbf{\textasciitilde90\%} accuracy.} % IDs: b_stan_1, b_stan_2
     \resumeItemListEnd
 
     \resumeSubheading{ITAM}{Mexico City, Mexico}{User Experience Researcher}{Aug 2014 -- May 2016}
     \resumeItemListStart
-      \resumeItem{Created custom data visualizations and analyzed psychophysiological signals, identifying user behavior patterns with machine learning techniques.} % IDs: b_itam_1
-      \resumeItem{Led usability testing across wearable, mobile, and web platforms, applying analytical insights to improve interaction and satisfaction metrics.} % IDs: b_itam_3, b_itam_5
+      \resumeItem{Analyzed psychophysiological signals and built custom visualizations, applying ML to surface patterns and inform user-centered product decisions.} % IDs: b_itam_1
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %----------- SELECTED PROJECTS -----------
-% WRITER: Rename this heading to better match the JD if needed (e.g., Applied ML/LLMs, Research/Systems).
-\section{Selected Projects (Research Systems \& At-Scale Insight)}
+\section{Selected Projects (AI Evaluation \& ML Platforms)}
   \resumeSubHeadingListStart
-    \resumeItem{\textbf{Quant UX at Scale}: 6-step GenAI pipeline (Council of Agents, LLM-as-a-judge); \textbf{time per study reduced from \textasciitilde30h to under 8h} in \textbf{500M+ MAU} context.} % IDs: b_meta_2, b_meta_3, b_meta_genai_1, b_meta_genai_2
-    \resumeItem{\textbf{Research Librarian (AI Index)}: Multi-engine semantic retrieval to surface prior insights and drive reuse.} % IDs: b_roku_1
-    \resumeItem{\textbf{Modular Survey Analysis System}: Weekly sentiment dashboard + prototype classifier; \textbf{reporting time reduced from \textasciitilde4h to under 5m}.} % IDs: b_roku_2, b_roku_6, b_roku_ml_proto
-    \resumeItem{\textbf{Customer Support Bot (Blueprint)}: RAG + evaluation/observability + safety rails; solution-spotlight answers.} % IDs: b_arg_5, b_arg_10, proj_customer_support_bot
+    \resumeItem{\textbf{Evaluation Benchmarking Suite}: Built automated regression tests on a \textbf{500+ item} dataset to track adherence, tone, and reasoning; improved reliability (about \textbf{33\%} hallucination reduction) and reduced p95 TTFT from \textbf{4.3s to under 2s} (internal).} % IDs: proj_ai_knowledge_assistant_4 (bullets 1,3,7,9)
+    \resumeItem{\textbf{Quant UX at Scale}: 6-step GenAI evaluation pipeline (embeddings, self-consistency, LLM-as-judge, verifier revisions, HITL, few-shot curation), cutting time per study from \textbf{\textasciitilde30h to under 8h} in a \textbf{500M+ MAU} context.} % IDs: proj_quant_ux_scale
+    \resumeItem{\textbf{Modular Survey Analysis System}: Production reporting engine with automated stats and classifier prototyping, reducing weekly reporting from \textbf{\textasciitilde4h to under 5m}.} % IDs: proj_modular_survey
   \resumeSubHeadingListEnd
 
 %----------- EDUCATION -----------
@@ -201,18 +203,15 @@ Staff UX Researcher and Mixed-Methods Strategist specializing in **Human-Centere
   \resumeSubHeadingListEnd
 
 %----------- PUBLICATIONS -----------
-% WRITER: Keep 3-4 most relevant items.
 \section{Selected Publications}
   \resumeSubHeadingListStart
     \small{\item{
-        {Santana-Mancilla, P. C., Guerrero-Ibáñez, A., Contreras-Castillo, J., Garcia-Mancilla, J., \& Anido-Rifón, L. (2025). Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization. Symmetry, 17(12), 2083.}
+        {Ramos-Rivera, R. E., Santana Mancilla, P. C., Garcia-Mancilla, J., \& Gaytán-Lugo, L. S. (2025). Language models in education: Generative AI to optimize teacher performance analysis. InnovAcademica, 1(2), 74--85.} % IDs: pub_innovacademica_2025_llm_education
 
-        {Ramos-Rivera, R. E., Santana Mancilla, P. C., Garcia-Mancilla, J., \& Gaytán-Lugo, L. S. (2025). Language models in education: Generative AI to optimize teacher performance analysis. InnovAcademica, 1(2), 74-85.}
-    
-        {Ramos-Rivera, R. E., Garcia-Mancilla, J., Cárdenas-Villa, G. E., \& Santana-Mancilla, P. C. (2024). Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis: An Approach Using Large Language Models (LLM). Avances en Interacción Humano-Computadora, 9(1), 261-264.}
-    
-        {Garcia-Mancilla, J., Ramirez-Marquez, J. E., Lipizzi, C., Vesonder, G. T., \& Gonzalez, V. M. (2018). Characterizing negative sentiments in at-risk populations via crowd computing: A computational social science approach. International Journal of Data Science and Analytics.}
-        
+        {Ramos-Rivera, R. E., Garcia-Mancilla, J., Cárdenas-Villa, G. E., \& Santana-Mancilla, P. C. (2024). Towards Improving Teacher Performance Assessment through Human-Centered AI-Powered Survey Analysis. Avances en Interacción Humano-Computadora, 9(1), 261--264.} % IDs: pub_aihc_2024_hcai_survey_analysis
+
+        {Garcia-Mancilla, J., Ramirez-Marquez, J. E., Lipizzi, C., Vesonder, G. T., \& Gonzalez, V. M. (2018). Characterizing negative sentiments in at-risk populations via crowd computing. International Journal of Data Science and Analytics.} % IDs: pub_springer_2018_negative_sentiment
+
         {\small For full list, see: jgmancilla.com/research-papers }
   }}
   \resumeSubHeadingListEnd

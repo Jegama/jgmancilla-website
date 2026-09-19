@@ -24,10 +24,15 @@
 - Chain-of-thought
 - Multi-agent orchestration
 - Model evaluation pipelines
+- Golden-set evaluation harnesses
 - Observability and monitoring
 - AI Safety & Alignment
 - RLHF
 - Explainability (XAI)
+- Applied ML
+- Pricing systems
+- Spatial / geometry algorithms
+- Agentic engineering
 
 ## Data Analysis
 
@@ -56,9 +61,18 @@
 ## Databases
 
 - Vector Databases
+- PostgreSQL
+- MSSQL
 - Automation pipelines
 - Data processing
 - Workflow optimization
+
+## Cloud & Infrastructure
+
+- AWS (ECS, SQS, SNS, Lambda, RDS)
+- Terraform
+- API design
+- Release engineering (QA / UAT / production release trains)
 
 ## Research Methods (Quant, Qual, Mixed)
 
@@ -87,6 +101,8 @@
 - Design thinking
 - Lean UX
 - Cross-functional collaboration
+- Team leadership (1:1s, mentorship)
+- Hiring loop design (rubrics, scoring, onboarding)
 
 ## Frameworks
 
