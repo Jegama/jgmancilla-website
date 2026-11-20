@@ -4,6 +4,8 @@ This website is the personal CV and interactive AI portfolio of **Jesús Mancill
 
 Live site: https://www.jgmancilla.com/
 
+This repository also hosts my [personal workflow skills and pinned Codex Cloud setup](docs/codex-cloud-skills.md).
+
 ## 🚀 Features
 
 - **AI Chat Assistant**: Ask questions about my experience, skills, research, and publications. The AI is trained on curated content from my career.
