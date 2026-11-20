@@ -1,8 +1,28 @@
 # Personal workflow skills for Codex Cloud
 
-## Prompt for the environment setup agent
+## Upgrade an existing calvinist-parrot environment
 
-> Prepare this repository's normal development environment. Add the pinned personal workflow skills from this guide to the install script for the user who runs Codex tasks. Preserve the project's existing setup and checks. When upgrading an earlier embedded PR Review Loop install, replace the old base64 block. Verify all five skills and report their installation path and source revision.
+Paste this into the environment's **Edit** setup conversation.
+
+```text
+Update the install script for the existing Jegama/calvinist-parrot Codex Cloud environment. Find the embedded PR Review Loop block that uses the PR_REVIEW_LOOP_PAYLOAD delimiter. Replace that entire block, including both base64 payloads, with a reproducible install of personal-skills-v1.0.0. Preserve the rest of the install script, the start skill, and the project's existing configuration. If the pinned installer is already present, verify it without adding another block.
+
+During setup, fetch https://github.com/Jegama/jgmancilla-website.git at commit e5154c307d4bf99da2e6a9ea75cfd3546f8e8915 into a temporary checkout and verify its HEAD. As the user who runs Codex tasks, run python3 scripts/install-personal-skills.py from that checkout, then run it again with --check. After verification, write the full commit SHA to ~/.agents/jegama-workflow-skills.rev and remove the temporary checkout.
+
+Run the revised setup. Report the verified revision and installed paths for adversarial-review, browser-review, staleness-check, implement-prd, and pr-review-loop. Check for duplicate skill names across the project and user skill directories. Exercise a local browser page using the available browser runner and report the observed result or blocker. Leave the updated environment ready for me to republish.
+```
+
+## Set up a new repository environment
+
+Select the target GitHub repository when creating the environment. The same prompt works for each repository without editing it.
+
+```text
+Prepare a Codex Cloud environment for the GitHub repository selected in this setup. Identify the repository from its checkout. Read its AGENTS.md and setup documentation where present, install its declared dependencies, and run its documented local checks using test data. Keep paid provider runs and production writes outside the setup smoke test.
+
+Include my five personal workflow skills from https://github.com/Jegama/jgmancilla-website.git at commit e5154c307d4bf99da2e6a9ea75cfd3546f8e8915 (personal-skills-v1.0.0). Fetch and verify that commit in a temporary checkout. If the target repository already ships all five skills, use the pinned checkout's scripts/install-personal-skills.py with --dest pointing at the repository's .agents/skills and --check. If that reports a version conflict, tell me which files differ. Otherwise, for a repository without bundled skills, add the pinned fetch to its persistent install script, run the installer as the Codex task user, verify with --check, and write the full SHA to ~/.agents/jegama-workflow-skills.rev. For partial overlap, identify the conflicting paths before creating duplicate copies. Clean up the temporary checkout.
+
+Report the repository, verified revision, one path each for adversarial-review, browser-review, staleness-check, implement-prd, and pr-review-loop, and the project checks that passed or were blocked. For a project with a browser UI, exercise one local user-visible flow with a browser and report what happened. Leave the environment ready for me to publish.
+```
 
 ## Install from GitHub
 
