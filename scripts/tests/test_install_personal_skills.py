@@ -59,6 +59,25 @@ class InstallSkillsTest(unittest.TestCase):
         self.assertEqual(existing.read_text(), "independently maintained")
         self.assertFalse((self.destination / "browser-review").exists())
 
+    def test_matching_symlinks_are_conflicts_for_install_and_check(self):
+        for relative in (".", "pr-review-loop", "implement-prd/references", "browser-review/SKILL.md"):
+            with self.subTest(relative=relative):
+                self.run_installer().check_returncode()
+                target = self.destination / relative
+                saved = self.root / "original"
+                target.rename(saved)
+                target.symlink_to(SOURCE / relative, target_is_directory=saved.is_dir())
+                try:
+                    for options in ((), ("--check",)):
+                        with self.subTest(options=options):
+                            result = self.run_installer(*options)
+                            self.assertNotEqual(result.returncode, 0)
+                            self.assertIn("Conflicting destination", result.stderr)
+                            self.assertTrue(target.is_symlink())
+                finally:
+                    target.unlink()
+                    saved.rename(target)
+
 
 if __name__ == "__main__":
     unittest.main()

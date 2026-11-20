@@ -41,22 +41,31 @@ def install_file(source, target):
         staged.unlink(missing_ok=True)
 
 
+def destination_file(destination, relative):
+    path = destination
+    for name in relative.parts:
+        if path.is_symlink() or (path.exists() and not path.is_dir()):
+            raise ValueError(f"Conflicting destination: {path}")
+        path = path / name
+    if path.is_symlink() or (path.exists() and not path.is_file()):
+        raise ValueError(f"Conflicting destination: {path}")
+    return path
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dest", type=Path, default=Path.home() / ".agents" / "skills")
     parser.add_argument("--check", action="store_true", help="Verify installed files without writing")
     args = parser.parse_args()
-    destination = args.dest.expanduser().resolve()
+    destination = args.dest.expanduser().absolute()
     source_root = Path(__file__).resolve().parents[1] / ".agents" / "skills"
     updates = []
     for source in bundle_files(source_root):
-        target = destination / source.relative_to(source_root)
+        target = destination_file(destination, source.relative_to(source_root))
         if target.is_file() and filecmp.cmp(source, target, shallow=False):
             continue
         if args.check:
             print(f"Missing or different: {target}", file=sys.stderr)
-        elif target.resolve() != target or target.is_dir():
-            raise ValueError(f"Conflicting destination: {target}")
         updates.append((source, target))
     if args.check and updates:
         return 1
