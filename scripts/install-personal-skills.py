@@ -58,7 +58,14 @@ def main():
     parser.add_argument("--check", action="store_true", help="Verify installed files without writing")
     args = parser.parse_args()
     destination = args.dest.expanduser().absolute()
-    source_root = Path(__file__).resolve().parents[1] / ".agents" / "skills"
+    checkout = Path(__file__).resolve().parents[1]
+    source_root = checkout / ".agents" / "skills"
+    # A parent such as ~/.agents may itself point into the disposable checkout.
+    for parent in destination.parents:
+        if parent.is_symlink():
+            resolved = parent.resolve()
+            if resolved == checkout or checkout in resolved.parents:
+                raise ValueError(f"Conflicting destination: {parent}")
     updates = []
     for source in bundle_files(source_root):
         target = destination_file(destination, source.relative_to(source_root))

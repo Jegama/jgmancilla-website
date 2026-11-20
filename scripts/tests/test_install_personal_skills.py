@@ -78,6 +78,26 @@ class InstallSkillsTest(unittest.TestCase):
                     target.unlink()
                     saved.rename(target)
 
+    def test_parent_link_into_source_checkout_is_a_conflict(self):
+        agents = self.root / ".agents"
+        agents.symlink_to(SOURCE.parent, target_is_directory=True)
+        self.destination = agents / "skills"
+        for options in ((), ("--check",)):
+            with self.subTest(options=options):
+                result = self.run_installer(*options)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn(f"Conflicting destination: {agents}", result.stderr)
+
+    def test_parent_alias_to_persistent_directory(self):
+        persistent = self.root / "persistent"
+        persistent.mkdir()
+        alias = self.root / "alias"
+        alias.symlink_to(persistent, target_is_directory=True)
+        self.destination = alias / "skills"
+        self.run_installer().check_returncode()
+        self.run_installer("--check").check_returncode()
+        self.assertTrue((persistent / "skills/pr-review-loop/SKILL.md").is_file())
+
 
 if __name__ == "__main__":
     unittest.main()
