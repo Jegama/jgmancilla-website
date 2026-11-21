@@ -1,5 +1,15 @@
 # Publications
 
+## AI-Based Monitoring Devices for the Identification of Circadian Parameters as Digital Predictive Biomarkers of Neurodegenerative Diseases in Older Adults: Systematic Review
+**ID:** `pub_jmir_aging_2026_circadian_biomarkers`
+**Year:** 2026
+**Publication:** JMIR Aging, 9, e83031
+**Authors:** Herrera-Zamora, J. M.; Monroy-Rodriguez, J.; Garcia-Mancilla, J.; Santana-Mancilla, P. C.
+**URL:** https://doi.org/10.2196/83031
+
+- Coauthored a systematic review of 10 eligible studies on AI-assisted sensing of daily rhythms in older adults. The review found stronger evidence for monitoring disruptions than for predicting neurodegenerative disease.
+- Served as the designated third reviewer for disagreements about full-text eligibility and verification of computational-method data.
+
 ## Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization
 **ID:** `pub_symmetry_2025_traffic_genai`
 **Year:** 2025
