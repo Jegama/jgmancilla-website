@@ -2,6 +2,14 @@ export const researchPapersContent = {
   headline: "Published Papers",
   papers: [
     {
+      title: "AI-Based Monitoring Devices for the Identification of Circadian Parameters as Digital Predictive Biomarkers of Neurodegenerative Diseases in Older Adults: Systematic Review",
+      authors: ["Herrera-Zamora, J. M.", "Monroy-Rodriguez, J.", "Garcia-Mancilla, J.", "Santana-Mancilla, P. C."],
+      publication: "JMIR Aging, 9, e83031",
+      year: "2026",
+      abstract: "This systematic review examined how wearables and other sensing devices measure daily rhythms in older adults and whether those measurements could help predict neurodegenerative disease. The authors synthesized 10 eligible studies. The evidence better supports measuring disrupted rhythms than using those measurements to predict disease, and none of the AI models had been validated on external data. The review proposes a framework for testing these potential biomarkers in future studies.",
+      url: "https://doi.org/10.2196/83031",
+    },
+    {
       title: "Sustainable Urban Mobility: Leveraging Generative AI for Symmetry-Aware Traffic Light Optimization",
       authors: ["Santana-Mancilla, P. C.", "Guerrero-Ibáñez, A.", "Contreras-Castillo, J.", "Garcia-Mancilla, J.", "Anido-Rifón, L."],
       publication: "Symmetry, 17(12), 2083",
